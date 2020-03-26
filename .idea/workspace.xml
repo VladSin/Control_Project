@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Web_module/src/main/java/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/src/main/java/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/DefaultUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/src/main/java/DefaultUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/webapp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +14,20 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,9 +55,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Service_module/src/main/java" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2731183" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -82,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585214975516</updated>
       <workItem from="1585214977783" duration="9461000" />
-      <workItem from="1585241028115" duration="5448000" />
+      <workItem from="1585241028115" duration="6989000" />
     </task>
     <servers />
   </component>

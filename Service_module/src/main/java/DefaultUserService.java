@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class DefaultUserService implements IUserService{
 
     private static volatile IUserService instance;
@@ -10,6 +12,11 @@ public class DefaultUserService implements IUserService{
             }
         }
         return localInstance;
+    }
+
+    @Override
+    public List<User> getUsers() {
+        return null;
     }
 
     @Override

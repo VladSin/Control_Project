@@ -9,7 +9,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <a href="${pageContext.request.contextPath}/logout"></a>
-<h2>Добро пожаловать!</h2>
+<h2 style="color: green">Добро пожаловать!</h2>
 <c:if test="${users != null}">
     <table>
         <tr>
@@ -18,14 +18,12 @@
             <td>Телефон</td>
             <td>Email</td>
         </tr>
-        <c:forEach items="${users}" var="user">
-            <tr>
-                <td>${user.name}</td>
-                <td>${user.surname}</td>
-                <td>${user.phone}</td>
-                <td>${user.email}</td>
-            </tr>
-        </c:forEach>
+        <tr>
+            <td>${user.name}</td>
+            <td>${user.surname}</td>
+            <td>${user.phone}</td>
+            <td>${user.email}</td>
+        </tr>
     </table>
 </c:if>
 

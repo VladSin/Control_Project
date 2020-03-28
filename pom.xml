@@ -13,6 +13,7 @@
         <module>Web_module</module>
         <module>Data_module</module>
         <module>Service_module</module>
+        <module>Storage_module</module>
     </modules>
 
     <properties>

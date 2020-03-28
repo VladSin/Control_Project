@@ -2,7 +2,9 @@ import java.util.List;
 
 public class DefaultUserService implements IUserService{
 
+    private IUserStorage userStorage = DefaultUserStorage.getInstance();
     private static volatile IUserService instance;
+
     public static IUserService getInstance(){
         IUserService localInstance = instance;
         if (localInstance == null){
@@ -16,12 +18,12 @@ public class DefaultUserService implements IUserService{
 
     @Override
     public List<User> getUsers() {
-        return null;
+        return userStorage.getUsers();
     }
 
     @Override
     public String saveUser(User user) {
-        return null;
+        return userStorage.save(user);
     }
 
     @Override

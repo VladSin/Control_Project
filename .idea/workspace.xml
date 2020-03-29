@@ -2,28 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage_module/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage_module/src/main/java/DefaultAuthUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage_module/src/main/java/DefaultUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage_module/src/main/java/IAuthUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage_module/src/main/java/IUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web_module/src/main/webapp/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data_module/target/Data_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data_module/target/Data_module-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data_module/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Data_module/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/DefaultSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/src/main/java/DefaultSecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/DefaultUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/src/main/java/DefaultUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service_module/target/Service_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/target/Service_module-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/classes/DefaultSecurityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/target/classes/DefaultSecurityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/classes/DefaultUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/target/classes/DefaultUserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service_module/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/webapp/user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/UserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Data_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Data_module-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Service_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Service_module-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/target/classes/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/classes/UserServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +40,15 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="control_project" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -107,8 +103,18 @@
       <workItem from="1585311199721" duration="756000" />
       <workItem from="1585312041952" duration="143000" />
       <workItem from="1585312508090" duration="1620000" />
-      <workItem from="1585391053884" duration="4253000" />
+      <workItem from="1585391053884" duration="7947000" />
+      <workItem from="1585416977426" duration="3585000" />
+      <workItem from="1585464347736" duration="7709000" />
     </task>
+    <task id="LOCAL-00001" summary="Creation of Storage_module and some changes are added">
+      <created>1585402813924</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585402813924</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,16 +135,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Creation of Storage_module and some changes are added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of Storage_module and some changes are added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1585312578813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1585312578813" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585393715643">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585416144710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585393715643" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585416144710" />
+    <state x="377" y="7" key="CommitChangelistDialog2" timestamp="1585472331647">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="377" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585472331647" />
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1585391381837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -147,5 +159,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585391808600" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1585467188515">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585467188515" />
   </component>
 </project>

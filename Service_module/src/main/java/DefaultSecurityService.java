@@ -14,9 +14,16 @@ public class DefaultSecurityService implements ISecurityService {
         return localInstance;
     }
 
+    private IAuthUserStorage authUserStorage = DefaultAuthUserStorage.getInstance();
     @Override
     public AuthorizationUser login(String login, String password) {
-        //TODO...
+        AuthorizationUser user = authUserStorage.getLogin(login);
+        if (user == null){
+            return null;
+        }
+        if (user.getPassword().equals(password)){
+            return user;
+        }
         return null;
     }
 }

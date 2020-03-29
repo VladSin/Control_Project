@@ -9,24 +9,21 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <a href="${pageContext.request.contextPath}/logout"></a>
-<h2>Добро пожаловать!</h2>
-<c:if test="${users != null}">
-    <table>
-        <tr>
-            <td>Имя</td>
-            <td>Фамилия</td>
-            <td>Телефон</td>
-            <td>Email</td>
-        </tr>
-        <c:forEach items="${users}" var="user">
-            <tr>
-                <td>${user.name}</td>
-                <td>${user.surname}</td>
-                <td>${user.phone}</td>
-                <td>${user.email}</td>
-            </tr>
-        </c:forEach>
-    </table>
-</c:if>
+    <h2 style="color: green">Введите свои данные</h2>
+    <form action="${pageContext.request.contextPath}/user" method="post">
+        <label for="name">имя</label>
+        <input id="name" type="text" name="name"><br/>
+
+        <label for="surname">фамилия</label>
+        <input id="surname" type="text" name="surname"><br/>
+
+        <label for="phone">phone</label>
+        <input id="phone" type="text" name="phone"><br/>
+
+        <label for="email">email</label>
+        <input id="email" type="text" name="email"><br/>
+
+        <input type="submit">
+    </form>
 
 <%= request.getAttribute("users")%>

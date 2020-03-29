@@ -13,7 +13,7 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<User> users = userService.getUsers();
-        request.setAttribute("user", users);
+        request.setAttribute("users", users);
         WebUtils.forword("user", request, response);
     }
 
@@ -28,7 +28,7 @@ public class UserServlet extends HttpServlet {
         String id = userService.saveUser(user);
 
         try {
-            response.sendRedirect(request.getContextPath() + "/user");
+            response.sendRedirect(request.getContextPath() + "/view.jsp");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

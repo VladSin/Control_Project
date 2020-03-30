@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Service_module" />
         <module name="Data_module" />
+        <module name="Service_module" />
         <module name="Storage_module" />
         <module name="Web_module" />
       </profile>

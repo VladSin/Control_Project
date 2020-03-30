@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Web_module/src/main/webapp/view.jsp" afterDir="false" />
+    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="Some bugs are corrected in jsp files">
+      <change afterPath="$PROJECT_DIR$/Data_module/src/main/java/Salary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_module/src/main/java/CalculatorValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_module/src/main/java/DefaultSalaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_module/src/main/java/ISalaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_module/src/test/java/DefaultSecurityServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Storage_module/src/main/java/DefaultSalaryStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Storage_module/src/main/java/ISalaryStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Storage_module/src/test/java/DefaultUserStorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web_module/src/main/java/CalculatorSalaryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web_module/src/test/java/LoginServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web_module/src/test/java/WebUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data_module/target/Data_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data_module/target/Data_module-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data_module/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Data_module/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service_module/target/Service_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/target/Service_module-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service_module/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/webapp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/webapp/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/WebUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/WebUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Data_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Data_module-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Service_module-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Service_module-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/classes/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/classes/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/target/classes/WebUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/classes/WebUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_module/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +58,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="creation_service" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -76,6 +95,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Service_module/src/main/java" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -84,9 +106,82 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DefaultUserStorageTest">
+    <configuration name="DefaultSecurityServiceTest" type="ArquillianJUnit" factoryName="" temporary="true" nameIsGenerated="true">
+      <module name="Service_module" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DefaultSecurityServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultSecurityServiceTest.login" type="ArquillianJUnit" factoryName="" temporary="true" nameIsGenerated="true">
+      <module name="Service_module" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DefaultSecurityServiceTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultSecurityServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Service_module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DefaultSecurityServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultUserStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Storage_module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DefaultUserStorageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Web_module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DefaultUserStorageTest" />
+        <item itemvalue="JUnit.DefaultSecurityServiceTest" />
+        <item itemvalue="Arquillian JUnit.DefaultSecurityServiceTest" />
+        <item itemvalue="Arquillian JUnit.DefaultSecurityServiceTest.login" />
+        <item itemvalue="JUnit.LoginServletTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -105,7 +200,8 @@
       <workItem from="1585312508090" duration="1620000" />
       <workItem from="1585391053884" duration="7947000" />
       <workItem from="1585416977426" duration="3585000" />
-      <workItem from="1585464347736" duration="7709000" />
+      <workItem from="1585464347736" duration="11824000" />
+      <workItem from="1585546743277" duration="14589000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of Storage_module and some changes are added">
       <created>1585402813924</created>
@@ -136,32 +232,93 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Creation of Storage_module and some changes are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of Storage_module and some changes are added" />
+    <MESSAGE value="Some bugs are corrected in jsp files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some bugs are corrected in jsp files" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Arquillian_Containers" timestamp="1585550944407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Arquillian_Containers/0.0.1536.824@0.0.1536.824" timestamp="1585550944407" />
+    <state x="365" y="71" key="#DefaultSecurityServiceTest" timestamp="1585550945831">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="365" y="68" key="#DefaultSecurityServiceTest.login" timestamp="1585550915797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="365" y="68" key="#DefaultSecurityServiceTest.login/0.0.1536.824@0.0.1536.824" timestamp="1585550915797" />
+    <state x="365" y="71" key="#DefaultSecurityServiceTest/0.0.1536.824@0.0.1536.824" timestamp="1585550945831" />
+    <state x="361" y="71" width="814" height="728" key="#Intentions" timestamp="1585562542983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" width="814" height="728" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1585562542983" />
     <state x="361" y="71" key="#Notifications" timestamp="1585312578813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1585312578813" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585416144710">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1585559284043">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585416144710" />
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1585559284043" />
+    <state x="340" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1585562157568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="340" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585562157568" />
     <state x="377" y="7" key="CommitChangelistDialog2" timestamp="1585472331647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="377" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585472331647" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1585558339144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585558339144" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1585558339144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585558339144" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1585558339144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585558339144" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1585558339144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585558339144" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1585476309145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585476309145" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1585476309144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585476309144" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1585476309144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585476309144" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1585476309144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585476309144" />
+    <state x="0" y="67" key="Maven.ArtifactSearchDialog" timestamp="1585474921737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1585474921737" />
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1585391381837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1585391381837" />
+    <state x="156" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585562577332">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="156" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1585562577332" />
     <state x="209" y="33" key="new project wizard" timestamp="1585391808600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585391808600" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1585467188515">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1585559078790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585467188515" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585559078790" />
   </component>
 </project>

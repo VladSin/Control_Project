@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="Some bugs are corrected in jsp files">
-      <change afterPath="$PROJECT_DIR$/Service_module/src/test/java/CalculatorValueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/src/main/java/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data_module/src/main/java/Salary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/DefaultSecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_module/src/test/java/DefaultSecurityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/CalculatorSalaryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web_module/src/main/java/CalculatorSalaryServlet.java" afterDir="false" />
+    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test_branch" />
+        <entry key="$PROJECT_DIR$" value="false_branch1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -181,7 +176,7 @@
       <workItem from="1585416977426" duration="3585000" />
       <workItem from="1585464347736" duration="11824000" />
       <workItem from="1585546743277" duration="15602000" />
-      <workItem from="1585573958168" duration="2237000" />
+      <workItem from="1585573958168" duration="3180000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of Storage_module and some changes are added">
       <created>1585402813924</created>
@@ -190,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585402813924</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added another test">
+      <created>1585576275553</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585576275553</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Good developer cleaned pom.xml">
+      <created>1585576454657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585576454657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +222,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Creation of Storage_module and some changes are added" />
     <MESSAGE value="Some bugs are corrected in jsp files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some bugs are corrected in jsp files" />
+    <MESSAGE value="Added another test" />
+    <MESSAGE value="Good developer cleaned pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Good developer cleaned pom.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Arquillian_Containers" timestamp="1585550944407">
@@ -244,10 +255,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="340" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585575057401" />
-    <state x="377" y="7" key="CommitChangelistDialog2" timestamp="1585576274102">
+    <state x="377" y="7" key="CommitChangelistDialog2" timestamp="1585577585619">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="377" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585576274102" />
+    <state x="377" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585577585619" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1585575976337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

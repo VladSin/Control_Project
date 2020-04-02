@@ -1,6 +1,7 @@
 DefaultSecurityService.class
+CalculatorValue.class
+DefaultUserService.class
+IUserService.class
 DefaultSalaryService.class
 ISalaryService.class
 ISecurityService.class
-DefaultUserService.class
-IUserService.class

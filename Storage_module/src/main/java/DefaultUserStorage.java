@@ -22,6 +22,7 @@ public class DefaultUserStorage implements IUserStorage{
         }
         return localInstance;
     }
+
     @Override
     public List<User> getUsers() {
         return users;

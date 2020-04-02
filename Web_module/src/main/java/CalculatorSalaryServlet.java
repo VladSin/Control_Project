@@ -8,8 +8,8 @@ import java.util.List;
 
 @WebServlet("/salary")
 public class CalculatorSalaryServlet extends HttpServlet {
-    private ISalaryService salaryService = DefaultSalaryService.getInstance();
 
+    private ISalaryService salaryService = DefaultSalaryService.getInstance();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Salary> salaries = salaryService.getSalary();
@@ -22,6 +22,7 @@ public class CalculatorSalaryServlet extends HttpServlet {
         String parameter = request.getParameter("salary");
         Salary salary = calculateValue(parameter);
         String id = salaryService.saveSalary(salary);
+        System.out.println(salary.toString());
 
         try {
             response.sendRedirect(request.getContextPath() + "/view.jsp");

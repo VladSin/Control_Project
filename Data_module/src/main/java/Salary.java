@@ -40,4 +40,15 @@ public class Salary {
     public String getResult() {
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Salary{" +
+                "salary='" + salary + '\'' +
+                ", value1='" + value1 + '\'' +
+                ", value2='" + value2 + '\'' +
+                ", value3='" + value3 + '\'' +
+                ", result='" + result + '\'' +
+                '}';
+    }
 }

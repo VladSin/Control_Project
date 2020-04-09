@@ -1,0 +1,55 @@
+public class AuthorizationUser {
+    private Long id;
+    private String login;
+    private String password;
+    private Role role;
+    private Long userId;
+
+    public AuthorizationUser(Long id, String login, String password, Role role, Long userId) {
+        this.id = id;
+        this.login = login;
+        this.password = password;
+        this.role = role;
+        this.userId = userId;
+    }
+
+    public AuthorizationUser(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}

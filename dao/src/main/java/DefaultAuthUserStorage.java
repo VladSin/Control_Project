@@ -1,6 +1,4 @@
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class DefaultAuthUserStorage implements IAuthUserStorage {
 
@@ -15,7 +13,7 @@ public class DefaultAuthUserStorage implements IAuthUserStorage {
     @Override
     public AuthorizationUser getLogin(String login) {
         try (Connection connection = DataSource.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement("select * from authorization where login = ?")){
+             PreparedStatement preparedStatement = connection.prepareStatement("select * from auth_user where login = ?")){
             preparedStatement.setString(1, login);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 if(resultSet.next()){
@@ -36,7 +34,7 @@ public class DefaultAuthUserStorage implements IAuthUserStorage {
 
     @Override
     public Long saveAuthUser(AuthorizationUser user) {
-        final String sql = "insert into authorization(login, password, role, user_id) values(?,?,?,?)";
+        final String sql = "insert into auth_user(login, password, role, user_id) values(?,?,?,?)";
         try (Connection connection = DataSource.getInstance().getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             preparedStatement.setString(1, user.getLogin());

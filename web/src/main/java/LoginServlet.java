@@ -39,6 +39,7 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("error", "Login or password invalid");
             WebUtils.forword("login", request, response);
         }
+        assert user != null;
         log.info("user {} logged", user.getLogin());
         request.getSession().setAttribute("authorizationUser", user);
         WebUtils.redirect("/user", request, response);

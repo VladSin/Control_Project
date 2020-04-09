@@ -2,180 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/DataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Applicant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Faculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/IApplicantStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/IExamStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/IFacultyStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/EFaculty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/exam.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/src/main/java/AuthorizationUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/AuthorizationUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/src/main/java/Salary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/target/Data_module-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/target/classes/AuthorizationUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/target/classes/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_module/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/CalculatorValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/DefaultSalaryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/DefaultSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/DefaultSecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/DefaultUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/DefaultUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/ISalaryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/ISecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/ISecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/main/java/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/DefaultSecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/DefaultSecurityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/Service_module-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/classes/DefaultSecurityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/classes/DefaultUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/classes/ISecurityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/classes/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_module/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/src/main/java/DefaultAuthUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultAuthUserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/src/main/java/DefaultSalaryStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/src/main/java/DefaultUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultUserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/src/main/java/IAuthUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/IAuthUserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/src/main/java/ISalaryStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/src/main/java/IUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/IUserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Storage_module/src/test/java/DefaultUserStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/DefaultUserStorageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/CalculatorSalaryServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/java/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/main/webapp/view.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/test/java/LoginServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/LoginServletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/src/test/java/WebUtilsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/classes/WebUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Data_module-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/Service_module-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/backport-util-concurrent-3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/classworlds-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-chain-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-cli-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-digester-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-httpclient-3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/commons-validator-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/dom4j-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-core-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-decoration-model-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-logging-api-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-module-fml-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-module-xhtml-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-sink-api-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-site-renderer-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/doxia-skin-model-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/google-collections-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/jackrabbit-jcr-commons-1.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/jackrabbit-webdav-1.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.5.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/jsch-0.1.38.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-artifact-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-artifact-manager-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-common-artifact-filters-3.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-core-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-error-diagnostics-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-filtering-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-model-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-monitor-2.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-annotations-3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-api-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-descriptor-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-parameter-documenter-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-plugin-registry-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-profile-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-project-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-reporting-api-3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-reporting-impl-3.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-repository-metadata-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-resources-plugin-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-settings-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-shared-utils-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-surefire-common-2.12.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-surefire-plugin-2.12.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/maven-toolchain-2.0.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/nekohtml-1.9.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/oro-2.0.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-build-api-0.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-cipher-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-classworlds-2.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-component-annotations-1.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-container-default-1.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-i18n-1.0-beta-10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-interactivity-api-1.0-alpha-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-interpolation-1.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-sec-dispatcher-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-utils-3.0.24.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/plexus-velocity-1.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/sisu-guice-2.1.7-noaop.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/sisu-inject-bean-1.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/sisu-inject-plexus-1.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.28.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/slf4j-jdk14-1.5.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/slf4j-nop-1.5.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/sslext-1.2-0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0-2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/stax2-api-3.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/struts-core-1.3.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/struts-taglib-1.3.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/struts-tiles-1.3.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/surefire-api-2.12.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/surefire-booter-2.12.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/velocity-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/velocity-tools-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/versions-maven-plugin-2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-file-2.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-http-1.0-beta-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-http-lightweight-1.0-beta-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-http-shared-1.0-beta-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-provider-api-2.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-ssh-1.0-beta-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-ssh-common-1.0-beta-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-ssh-external-1.0-beta-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/wagon-webdav-jackrabbit-1.0-beta-6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/woodstox-core-asl-4.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/xbean-reflect-3.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/xercesMinimal-1.9.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/WEB-INF/lib/xmlunit-1.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/Web_module-1.0-SNAPSHOT/user.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/classes/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/classes/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/classes/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/classes/WebUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_module/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/DataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultAuthUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultAuthUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Faculty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" afterDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13">
       <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/CalculatorValueTest.java" beforeDir="false" />
@@ -196,15 +35,53 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="applicant: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="faculty: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="test: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Enum" />
+        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -367,8 +244,16 @@
       <workItem from="1586339787693" duration="1931000" />
       <workItem from="1586342195075" duration="1290000" />
       <workItem from="1586347671736" duration="19125000" />
-      <workItem from="1586432271614" duration="221000" />
+      <workItem from="1586432271614" duration="10522000" />
     </task>
+    <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
+      <created>1586432531253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586432531253</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,21 +274,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
+    <MESSAGE value="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary." />
+    <option name="LAST_COMMIT_MESSAGE" value="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1586369923790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1586369923790" />
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586372944210">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586439901258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586372944210" />
-    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586356989567">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586439901258" />
+    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586441926213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586356989567" />
+    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586441926213" />
     <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586371968504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -412,30 +298,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586352355300" />
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586337161775">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586432527195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586337161775" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586375802315">
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586432527195" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586439508572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586375802315" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586375802315">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586439508572" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586439508572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586375802315" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586375802315">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586439508572" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586439508571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586375802315" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586375802315">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586439508571" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586439508572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586375802315" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1586353361110">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586439508572" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1586442382236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1586353361110" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1586442382236" />
     <state x="147" y="65" key="MergeDialog" timestamp="1586337111027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -448,10 +334,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586369783027" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586432682681">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586432682681" />
     <state x="49" y="170" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1586375336112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="49" y="170" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1536.824@0.0.1536.824" timestamp="1586375336112" />
+    <state x="48" y="89" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586439712766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="48" y="89" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586439712766" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586339890177">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -8,22 +8,45 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+<html>
+<head>
+    <title>Ввод данных пользователя</title>
+</head>
+
+<body>
 <a href="${pageContext.request.contextPath}/logout"></a>
+
     <h2 style="color: green">Введите свои данные</h2>
     <form action="${pageContext.request.contextPath}/user" method="post">
-        <label for="name">имя</label>
-        <input id="name" type="text" name="name"><br/>
+        <c:set var="progress" value="${0}"/>
 
-        <label for="surname">фамилия</label>
-        <input id="surname" type="text" name="surname"><br/>
+        <label for="name"></label>
+        <input id="name" type="text" name="name" placeholder="Name"><br/>
+        <c:if test="${1 != null}">
+            <c:set var="progress" value="${100}"/>
+        </c:if>
 
-        <label for="phone">phone</label>
-        <input id="phone" type="text" name="phone"><br/>
+        <label for="surname"></label>
+        <input id="surname" type="text" name="surname" placeholder="Surname"><br/>
+        <c:if test="${1 != null}">
+            <c:set var="progress" value="${100}"/>
+        </c:if>
 
-        <label for="email">email</label>
-        <input id="email" type="text" name="email"><br/>
+        <label for="phone"></label>
+        <input id="phone" type="text" name="phone" placeholder="Phone"><br/>
+        <c:if test="${1 != null}">
+            <c:set var="progress" value="${100}"/>
+        </c:if>
 
+        <label for="email"></label>
+        <input id="email" type="text" name="email" placeholder="Email"><br/>
+        <c:if test="${1 != null}">
+            <c:set var="progress" value="${100}"/>
+        </c:if>
+
+
+        <progress max="100" value="${progress}"></progress><br/>
         <input type="submit">
     </form>
-
-<%= request.getAttribute("users")%>
+</body>
+</html>

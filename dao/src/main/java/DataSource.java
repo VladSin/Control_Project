@@ -16,7 +16,7 @@ public class DataSource {
         }
 
         pool = new ComboPooledDataSource();
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("db.properties");
         String url = resourceBundle.getString("url");
         String user = resourceBundle.getString("user");
         String password = resourceBundle.getString("password");

@@ -5,7 +5,6 @@ public class DefaultAuthUserStorage implements IAuthUserStorage {
    private static class SingletonHolder {
        static final IAuthUserStorage HOLDER_INSTANCE = new DefaultAuthUserStorage();
    }
-
    public static IAuthUserStorage getInstance(){
        return SingletonHolder.HOLDER_INSTANCE;
    }

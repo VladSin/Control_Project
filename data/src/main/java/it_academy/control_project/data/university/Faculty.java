@@ -4,9 +4,9 @@ public class Faculty {
 
     private Long id;
     private String faculty;
-    private String mark;
+    private int mark;
 
-    public Faculty(Long id, String faculty, String mark) {
+    public Faculty(Long id, String faculty, int mark) {
         this.id = id;
         this.faculty = faculty;
         this.mark = mark;
@@ -26,10 +26,10 @@ public class Faculty {
         this.faculty = faculty;
     }
 
-    public String getMark() {
+    public int getMark() {
         return mark;
     }
-    public void setMark(String mark) {
+    public void setMark(int mark) {
         this.mark = mark;
     }
 }

@@ -10,9 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DefaultUserStorageTest {
 
-
-//Абсолютно бесполезный тест, знаю, но пусть будет)))
-
     @Test
     public void save() {
         List<User> users = new ArrayList<>();

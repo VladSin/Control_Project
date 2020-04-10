@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/IApplicantStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/IExamStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/IFacultyStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/EFaculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/exam.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultApplicantStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultExamStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultFacultyStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/DefaultApplicantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/DefaultExamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/DefaultFacultyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/IApplicantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/IExamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/IFacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/DataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultAuthUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultAuthUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/DefaultUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/test/java/DefaultUserStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/DefaultUserStorageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Faculty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/IUserService.java" afterDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13">
       <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/CalculatorValueTest.java" beforeDir="false" />
@@ -56,21 +59,7 @@
         <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="applicant: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="faculty: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="test: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -80,8 +69,8 @@
       <list>
         <option value="Enum" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -118,6 +107,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2731183" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="it_academy.control_project.dao.impl" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.LoginServletTest">
     <configuration name="DefaultSecurityServiceTest.login" type="ArquillianJUnit" factoryName="" temporary="true" nameIsGenerated="true">
@@ -244,7 +241,8 @@
       <workItem from="1586339787693" duration="1931000" />
       <workItem from="1586342195075" duration="1290000" />
       <workItem from="1586347671736" duration="19125000" />
-      <workItem from="1586432271614" duration="10522000" />
+      <workItem from="1586432271614" duration="10705000" />
+      <workItem from="1586511497711" duration="5391000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -253,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586432531253</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Starting to work on database structure.&#10;Main work on Dao.">
+      <created>1586442983151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586442983151</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +280,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <MESSAGE value="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary." />
-    <option name="LAST_COMMIT_MESSAGE" value="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary." />
+    <MESSAGE value="Starting to work on database structure.&#10;Main work on Dao." />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting to work on database structure.&#10;Main work on Dao." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1586369923790">
@@ -286,38 +292,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586439901258" />
-    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586441926213">
+    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586516360162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586441926213" />
-    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586371968504">
+    <state x="190" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586516360162" />
+    <state x="566" y="272" width="445" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586512684107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586371968504" />
+    <state x="566" y="272" width="445" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586512684107" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586352355300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586352355300" />
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586432527195">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586442981422">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586432527195" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586439508572">
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586442981422" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586442989857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586439508572" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586439508572">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586442989857" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586442989857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586439508572" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586439508571">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586442989857" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586442989856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586439508571" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586439508572">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586442989856" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586442989857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586439508572" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586442989857" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1586442382236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

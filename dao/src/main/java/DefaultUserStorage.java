@@ -4,12 +4,6 @@ import java.util.List;
 
 public class DefaultUserStorage implements IUserStorage{
 
-    private List<User> users;
-    private static volatile IUserStorage instance;
-
-    public DefaultUserStorage(){
-        this.users = new ArrayList<>();
-    }
 
     private static class SingletonHolder{
         static final IUserStorage HOLDER_INSTANCE = new DefaultUserStorage();

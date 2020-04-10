@@ -18,9 +18,4 @@ public class DefaultUserService implements IUserService{
     public Long saveUser(User user) {
         return DefaultUserStorage.getInstance().save(user);
     }
-
-    @Override
-    public void saveAuthorizationUser(AuthorizationUser authorizationUser) {
-
-    }
 }

@@ -4,15 +4,13 @@ public class AuthorizationUser {
     private Long id;
     private String login;
     private String password;
-    private Role role;
-    private Long userId;
+    private String role;
 
-    public AuthorizationUser(Long id, String login, String password, Role role, Long userId) {
+    public AuthorizationUser(Long id, String login, String password, String role) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.role = role;
-        this.userId = userId;
     }
 
     public AuthorizationUser(String login, String password) {
@@ -27,18 +25,11 @@ public class AuthorizationUser {
         this.id = id;
     }
 
-    public Role getRole() {
+    public String getRole() {
         return role;
     }
-    public void setRole(Role role) {
+    public void setRole(String role) {
         this.role = role;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-    public void setUserId(Long userId) {
-        this.userId = userId;
     }
 
     public String getLogin() {

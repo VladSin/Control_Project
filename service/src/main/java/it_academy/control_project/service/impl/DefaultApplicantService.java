@@ -11,9 +11,33 @@ public class DefaultApplicantService implements IApplicantService {
     private static class SingletonHolder {
         static final IApplicantService HOLDER_INSTANCE = new DefaultApplicantService();
     }
-
     public static IApplicantService getInstance() {
         return DefaultApplicantService.SingletonHolder.HOLDER_INSTANCE;
+    }
+
+    @Override
+    public Applicant saveApplicant(Applicant applicant) {
+        return DefaultApplicantStorage.getInstance().saveApplicant(applicant);
+    }
+
+    @Override
+    public List<Applicant> saveApplicant(List<Applicant> applicants) {
+        return DefaultApplicantStorage.getInstance().saveApplicant(applicants);
+    }
+
+    @Override
+    public boolean deleteApplicant(long id) {
+        return DefaultApplicantStorage.getInstance().deleteApplicant(id);
+    }
+
+    @Override
+    public boolean updateApplicant(Applicant applicant) {
+        return DefaultApplicantStorage.getInstance().updateApplicant(applicant);
+    }
+
+    @Override
+    public Applicant getApplicant(long id) {
+        return DefaultApplicantStorage.getInstance().getApplicant(id);
     }
 
     @Override
@@ -21,8 +45,4 @@ public class DefaultApplicantService implements IApplicantService {
         return DefaultApplicantStorage.getInstance().getApplicant();
     }
 
-    @Override
-    public Long saveApplicant(Applicant applicant) {
-        return DefaultApplicantStorage.getInstance().save(applicant);
-    }
 }

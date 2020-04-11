@@ -6,6 +6,12 @@ import java.util.List;
 
 public interface IFacultyService {
 
+    Faculty saveFaculty(Faculty faculty);
+    List<Faculty> saveFaculty(List<Faculty> faculties);
+
+    boolean deleteFaculty(long id);
+    boolean updateFaculty(Faculty faculty);
+
+    Faculty getFaculty(long id);
     List<Faculty> getFaculty();
-    Long saveFaculty(Faculty faculty);
 }

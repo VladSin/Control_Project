@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IAuthUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultAuthUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IApplicantStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IApplicantStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IAuthUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IAuthUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IExamStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IExamStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IFacultyStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IFacultyStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultApplicantStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultApplicantStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultAuthUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultAuthUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultExamStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultExamStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultFacultyStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultFacultyStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/AuthorizationUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/AuthorizationUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IApplicantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IApplicantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IExamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IFacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IFacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultApplicantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultApplicantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultExamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultFacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultFacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LoginServlet.java" afterDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13">
       <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/CalculatorValueTest.java" beforeDir="false" />
@@ -45,7 +68,7 @@
         <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="test: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="auth_user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -54,9 +77,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -187,7 +211,7 @@
       <workItem from="1586535737963" duration="2374000" />
       <workItem from="1586589576941" duration="7629000" />
       <workItem from="1586598408961" duration="293000" />
-      <workItem from="1586603448190" duration="5836000" />
+      <workItem from="1586603448190" duration="18793000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -224,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586603710450</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="The test.jsp is created">
+      <created>1586613661702</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586613661702</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +280,8 @@
     <MESSAGE value="Starting to work on database structure.&#10;Main work on Dao." />
     <MESSAGE value="Added interactions with &quot;Applicant,&quot; Exam, &quot;Faculty&quot; models to Dao and Service modules" />
     <MESSAGE value="Authorization work (not finished)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authorization work (not finished)" />
+    <MESSAGE value="The test.jsp is created" />
+    <option name="LAST_COMMIT_MESSAGE" value="The test.jsp is created" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1586369923790">
@@ -264,26 +296,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586439901258" />
-    <state x="818" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1586590401207">
+    <state x="818" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1586632556157">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="818" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586590401207" />
+    <state x="818" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586632556157" />
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586602459956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586602459956" />
-    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586599974471">
+    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586626836472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586599974471" />
+    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586626836472" />
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586628742269">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1586628742269" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586352355300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586352355300" />
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586603708304">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586613660352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586603708304" />
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586613660352" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586442989857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -320,6 +356,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586432682681" />
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog" timestamp="1586627360601">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1586627360601" />
     <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1586596849194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

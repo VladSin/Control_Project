@@ -1,10 +1,10 @@
-package it_academy.control_project.dao;
+package it_academy.control_project.service;
 
 import it_academy.control_project.data.AuthorizationUser;
 
 import java.util.List;
 
-public interface IAuthUserStorage {
+public interface IAuthUserService {
 
     AuthorizationUser saveAuthUser(AuthorizationUser authorizationUser);
     List<AuthorizationUser> saveAuthUser(List<AuthorizationUser> authorizationUsers);

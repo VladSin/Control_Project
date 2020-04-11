@@ -3,10 +3,19 @@ package it_academy.control_project.service.impl;
 import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
 import it_academy.control_project.data.AuthorizationUser;
 import it_academy.control_project.service.IAuthUserService;
+import it_academy.control_project.service.IUserService;
 
 import java.util.List;
 
 public class DefaultAuthUserService implements IAuthUserService {
+
+    private static class SingletonHolder{
+        static final IAuthUserService HOLDER_INSTANCE = new DefaultAuthUserService();
+    }
+    public static IAuthUserService getInstance(){
+        return SingletonHolder.HOLDER_INSTANCE;
+    }
+
     @Override
     public AuthorizationUser saveAuthUser(AuthorizationUser authorizationUser) {
         return DefaultAuthUserStorage.getInstance().saveAuthUser(authorizationUser);

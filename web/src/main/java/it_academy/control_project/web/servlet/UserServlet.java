@@ -24,7 +24,7 @@ public class UserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<User> users = userService.getUsers();
+        List<User> users = userService.getUser();
         request.setAttribute("users", users);
         WebUtils.forward("user", request, response);
     }
@@ -37,14 +37,9 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
 
         User user = new User(null, name, surname, phone, email);
-        Long id = userService.saveUser(user);
-        log.info("user created:{} at {}", id, LocalDateTime.now());
+        User saveUser = userService.saveUser(user);
+        log.info("user created:{} at {}", saveUser.getId(), LocalDateTime.now());
 
-        WebUtils.redirect("/user", request, response);
-        /*try {
-            response.sendRedirect(request.getContextPath() + "/view.jsp");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }*/
+        WebUtils.redirect("/faculty", request, response);
     }
 }

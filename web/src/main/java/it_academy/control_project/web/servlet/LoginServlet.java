@@ -2,6 +2,7 @@ package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
 import it_academy.control_project.data.AuthorizationUser;
+import it_academy.control_project.data.Role;
 import it_academy.control_project.service.IAuthUserService;
 import it_academy.control_project.service.impl.DefaultAuthUserService;
 import it_academy.control_project.service.impl.DefaultSecurityService;
@@ -23,6 +24,7 @@ import org.slf4j.Logger;
 public class LoginServlet extends HttpServlet {
 
     private ISecurityService securityService = DefaultSecurityService.getInstance();
+    private IAuthUserService authUserService = DefaultAuthUserService.getInstance();
     private static final Logger log = LoggerFactory.getLogger(LoginServlet.class);
 
     @Override
@@ -40,15 +42,20 @@ public class LoginServlet extends HttpServlet {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
 
-        WebUtils.forward("login", request, response);
         AuthorizationUser authorizationUser = securityService.login(login, password);
         if (authorizationUser == null) {
             request.setAttribute("error", "login or password invalid");
             WebUtils.forward("login", request, response);
             return;
         }
+
         log.info("user {} logged", authorizationUser.getLogin());
         request.getSession().setAttribute("authUser", authorizationUser);
-        WebUtils.redirect("/student", request, response);
+
+        if (authorizationUser.getRole().equals("APPLICANT")){
+            WebUtils.redirect("/user", request, response);
+        } else {
+            WebUtils.redirect("/teacher", request, response);
+        }
     }
 }

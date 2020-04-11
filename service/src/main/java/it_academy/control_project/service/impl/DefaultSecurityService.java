@@ -3,6 +3,7 @@ package it_academy.control_project.service.impl;
 import it_academy.control_project.dao.IAuthUserStorage;
 import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
 import it_academy.control_project.data.AuthorizationUser;
+import it_academy.control_project.service.IAuthUserService;
 import it_academy.control_project.service.ISecurityService;
 
 public class DefaultSecurityService implements ISecurityService {
@@ -15,6 +16,7 @@ public class DefaultSecurityService implements ISecurityService {
     }
 
     private IAuthUserStorage authUserStorage = DefaultAuthUserStorage.getInstance();
+    private IAuthUserService authUserService = DefaultAuthUserService.getInstance();
 
     @Override
     public AuthorizationUser login(String login, String password) {
@@ -22,8 +24,11 @@ public class DefaultSecurityService implements ISecurityService {
         if (user == null){
             return null;
         }
-        if (user.getPassword().equals(password)){
-            return user;
+        for (int i = 1; i < 3; i++) {
+            AuthorizationUser authUser = authUserService.getAuthUser(i);
+            if (user.getPassword().equals(authUser.getPassword())){
+                return user;
+            }
         }
         return null;
     }

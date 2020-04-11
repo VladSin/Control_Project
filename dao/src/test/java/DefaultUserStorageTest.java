@@ -1,5 +1,4 @@
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.DisplayName;
+import it_academy.control_project.data.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

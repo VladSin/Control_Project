@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: dell
+  it_academy.control_project.data.User: dell
   Date: 26.03.2020
   Time: 16:11
   To change this template use File | Settings | File Templates.
@@ -13,7 +13,7 @@
     <title>Страница для абитуриентов</title>
 </head>
 <body>
-
+<center>
 <h2 style="color: green">Введите Ваш Login</h2>
 <form action="${pageContext.request.contextPath}/login" method="post">
     <label for="login"></label>
@@ -24,8 +24,8 @@
 
     <input type="submit">
 </form>
-
 <p style="color: red">${error}</p>
+</center>
 </body>
 </html>
 

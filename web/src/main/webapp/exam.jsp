@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: dell
+  it_academy.control_project.data.User: dell
   Date: 09.04.2020
   Time: 14:49
   To change this template use File | Settings | File Templates.
@@ -11,6 +11,7 @@
     <title>Страница для абитуриентов</title>
 </head>
 <body>
+<center>
 <h2 style="color: green">Добро пожаловать, абитуриент!</h2>
 <p>Пожалуйста, выберите предмет, по которому хотите проти тест</p>
 <label for="exam"></label>
@@ -20,5 +21,6 @@
     <option value="Mathematics">
     <option value="Physics">
 </datalist>
+</center>
 </body>
 </html>

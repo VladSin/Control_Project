@@ -1,82 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="Authorization work (not finished)">
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IApplicantStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IAuthUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IExamStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IFacultyStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultApplicantStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultAuthUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultExamStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultFacultyStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/Applicant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/AuthorizationUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/EFaculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/Faculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IApplicantService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IExamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IFacultyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/ISecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultApplicantService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultExamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultFacultyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultSecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/FacultyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DataSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultApplicantStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultAuthUserStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultExamStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultFacultyStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/DefaultUserStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/IApplicantStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/IAuthUserStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/IExamStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/IFacultyStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/IUserStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/DefaultUserStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/DefaultUserStorageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/AuthorizationUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Applicant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/EFaculty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Exam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/university/Faculty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/DefaultApplicantService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/DefaultExamService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/DefaultFacultyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/DefaultSecurityService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/DefaultUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/IApplicantService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/IExamService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/IFacultyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/ISecurityService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/DefaultSecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/DefaultSecurityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/FacultyServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/LogoutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/UserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/WebUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/exam.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/exam.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/test/java/LoginServletTest.java" beforeDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13">
       <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/CalculatorValueTest.java" beforeDir="false" />
@@ -128,8 +55,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -260,7 +187,7 @@
       <workItem from="1586535737963" duration="2374000" />
       <workItem from="1586589576941" duration="7629000" />
       <workItem from="1586598408961" duration="293000" />
-      <workItem from="1586603448190" duration="239000" />
+      <workItem from="1586603448190" duration="5836000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -290,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586526965039</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Authorization work (not finished)">
+      <created>1586603710450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586603710450</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +256,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1586369923790" />
+    <state x="361" y="71" key="#Template_Data_Languages" timestamp="1586604909019">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1586604909019" />
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586439901258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -342,10 +280,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586352355300" />
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586603675082">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1586603708304">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586603675082" />
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586603708304" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586442989857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

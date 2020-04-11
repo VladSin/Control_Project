@@ -21,6 +21,7 @@
     <option value="Mathematics">
     <option value="Physics">
 </datalist>
+    <input type="submit" name="input_submit" value="Начать" />
 </center>
 </body>
 </html>

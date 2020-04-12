@@ -216,22 +216,39 @@ public class DefaultAuthUserStorage implements IAuthUserStorage {
 
     @Override
     public AuthorizationUser getLogin(String login) {
-        try (Connection connection = DataSource.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement("select * from auth_user where login = ?")){
-            preparedStatement.setString(1, login);
-            try (ResultSet resultSet = preparedStatement.executeQuery()) {
-                if(resultSet.next()){
-                    return new AuthorizationUser(
-                            resultSet.getLong("id"),
-                            resultSet.getString("login"),
-                            resultSet.getString("password"),
-                            resultSet.getString("role"));
-                } else {
+        Connection connection = null;
+        try {
+            connection = getConnection();
+            connection.setAutoCommit(false);
+            try (PreparedStatement statement = connection.prepareStatement("select * from auth_user where login = ?")) {
+                statement.setString(1, login);
+                final ResultSet resultSet = statement.executeQuery();
+                connection.commit();
+                final boolean exist = resultSet.next();
+                if (!exist) {
                     return null;
                 }
+                final long id = resultSet.getLong("id");
+                final String resultLogin = resultSet.getString("login");
+                final String password = resultSet.getString("password");
+                final String role = resultSet.getString("role");
+                return new AuthorizationUser(id, resultLogin, password, role);
             }
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                throw new RuntimeException(e);
+            }
             throw new RuntimeException(e);
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    log.error("fail close connection", e);
+                }
+            }
         }
     }
 }

@@ -18,13 +18,13 @@ public class DataSource {
         }
 
         pool = new ComboPooledDataSource();
-        /*ResourceBundle resourceBundle = ResourceBundle.getBundle("db.properties");
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
         String url = resourceBundle.getString("url");
         String user = resourceBundle.getString("user");
-        String password = resourceBundle.getString("password");*/
-        String url = "jdbc:mysql://localhost:3306/university";
+        String password = resourceBundle.getString("password");
+        /*String url = "jdbc:mysql://localhost:3306/university";
         String user = "root";
-        String password = "root";
+        String password = "root";*/
 
         pool.setJdbcUrl(url);
         pool.setUser(user);

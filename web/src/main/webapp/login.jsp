@@ -20,7 +20,7 @@
     <input id="login" type="text" name="login" placeholder="Login"> <br/>
 
     <label for="password"></label>
-    <input id="password" type="password" name="password" placeholder="Password"><br/>
+    <input id="password" type="text" name="password" placeholder="Password"><br/>
 
     <input type="submit">
 </form>

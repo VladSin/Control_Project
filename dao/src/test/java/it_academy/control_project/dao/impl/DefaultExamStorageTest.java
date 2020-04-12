@@ -28,7 +28,7 @@ class DefaultExamStorageTest {
         final Long id = savedExam.getId();
 
         final Exam exam = examStorage.getExam(id);
-        assertNull(exam);
+        assertNotNull(exam);
 
         final boolean deleted = examStorage.deleteExam(id);
         assertTrue(deleted);

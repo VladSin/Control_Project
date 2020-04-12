@@ -27,7 +27,7 @@ class DefaultFacultyStorageTest {
         final Long id = savedFaculty.getId();
 
         final Faculty faculty = facultyStorage.getFaculty(id);
-        assertNull(faculty);
+        assertNotNull(faculty);
 
         final boolean deleted = facultyStorage.deleteFaculty(id);
         assertTrue(deleted);

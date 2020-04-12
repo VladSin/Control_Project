@@ -97,7 +97,7 @@ public class DefaultExamStorage implements IExamStorage {
         try {
             connection = getConnection();
             connection.setAutoCommit(false);
-            try (PreparedStatement statement = connection.prepareStatement("delete from exam where id = ?")) {
+            try (PreparedStatement statement = connection.prepareStatement("delete from test where id = ?")) {
                 statement.setLong(1, id);
                 final int count = statement.executeUpdate();
                 connection.commit();
@@ -127,7 +127,7 @@ public class DefaultExamStorage implements IExamStorage {
         try {
             connection = getConnection();
             connection.setAutoCommit(false);
-            try (PreparedStatement statement = connection.prepareStatement("update exam set faculty_id = ?, question = ?, answer = ? where id = ?")) {
+            try (PreparedStatement statement = connection.prepareStatement("update test set faculty_id = ?, question = ?, answer = ? where id = ?")) {
                 statement.setLong(1, exam.getFacultyId());
                 statement.setString(2, exam.getQuestion());
                 statement.setString(3, exam.getAnswer());
@@ -160,7 +160,7 @@ public class DefaultExamStorage implements IExamStorage {
         try {
             connection = getConnection();
             connection.setAutoCommit(false);
-            try (PreparedStatement statement = connection.prepareStatement("select * from exam where id = ?")) {
+            try (PreparedStatement statement = connection.prepareStatement("select * from test where id = ?")) {
                 statement.setLong(1, id);
                 final ResultSet resultSet = statement.executeQuery();
                 connection.commit();

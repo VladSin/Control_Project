@@ -16,20 +16,15 @@ public class DefaultSecurityService implements ISecurityService {
     }
 
     private IAuthUserStorage authUserStorage = DefaultAuthUserStorage.getInstance();
-    private IAuthUserService authUserService = DefaultAuthUserService.getInstance();
 
     @Override
     public AuthorizationUser login(String login, String password) {
-        AuthorizationUser user = authUserStorage.getLogin(login);
-        if (user == null){
+        if (login.equals("User")){
+            return authUserStorage.getAuthUser(1);
+        } else if (login.equals("Teacher")) {
+            return authUserStorage.getAuthUser(2);
+        } else {
             return null;
         }
-        for (int i = 1; i < 3; i++) {
-            AuthorizationUser authUser = authUserService.getAuthUser(i);
-            if (user.getPassword().equals(authUser.getPassword())){
-                return user;
-            }
-        }
-        return null;
     }
 }

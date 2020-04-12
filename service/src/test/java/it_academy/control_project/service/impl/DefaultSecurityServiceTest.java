@@ -18,8 +18,8 @@ class DefaultSecurityServiceTest {
 
     @Test
     void testLoginNotExist() {
-        when(dao.getLogin("User")).thenReturn(null);
-        AuthorizationUser login = service.login("User", "User");
+        when(dao.getLogin("NotUser")).thenReturn(null);
+        AuthorizationUser login = service.login("NotUser", "NotUser");
         assertNull(login);
     }
 

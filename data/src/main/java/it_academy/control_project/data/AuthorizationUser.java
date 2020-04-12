@@ -13,11 +13,6 @@ public class AuthorizationUser {
         this.role = role;
     }
 
-    public AuthorizationUser(String login, String password) {
-        this.login = login;
-        this.password = password;
-    }
-
     public Long getId() {
         return id;
     }

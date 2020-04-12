@@ -29,7 +29,7 @@ class DefaultUserStorageTest {
         final Long id = savedUser.getId();
 
         final User user = userStorage.getUser(id);
-        assertNull(user);
+        assertNotNull(user);
 
         final boolean deleted = userStorage.deleteUser(id);
         assertTrue(deleted);

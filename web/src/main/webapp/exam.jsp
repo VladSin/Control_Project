@@ -12,16 +12,21 @@
 </head>
 <body>
 <center>
-<h2 style="color: green">Добро пожаловать, абитуриент!</h2>
-<p>Пожалуйста, выберите предмет, по которому хотите проти тест</p>
-<label for="exam"></label>
-<input id="exam" type="text" list="examinations" />
-<datalist id="examinations">
-    <option value="Programming">
-    <option value="Mathematics">
-    <option value="Physics">
-</datalist>
-    <input type="submit" name="input_submit" value="Начать" />
+    <h2 style="color: green">Добро пожаловать, абитуриент!</h2>
+    <p>Вам предлагается выбрать один из трех факультетов для поступления на который, Вам необходимо будет пройти элементарное тестирование!</p>
+    <p>Пожалуйста, выберите предмет, по которому хотите проти тест</p>
+    <form action="${pageContext.request.contextPath}/faculty" method="post">
+
+        <label for="exam"></label>
+        <input id="exam" type="text" name="exam" placeholder="Field of the choice" list="examinations" />
+        <datalist id="examinations">
+            <option value="Programming">
+            <option value="Mathematics">
+            <option value="Physics">
+        </datalist>
+        <input type="submit" name="exam" value="Начать" />
+
+    </form>
 </center>
 </body>
 </html>

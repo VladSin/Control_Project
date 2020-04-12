@@ -1,10 +1,6 @@
 package it_academy.control_project.web.servlet;
 
-import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
 import it_academy.control_project.data.AuthorizationUser;
-import it_academy.control_project.data.Role;
-import it_academy.control_project.service.IAuthUserService;
-import it_academy.control_project.service.impl.DefaultAuthUserService;
 import it_academy.control_project.service.impl.DefaultSecurityService;
 import it_academy.control_project.service.ISecurityService;
 import it_academy.control_project.web.WebUtils;
@@ -16,7 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.*;
 
 import org.slf4j.Logger;
 
@@ -24,7 +19,7 @@ import org.slf4j.Logger;
 public class LoginServlet extends HttpServlet {
 
     private ISecurityService securityService = DefaultSecurityService.getInstance();
-    private IAuthUserService authUserService = DefaultAuthUserService.getInstance();
+
     private static final Logger log = LoggerFactory.getLogger(LoginServlet.class);
 
     @Override
@@ -49,10 +44,10 @@ public class LoginServlet extends HttpServlet {
             return;
         }
 
-        log.info("user {} logged", authorizationUser.getLogin());
-        request.getSession().setAttribute("authUser", authorizationUser);
+        log.info("authorizationUser {} logged", authorizationUser.getLogin());
+        request.getSession().setAttribute("authorizationUser", authorizationUser);
 
-        if (authorizationUser.getRole().equals("APPLICANT")){
+        if (authorizationUser.getLogin().equals("User")){
             WebUtils.redirect("/user", request, response);
         } else {
             WebUtils.redirect("/teacher", request, response);

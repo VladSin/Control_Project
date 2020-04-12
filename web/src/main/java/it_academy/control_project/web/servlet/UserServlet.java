@@ -1,6 +1,9 @@
 package it_academy.control_project.web.servlet;
 
+import it_academy.control_project.data.Applicant;
 import it_academy.control_project.data.User;
+import it_academy.control_project.service.IApplicantService;
+import it_academy.control_project.service.impl.DefaultApplicantService;
 import it_academy.control_project.service.impl.DefaultUserService;
 import it_academy.control_project.service.IUserService;
 import it_academy.control_project.web.WebUtils;
@@ -39,6 +42,7 @@ public class UserServlet extends HttpServlet {
         User user = new User(null, name, surname, phone, email);
         User saveUser = userService.saveUser(user);
         log.info("user created:{} at {}", saveUser.getId(), LocalDateTime.now());
+        request.getSession().setAttribute("userId", saveUser.getId());
 
         WebUtils.redirect("/faculty", request, response);
     }

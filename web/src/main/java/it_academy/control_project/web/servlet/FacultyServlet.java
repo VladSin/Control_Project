@@ -1,6 +1,7 @@
 package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.data.Faculty;
+import it_academy.control_project.data.User;
 import it_academy.control_project.service.impl.DefaultFacultyService;
 import it_academy.control_project.service.IFacultyService;
 import it_academy.control_project.web.WebUtils;
@@ -14,51 +15,51 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.*;
+import java.util.List;
 
 @WebServlet("/faculty")
 public class FacultyServlet extends HttpServlet {
-
-    static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    static final String DATABASE_URL = "jdbc:mysql://localhost:3306/university";
-    static final String DATABASE_USER = "root";
-    static final String DATABASE_PASSWORD = "root";
-    static final String GET_ALL = "SELECT * FROM faculty";
 
     private IFacultyService facultyService = DefaultFacultyService.getInstance();
     private static final Logger log = LoggerFactory.getLogger(FacultyServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        WebUtils.forward("exam", request, response);
+        Object faculty = request.getSession().getAttribute("exam");
+        if (faculty == null){
+            WebUtils.forward("exam", request, response);
+        } else {
+            WebUtils.redirect("/exam", request, response);
+        }
     }
 
     @Override
-    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String subject = request.getParameter("exam");
+        if (subject == null){
+            WebUtils.forward("exam", request, response);
+        } else if (subject.equals("Programming")){
 
-        String faculty = request.getParameter("faculty");
-        Faculty facultyForExam = null;
+            Faculty exam = facultyService.getFaculty(1);
+            log.info("faculty {} logged", exam.getId());
+            request.getSession().setAttribute("exam", exam);
+            WebUtils.redirect("/prog", request, response);
 
-        try{
-            Class.forName(JDBC_DRIVER);
-            Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USER, DATABASE_PASSWORD);
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(GET_ALL);
-            while (resultSet.next()){
-                String dbFaculty = resultSet.getString(1);
-                if(faculty.equals(dbFaculty)){
-                    Long dbId = resultSet.getLong(0);
-                    int dbMark = resultSet.getInt(2);
-                    facultyForExam = new Faculty(dbId, dbFaculty, dbMark);
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException | SQLException e){
-            throw new RuntimeException(e);
+        } else if (subject.equals("Mathematics")){
+
+            Faculty exam = facultyService.getFaculty(2);
+            log.info("faculty {} logged", exam.getId());
+            request.getSession().setAttribute("exam", exam);
+            WebUtils.redirect("/math", request, response);
+
+        } else if (subject.equals("Physics")){
+
+            Faculty exam = facultyService.getFaculty(3);
+            log.info("faculty {} logged", exam.getId());
+            request.getSession().setAttribute("exam", exam);
+            WebUtils.redirect("/phys", request, response);
+
         }
-
-
-
-        WebUtils.redirect("/faculty", request, response);
+        WebUtils.forward("login", request, response);
     }
 }

@@ -36,9 +36,9 @@ public class ProgExamServlet extends HttpServlet {
         String answer2 = req.getParameter("test[1]");
         String answer3 = req.getParameter("test[2]");
 
-        if (answer1.equals(examService.getExam(1).getAnswer())){ mark+=3; }
-        if (answer2.equals(examService.getExam(4).getAnswer())){ mark+=3; }
-        if (answer3.equals(examService.getExam(5).getAnswer())){ mark+=3; }
+        if (answer1.equals("3")){ mark+=3; }
+        if (answer2.equals("0")){ mark+=3; }
+        if (answer3.equals("3")){ mark+=3; }
 
         Applicant applicant = new Applicant(null, (Long) req.getSession().getAttribute("userId"), 1L, mark);
 

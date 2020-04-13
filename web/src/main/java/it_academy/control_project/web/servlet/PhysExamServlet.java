@@ -36,9 +36,9 @@ public class PhysExamServlet extends HttpServlet {
         String answer2 = req.getParameter("test[7]");
         String answer3 = req.getParameter("test[8]");
 
-        if (answer1.equals(examService.getExam(3).getAnswer())){ mark+=3; }
-        if (answer2.equals(examService.getExam(8).getAnswer())){ mark+=3; }
-        if (answer3.equals(examService.getExam(9).getAnswer())){ mark+=3; }
+        if (answer1.equals("0")){ mark+=3; }
+        if (answer2.equals("0")){ mark+=3; }
+        if (answer3.equals("4")){ mark+=3; }
 
         Applicant applicant = new Applicant(null, (Long) req.getSession().getAttribute("userId"), 3L, mark);
 

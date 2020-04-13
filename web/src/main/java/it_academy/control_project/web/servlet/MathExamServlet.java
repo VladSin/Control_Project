@@ -38,9 +38,9 @@ public class MathExamServlet extends HttpServlet {
         String answer2 = req.getParameter("test[4]");
         String answer3 = req.getParameter("test[5]");
 
-        if (answer1.equals(examService.getExam(2).getAnswer())){ mark+=3; }
-        if (answer2.equals(examService.getExam(6).getAnswer())){ mark+=3; }
-        if (answer3.equals(examService.getExam(7).getAnswer())){ mark+=3; }
+        if (answer1.equals("2")){ mark+=3; }
+        if (answer2.equals("2")){ mark+=3; }
+        if (answer3.equals("1")){ mark+=3; }
 
         Applicant applicant = new Applicant(null, (Long) req.getSession().getAttribute("userId"), 2L, mark);
 

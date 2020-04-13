@@ -41,8 +41,8 @@
         </div>
         <ul>
             <li><input type="radio" name="test[2]" value="0" id="test_2_0"  /> <label for="test_2_0">21</label></li>
-            <li><input type="radio" name="test[2]" value="1" id="test_2_1"  /> <label for="test_2_1">13</label></li>
-            <li><input type="radio" name="test[2]" value="2" id="test_2_2"  /> <label for="test_2_2">32</label></li>
+            <li><input type="radio" name="test[2]" value="1" id="test_2_1"  /> <label for="test_2_1">36</label></li>
+            <li><input type="radio" name="test[2]" value="2" id="test_2_2"  /> <label for="test_2_2">54</label></li>
             <li><input type="radio" name="test[2]" value="3" id="test_2_3"  /> <label for="test_2_3">63</label></li>
             <li><input type="radio" name="test[2]" value="4" id="test_2_4"  /> <label for="test_2_4">58</label></li>
         </ul>

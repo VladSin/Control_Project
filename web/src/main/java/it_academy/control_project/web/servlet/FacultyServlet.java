@@ -25,12 +25,7 @@ public class FacultyServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Object faculty = request.getSession().getAttribute("exam");
-        if (faculty == null){
-            WebUtils.forward("exam", request, response);
-        } else {
-            WebUtils.redirect("/faculty", request, response);
-        }
+        WebUtils.forward("exam", request, response);
     }
 
     @Override
@@ -60,6 +55,6 @@ public class FacultyServlet extends HttpServlet {
             WebUtils.redirect("/phys", request, response);
 
         }
-        WebUtils.forward("login", request, response);
+        WebUtils.forward("exam", request, response);
     }
 }

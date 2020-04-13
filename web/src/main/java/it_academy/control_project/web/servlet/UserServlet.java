@@ -1,9 +1,6 @@
 package it_academy.control_project.web.servlet;
 
-import it_academy.control_project.data.Applicant;
 import it_academy.control_project.data.User;
-import it_academy.control_project.service.IApplicantService;
-import it_academy.control_project.service.impl.DefaultApplicantService;
 import it_academy.control_project.service.impl.DefaultUserService;
 import it_academy.control_project.service.IUserService;
 import it_academy.control_project.web.WebUtils;
@@ -17,7 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @WebServlet("/user")
 public class UserServlet extends HttpServlet {
@@ -27,8 +23,6 @@ public class UserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<User> users = userService.getUser();
-        request.setAttribute("users", users);
         WebUtils.forward("user", request, response);
     }
 
@@ -38,6 +32,11 @@ public class UserServlet extends HttpServlet {
         String surname = request.getParameter("surname");
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
+
+        if (name.equals("") || surname.equals("") || phone.equals("") || email.equals("")){
+            request.setAttribute("error", "incorrect data");
+            WebUtils.forward("user", request, response);
+        }
 
         User user = new User(null, name, surname, phone, email);
         User saveUser = userService.saveUser(user);

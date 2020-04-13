@@ -29,7 +29,7 @@ public class FacultyServlet extends HttpServlet {
         if (faculty == null){
             WebUtils.forward("exam", request, response);
         } else {
-            WebUtils.redirect("/exam", request, response);
+            WebUtils.redirect("/faculty", request, response);
         }
     }
 

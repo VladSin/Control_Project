@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
         log.info("authorizationUser {} logged", authorizationUser.getLogin());
         request.getSession().setAttribute("authorizationUser", authorizationUser);
 
-        if (authorizationUser.getLogin().equals("User")){
+        if (authorizationUser.getId().equals(1L)){
             WebUtils.redirect("/user", request, response);
         } else {
             WebUtils.redirect("/teacher", request, response);

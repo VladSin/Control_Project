@@ -14,8 +14,6 @@ class DefaultExamStorageTest {
     void saveExam() {
         final Exam examToSave = new Exam(null, 1L, "question", "answer");
         final Exam savedExam = examStorage.saveExam(examToSave);
-
-        assertEquals(examToSave.getId(), savedExam.getId());
         assertEquals(examToSave.getFacultyId(), savedExam.getFacultyId());
         assertEquals(examToSave.getQuestion(), savedExam.getQuestion());
         assertEquals(examToSave.getAnswer(), savedExam.getAnswer());
@@ -43,12 +41,12 @@ class DefaultExamStorageTest {
         final Exam savedExam = examStorage.saveExam(examToSave);
         final Long id = savedExam.getId();
 
-        final Exam toUpdate = new Exam(null, 2L, "question2", "answer2");
+        final Exam toUpdate = new Exam(id, 2L, "question2", "answer2");
         final boolean update = examStorage.updateExam(toUpdate);
         assertTrue(update);
 
         final Exam afterUpdate = examStorage.getExam(id);
-        assertEquals(toUpdate.getId(), afterUpdate.getId());
+
         assertEquals(toUpdate.getFacultyId(), afterUpdate.getFacultyId());
         assertEquals(toUpdate.getQuestion(), afterUpdate.getQuestion());
         assertEquals(toUpdate.getAnswer(), afterUpdate.getAnswer());
@@ -62,7 +60,7 @@ class DefaultExamStorageTest {
 
         final Exam exam = examStorage.getExam(id);
         assertNotNull(exam);
-        assertEquals(examToSave.getId(), exam.getId());
+
         assertEquals(examToSave.getFacultyId(), exam.getFacultyId());
         assertEquals(examToSave.getQuestion(), exam.getQuestion());
         assertEquals(examToSave.getAnswer(), exam.getAnswer());

@@ -10,12 +10,10 @@ class DefaultAuthUserStorageTest {
 
     IAuthUserStorage authUserStorage = DefaultAuthUserStorage.getInstance();
 
-
     @Test
     void saveAuthUser() {
         final AuthorizationUser authUserToSave = new AuthorizationUser(null, "login", "password", "role");
         final AuthorizationUser savedAuthUser = authUserStorage.saveAuthUser(authUserToSave);
-        assertEquals(authUserToSave.getId(), savedAuthUser.getId());
         assertEquals(authUserToSave.getLogin(), savedAuthUser.getLogin());
         assertEquals(authUserToSave.getPassword(), savedAuthUser.getPassword());
         assertEquals(authUserToSave.getRole(), savedAuthUser.getRole());
@@ -43,7 +41,7 @@ class DefaultAuthUserStorageTest {
         final AuthorizationUser savedAuthUser = authUserStorage.saveAuthUser(authUserToSave);
         final Long id = savedAuthUser.getId();
 
-        final AuthorizationUser toUpdate = new AuthorizationUser(null, "login2", "password2", "role2");
+        final AuthorizationUser toUpdate = new AuthorizationUser(id, "login2", "password2", "role2");
         final boolean updated = authUserStorage.updateAuthUser(toUpdate);
         assertTrue(updated);
 
@@ -62,7 +60,7 @@ class DefaultAuthUserStorageTest {
 
         final AuthorizationUser authorizationUser = authUserStorage.getAuthUser(id);
         assertNotNull(authorizationUser);
-        assertEquals(authUserToSave.getId(), authorizationUser.getId());
+
         assertEquals(authUserToSave.getLogin(), authorizationUser.getLogin());
         assertEquals(authUserToSave.getPassword(), authorizationUser.getPassword());
         assertEquals(authUserToSave.getRole(), authorizationUser.getRole());
@@ -77,7 +75,7 @@ class DefaultAuthUserStorageTest {
 
         final AuthorizationUser authorizationUser = authUserStorage.getLogin(login);
         assertNotNull(authorizationUser);
-        assertEquals(authUserToSave.getId(), authorizationUser.getId());
+
         assertEquals(authUserToSave.getLogin(), authorizationUser.getLogin());
         assertEquals(authUserToSave.getPassword(), authorizationUser.getPassword());
         assertEquals(authUserToSave.getRole(), authorizationUser.getRole());

@@ -1,5 +1,8 @@
 package it_academy.control_project.service.impl;
 
+import it_academy.control_project.dao.IAuthUserStorage;
+import it_academy.control_project.dao.IExamStorage;
+import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
 import it_academy.control_project.dao.impl.DefaultExamStorage;
 import it_academy.control_project.data.Exam;
 import it_academy.control_project.service.IExamService;
@@ -7,6 +10,7 @@ import it_academy.control_project.service.IExamService;
 import java.util.List;
 
 public class DefaultExamService implements IExamService {
+    private IExamStorage examStorage = DefaultExamStorage.getInstance();
 
     private static class SingletonHolder {
         static final IExamService HOLDER_INSTANCE = new DefaultExamService();
@@ -17,31 +21,31 @@ public class DefaultExamService implements IExamService {
 
     @Override
     public Exam saveExam(Exam exam) {
-        return DefaultExamStorage.getInstance().saveExam(exam);
+        return examStorage.saveExam(exam);
     }
 
     @Override
     public List<Exam> saveExam(List<Exam> exams) {
-        return DefaultExamStorage.getInstance().saveExam(exams);
+        return examStorage.saveExam(exams);
     }
 
     @Override
     public boolean deleteExam(long id) {
-        return DefaultExamStorage.getInstance().deleteExam(id);
+        return examStorage.deleteExam(id);
     }
 
     @Override
     public boolean updateExam(Exam exam) {
-        return DefaultExamStorage.getInstance().updateExam(exam);
+        return examStorage.updateExam(exam);
     }
 
     @Override
     public Exam getExam(long id) {
-        return DefaultExamStorage.getInstance().getExam(id);
+        return examStorage.getExam(id);
     }
 
     @Override
     public List<Exam> getExam() {
-        return DefaultExamStorage.getInstance().getExam();
+        return examStorage.getExam();
     }
 }

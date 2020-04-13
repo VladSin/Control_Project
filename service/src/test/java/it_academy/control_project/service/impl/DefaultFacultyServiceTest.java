@@ -3,12 +3,15 @@ package it_academy.control_project.service.impl;
 import it_academy.control_project.dao.IFacultyStorage;
 import it_academy.control_project.data.Faculty;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
+@ExtendWith(MockitoExtension.class)
 class DefaultFacultyServiceTest {
 
     @Mock
@@ -35,22 +38,9 @@ class DefaultFacultyServiceTest {
 
     @Test
     void testLoginWrongPass() {
-        when(dao.getFaculty(1)).thenReturn(new Faculty(1L, "faculty", 10));
+        when(dao.getFaculty(2)).thenReturn(null);
         Faculty facultyFromDb = service.getFaculty(2);
         assertNull(facultyFromDb);
-    }
-
-    @Test
-    void deleteUser(){
-        when(dao.getFaculty(1)).thenReturn(new Faculty(1L, "faculty", 10));
-        final Faculty facultyFromDb = service.getFaculty(1);
-        assertNotNull(facultyFromDb);
-
-        final boolean deleted = service.deleteFaculty(1);
-        assertTrue(deleted);
-
-        final Faculty afterDeleted = service.getFaculty(1);
-        assertNull(afterDeleted);
     }
 
     @Test

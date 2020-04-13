@@ -1,13 +1,15 @@
 package it_academy.control_project.service.impl;
 
+import it_academy.control_project.dao.IAuthUserStorage;
 import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
 import it_academy.control_project.data.AuthorizationUser;
 import it_academy.control_project.service.IAuthUserService;
-import it_academy.control_project.service.IUserService;
 
 import java.util.List;
 
 public class DefaultAuthUserService implements IAuthUserService {
+
+    private IAuthUserStorage authUserStorage = DefaultAuthUserStorage.getInstance();
 
     private static class SingletonHolder{
         static final IAuthUserService HOLDER_INSTANCE = new DefaultAuthUserService();
@@ -18,36 +20,36 @@ public class DefaultAuthUserService implements IAuthUserService {
 
     @Override
     public AuthorizationUser saveAuthUser(AuthorizationUser authorizationUser) {
-        return DefaultAuthUserStorage.getInstance().saveAuthUser(authorizationUser);
+        return authUserStorage.saveAuthUser(authorizationUser);
     }
 
     @Override
     public List<AuthorizationUser> saveAuthUser(List<AuthorizationUser> authorizationUsers) {
-        return DefaultAuthUserStorage.getInstance().saveAuthUser(authorizationUsers);
+        return authUserStorage.saveAuthUser(authorizationUsers);
     }
 
     @Override
     public boolean deleteAuthUser(long id) {
-        return DefaultAuthUserStorage.getInstance().deleteAuthUser(id);
+        return authUserStorage.deleteAuthUser(id);
     }
 
     @Override
     public boolean updateAuthUser(AuthorizationUser authorizationUser) {
-        return DefaultAuthUserStorage.getInstance().updateAuthUser(authorizationUser);
+        return authUserStorage.updateAuthUser(authorizationUser);
     }
 
     @Override
     public AuthorizationUser getAuthUser(long id) {
-        return DefaultAuthUserStorage.getInstance().getAuthUser(id);
+        return authUserStorage.getAuthUser(id);
     }
 
     @Override
     public List<AuthorizationUser> getAuthUser() {
-        return DefaultAuthUserStorage.getInstance().getAuthUser();
+        return authUserStorage.getAuthUser();
     }
 
     @Override
     public AuthorizationUser getLogin(String login) {
-        return DefaultAuthUserStorage.getInstance().getLogin(login);
+        return authUserStorage.getLogin(login);
     }
 }

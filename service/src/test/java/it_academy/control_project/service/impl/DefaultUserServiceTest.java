@@ -40,22 +40,9 @@ class DefaultUserServiceTest {
 
     @Test
     void testLoginWrongPass() {
-        when(dao.getUser(1)).thenReturn(new User(1L, "User", "User", "+375299999999", "user@mail.ru"));
-        User userFromDb = service.getUser(2);
+        when(dao.getUser(1L)).thenReturn(null);
+        User userFromDb = service.getUser(1L);
         assertNull(userFromDb);
-    }
-
-    @Test
-    void deleteUser(){
-        when(dao.getUser(1)).thenReturn(new User(1L, "User", "User", "+375299999999", "user@mail.ru"));
-        final User userFromDb = service.getUser(1);
-        assertNotNull(userFromDb);
-
-        final boolean deleted = service.deleteUser(1);
-        assertTrue(deleted);
-
-        final User afterDeleted = service.getUser(1);
-        assertNull(afterDeleted);
     }
 
     @Test

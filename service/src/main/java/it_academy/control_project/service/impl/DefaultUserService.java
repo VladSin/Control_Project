@@ -1,5 +1,6 @@
 package it_academy.control_project.service.impl;
 
+import it_academy.control_project.dao.IUserStorage;
 import it_academy.control_project.dao.impl.DefaultUserStorage;
 import it_academy.control_project.data.User;
 import it_academy.control_project.service.IUserService;
@@ -7,6 +8,8 @@ import it_academy.control_project.service.IUserService;
 import java.util.List;
 
 public class DefaultUserService implements IUserService {
+
+    private IUserStorage userStorage = DefaultUserStorage.getInstance();
 
     private static class SingletonHolder{
         static final IUserService HOLDER_INSTANCE = new DefaultUserService();
@@ -17,31 +20,31 @@ public class DefaultUserService implements IUserService {
 
     @Override
     public User saveUser(User user) {
-        return DefaultUserStorage.getInstance().saveUser(user);
+        return userStorage.saveUser(user);
     }
 
     @Override
     public List<User> saveUser(List<User> users) {
-        return DefaultUserStorage.getInstance().saveUser(users);
+        return userStorage.saveUser(users);
     }
 
     @Override
     public boolean deleteUser(long id) {
-        return DefaultUserStorage.getInstance().deleteUser(id);
+        return userStorage.deleteUser(id);
     }
 
     @Override
     public boolean updateUser(User user) {
-        return DefaultUserStorage.getInstance().updateUser(user);
+        return userStorage.updateUser(user);
     }
 
     @Override
     public User getUser(long id) {
-        return DefaultUserStorage.getInstance().getUser(id);
+        return userStorage.getUser(id);
     }
 
     @Override
     public List<User> getUser() {
-        return DefaultUserStorage.getInstance().getUser();
+        return userStorage.getUser();
     }
 }

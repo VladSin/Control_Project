@@ -15,7 +15,7 @@ class DefaultUserStorageTest {
         final User userToSave = new User(null, "name", "surname", "phone", "email");
         final User savedUser = userStorage.saveUser(userToSave);
 
-        assertEquals(userToSave.getId(), savedUser.getId());
+
         assertEquals(userToSave.getName(), savedUser.getName());
         assertEquals(userToSave.getSurname(), savedUser.getSurname());
         assertEquals(userToSave.getPhone(), savedUser.getPhone());
@@ -44,12 +44,12 @@ class DefaultUserStorageTest {
         final User savedUser = userStorage.saveUser(userToSave);
         final Long id = savedUser.getId();
 
-        final User toUpdate = new User(null, "name", "surname", "phone", "email");
+        final User toUpdate = new User(id, "name", "surname", "phone", "email");
         final boolean update = userStorage.updateUser(toUpdate);
         assertTrue(update);
 
         final User afterUpdate = userStorage.getUser(id);
-        assertEquals(toUpdate.getId(), afterUpdate.getId());
+
         assertEquals(toUpdate.getName(), afterUpdate.getName());
         assertEquals(toUpdate.getSurname(), afterUpdate.getSurname());
         assertEquals(toUpdate.getPhone(), afterUpdate.getPhone());
@@ -64,7 +64,6 @@ class DefaultUserStorageTest {
 
         final User user = userStorage.getUser(id);
         assertNotNull(user);
-        assertEquals(userToSave.getId(), user.getId());
         assertEquals(userToSave.getName(), user.getName());
         assertEquals(userToSave.getSurname(), user.getSurname());
         assertEquals(userToSave.getPhone(), user.getPhone());

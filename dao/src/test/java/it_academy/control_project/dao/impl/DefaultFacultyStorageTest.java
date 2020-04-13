@@ -15,7 +15,6 @@ class DefaultFacultyStorageTest {
         final Faculty facultyToSave = new Faculty(null,"faculty", 10);
         final Faculty savedFaculty = facultyStorage.saveFaculty(facultyToSave);
 
-        assertEquals(facultyToSave.getId(), savedFaculty.getId());
         assertEquals(facultyToSave.getFaculty(), savedFaculty.getFaculty());
         assertEquals(facultyToSave.getMark(), savedFaculty.getMark());
     }
@@ -42,12 +41,12 @@ class DefaultFacultyStorageTest {
         final Faculty savedFaculty = facultyStorage.saveFaculty(facultyToSave);
         final Long id = savedFaculty.getId();
 
-        final Faculty toUpdate = new Faculty(null,"faculty", 10);
+        final Faculty toUpdate = new Faculty(id,"faculty", 10);
         final boolean update = facultyStorage.updateFaculty(toUpdate);
         assertTrue(update);
 
         final Faculty afterUpdate = facultyStorage.getFaculty(id);
-        assertEquals(toUpdate.getId(), afterUpdate.getId());
+
         assertEquals(toUpdate.getFaculty(), afterUpdate.getFaculty());
         assertEquals(toUpdate.getMark(), afterUpdate.getMark());
     }
@@ -60,7 +59,7 @@ class DefaultFacultyStorageTest {
 
         final Faculty faculty = facultyStorage.getFaculty(id);
         assertNotNull(faculty);
-        assertEquals(facultyToSave.getId(), faculty.getId());
+
         assertEquals(facultyToSave.getFaculty(), faculty.getFaculty());
         assertEquals(facultyToSave.getMark(), faculty.getMark());
         assertEquals(id, faculty.getId());

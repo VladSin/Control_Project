@@ -1,5 +1,6 @@
 package it_academy.control_project.service.impl;
 
+import it_academy.control_project.dao.IApplicantStorage;
 import it_academy.control_project.dao.impl.DefaultApplicantStorage;
 import it_academy.control_project.data.Applicant;
 import it_academy.control_project.service.IApplicantService;
@@ -7,6 +8,8 @@ import it_academy.control_project.service.IApplicantService;
 import java.util.List;
 
 public class DefaultApplicantService implements IApplicantService {
+
+    private IApplicantStorage applicantStorage = DefaultApplicantStorage.getInstance();
 
     private static class SingletonHolder {
         static final IApplicantService HOLDER_INSTANCE = new DefaultApplicantService();
@@ -17,32 +20,32 @@ public class DefaultApplicantService implements IApplicantService {
 
     @Override
     public Applicant saveApplicant(Applicant applicant) {
-        return DefaultApplicantStorage.getInstance().saveApplicant(applicant);
+        return applicantStorage.saveApplicant(applicant);
     }
 
     @Override
     public List<Applicant> saveApplicant(List<Applicant> applicants) {
-        return DefaultApplicantStorage.getInstance().saveApplicant(applicants);
+        return applicantStorage.saveApplicant(applicants);
     }
 
     @Override
     public boolean deleteApplicant(long id) {
-        return DefaultApplicantStorage.getInstance().deleteApplicant(id);
+        return applicantStorage.deleteApplicant(id);
     }
 
     @Override
     public boolean updateApplicant(Applicant applicant) {
-        return DefaultApplicantStorage.getInstance().updateApplicant(applicant);
+        return applicantStorage.updateApplicant(applicant);
     }
 
     @Override
     public Applicant getApplicant(long id) {
-        return DefaultApplicantStorage.getInstance().getApplicant(id);
+        return applicantStorage.getApplicant(id);
     }
 
     @Override
     public List<Applicant> getApplicant() {
-        return DefaultApplicantStorage.getInstance().getApplicant();
+        return applicantStorage.getApplicant();
     }
 
 }

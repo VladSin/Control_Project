@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,22 +37,9 @@ class DefaultApplicantServiceTest {
 
     @Test
     void testLoginWrongPass() {
-        when(dao.getApplicant(1L)).thenReturn(new Applicant(1L, 1L, 1L, 10));
+        when(dao.getApplicant(2L)).thenReturn(null);
         Applicant applicantFromDb = service.getApplicant(2L);
         assertNull(applicantFromDb);
-    }
-
-    @Test
-    void deleteUser(){
-        when(dao.getApplicant(1L)).thenReturn(new Applicant(1L, 1L, 1L, 10));
-        Applicant applicantFromDb = service.getApplicant(1L);
-        assertNotNull(applicantFromDb);
-
-        final boolean deleted = service.deleteApplicant(1L);
-        assertTrue(deleted);
-
-        final Applicant afterDeleted = service.getApplicant(1L);
-        assertNull(afterDeleted);
     }
 
     @Test

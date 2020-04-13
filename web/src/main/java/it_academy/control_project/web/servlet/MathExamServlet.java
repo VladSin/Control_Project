@@ -47,6 +47,6 @@ public class MathExamServlet extends HttpServlet {
         Applicant saveApplicant = applicantService.saveApplicant(applicant);
         log.info("applicant created:{} at {}", saveApplicant.getId(), LocalDateTime.now());
         req.getSession().setAttribute("applicantId", saveApplicant.getId());
-        WebUtils.redirect("/", req, resp);
+        WebUtils.redirect("result", req, resp);
     }
 }

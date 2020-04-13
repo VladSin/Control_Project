@@ -14,8 +14,8 @@
 </head>
 <body>
 <center>
-    <h3 style="color: green">Абитуриенты</h3>
-    <jsp:useBean id="applicants" scope="request" type="it_academy.control_project.web.servlet.TableServlet"/>
+    <h3 style="color: darkslateblue">Страница на доработке((( Приносим свои извинения! </h3>
+    <%--<jsp:useBean id="applicants" scope="request" type="it_academy.control_project.web.servlet.TableServlet"/>
     <c:if test="${applicants != null}">
         <table>
             <tr>
@@ -30,7 +30,7 @@
             <td>${applicants.id}</td>
             <td>${applicants.mark}</td>
         </tr>
-    </c:forEach>
+    </c:forEach>--%>
     <a href="${pageContext.request.contextPath}/index.jsp">Вернуться на начальную страницу</a>
 </center>
 </body>

@@ -27,7 +27,8 @@ public class DefaultUserStorage implements IUserStorage {
 
     @Override
     public User saveUser(User user) {
-        try(PreparedStatement statement = getConnection().prepareStatement("insert into user(name, surname, phone, email) values(?,?,?,?)", Statement.RETURN_GENERATED_KEYS)){
+        try(Connection connection = getConnection();
+            PreparedStatement statement = connection.prepareStatement("insert into user(name, surname, phone, email) values(?,?,?,?)", Statement.RETURN_GENERATED_KEYS)){
             statement.setString(1, user.getName());
             statement.setString(2, user.getSurname());
             statement.setString(3, user.getPhone());

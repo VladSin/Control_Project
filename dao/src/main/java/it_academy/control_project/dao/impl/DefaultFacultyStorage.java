@@ -28,7 +28,9 @@ public class DefaultFacultyStorage implements IFacultyStorage {
 
     @Override
     public Faculty saveFaculty(Faculty faculty) {
-        try (PreparedStatement statement = getConnection().prepareStatement(
+
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(
                 "insert into faculty(faculty, Mark) values (?,?)", Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, faculty.getFaculty());
             statement.setInt(2, faculty.getMark());
@@ -160,15 +162,19 @@ public class DefaultFacultyStorage implements IFacultyStorage {
             connection.setAutoCommit(false);
             try (PreparedStatement statement = connection.prepareStatement("select * from faculty where id = ?")) {
                 statement.setLong(1, id);
-                final ResultSet resultSet = statement.executeQuery();
-                connection.commit();
-                final boolean exist = resultSet.next();
-                if (!exist) {
-                    return null;
+                final long resultId;
+                final String faculty;
+                final int mark;
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    connection.commit();
+                    final boolean exist = resultSet.next();
+                    if (!exist) {
+                        return null;
+                    }
+                    resultId = resultSet.getLong("id");
+                    faculty = resultSet.getString("faculty");
+                    mark = resultSet.getInt("Mark");
                 }
-                final long resultId = resultSet.getLong("id");
-                final String faculty = resultSet.getString("faculty");
-                final int mark = resultSet.getInt("Mark");
                 return new Faculty(resultId, faculty, mark);
             }
         } catch (SQLException e) {

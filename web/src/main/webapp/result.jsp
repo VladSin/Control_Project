@@ -12,10 +12,8 @@
     <title>Результаты теста</title>
 </head>
 <body>
+<br>
 <center>
-    <h3 style="color: darkslateblue">Страница на доработке((( Приносим свои извинения! </h3>
-   <%-- <jsp:useBean id="applicant" scope="request" type="com.sun.tools.javac.code.Scope.CompoundScope"/>
-    <jsp:useBean id="faculty" scope="request" type="com.sun.tools.javac.code.Scope.CompoundScope"/>
     <c:if test="${applicant.mark ge faculty.mark}">
         <h1 style="color: green">Поздравляем!!!</h1>
     </c:if>
@@ -26,15 +24,16 @@
 
     <table>
         <tr>
-            <th>Ваш результат:</th>
-            <th>Требования факультета:</th>
+        <br>
+            <th>Ваш результат: </th>
+            <th><c:out value="${applicant.mark}"/></th>
         </tr>
 
         <tr>
-            <td><c:out value="${applicant.mark}"/></td>
-            <td><c:out value="${faculty.mark}"/></td>
+            <th>Требования факультета: </th>
+            <th><c:out value="${faculty.mark}"/></th>
         </tr>
-    </table>--%>
+    </table>
     <a href="${pageContext.request.contextPath}/index.jsp">Вернуться на начальную страницу</a>
 </center>
 </body>

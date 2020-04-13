@@ -39,21 +39,21 @@ public class FacultyServlet extends HttpServlet {
             log.info("faculty {} logged", exam.getId());
             request.getSession().setAttribute("test", exam);
             WebUtils.redirect("/prog", request, response);
-
+            return;
         } else if (subject.equals("Mathematics")){
 
             Faculty exam = facultyService.getFaculty(2);
             log.info("faculty {} logged", exam.getId());
             request.getSession().setAttribute("test", exam);
             WebUtils.redirect("/math", request, response);
-
+            return;
         } else if (subject.equals("Physics")){
 
             Faculty exam = facultyService.getFaculty(3);
             log.info("faculty {} logged", exam.getId());
             request.getSession().setAttribute("test", exam);
             WebUtils.redirect("/phys", request, response);
-
+            return;
         }
         WebUtils.forward("exam", request, response);
     }

@@ -44,6 +44,7 @@ public class ProgExamServlet extends HttpServlet {
 
         Applicant saveApplicant = applicantService.saveApplicant(applicant);
         log.info("applicant created:{} at {}", saveApplicant.getId(), LocalDateTime.now());
-        WebUtils.redirect("result", req, resp);
+        req.getSession().setAttribute("applicantId", saveApplicant.getId());
+        WebUtils.redirect("/result", req, resp);
     }
 }

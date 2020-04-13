@@ -14,7 +14,7 @@
 <body onload="var v_date_init = new Date(); tm_init = v_date_init.getTime();">
 
 <h1 class="breadcrumb">Тест начался! Удачи!</h1>
-<form action="${pageContext.request.contextPath}/prog" method="post">
+<form action="${pageContext.request.contextPath}/phys" method="post">
     <div>
 
         <div class="question">

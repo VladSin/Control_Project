@@ -15,22 +15,16 @@
 <body>
 <center>
     <h3 style="color: darkslateblue">Страница на доработке((( Приносим свои извинения! </h3>
-    <%--<jsp:useBean id="applicants" scope="request" type="it_academy.control_project.web.servlet.TableServlet"/>
     <c:if test="${applicants != null}">
-        <table>
-            <tr>
-                <th>ID абитуриента</th>
-                <th>Оцека</th>
-            </tr>
-        </table>
+        <c:forEach items="${applicants}" var="applicant">
+            <table>
+                <tr>
+                    <th>ID абитуриента: ${applicant.id}</th>
+                    <th>Оцека: ${applicant.mark}</th>
+                </tr>
+            </table>
+        </c:forEach>
     </c:if>
-    <jsp:useBean id="applicants" scope="request" type="java.util.List"/>
-    <c:forEach items="${applicants}" var="applicant">
-        <tr>
-            <td>${applicants.id}</td>
-            <td>${applicants.mark}</td>
-        </tr>
-    </c:forEach>--%>
     <a href="${pageContext.request.contextPath}/index.jsp">Вернуться на начальную страницу</a>
 </center>
 </body>

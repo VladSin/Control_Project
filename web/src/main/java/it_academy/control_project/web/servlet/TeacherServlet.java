@@ -1,5 +1,7 @@
 package it_academy.control_project.web.servlet;
 
+import it_academy.control_project.web.WebUtils;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,12 +12,7 @@ import java.io.IOException;
 @WebServlet("/teacher")
 public class TeacherServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        WebUtils.redirect("/table", request, response);
     }
 }

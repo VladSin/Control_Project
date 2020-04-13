@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
     <title>Тест</title>
@@ -17,14 +18,14 @@
     <div>
 
         <div class="question">
-            <span class="question_n">Physics 1</span>.  Вопрос по физике 1
+            <span class="question_n">Physics: question 1: </span> Angle of incidence is equal to angle of reflection
         </div>
         <ul>
             <li><input type="radio" name="test[6]" value="0" id="test_6_0"  /> <label for="test_6_0">True</label></li>
             <li><input type="radio" name="test[6]" value="1" id="test_6_1"  /> <label for="test_6_1">False</label></li>
         </ul>
         <div class="question">
-            <span class="question_n">Physics 2</span>. Вопрос по физике 2
+            <span class="question_n">Physics: question 2: </span> 123, 117, 108, 99, ?
         </div>
         <ul>
             <li><input type="radio" name="test[7]" value="0" id="test_7_0"  /> <label for="test_7_0">81</label></li>
@@ -33,7 +34,7 @@
             <li><input type="radio" name="test[7]" value="3" id="test_7_3"  /> <label for="test_7_3">87</label></li>
         </ul>
         <div class="question">
-            <span class="question_n">Physics 3</span>. Вопрос по физике 3
+            <span class="question_n">Physics: question 3: </span> Who was the first author of the theory of relativity?
         </div>
         <ul>
             <li><input type="radio" name="test[8]" value="0" id="test_8_0"  /> <label for="test_8_0">Einstein</label></li>

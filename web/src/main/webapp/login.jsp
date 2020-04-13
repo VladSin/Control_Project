@@ -10,6 +10,7 @@
 
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Страница для абитуриентов</title>
 </head>
 <body>

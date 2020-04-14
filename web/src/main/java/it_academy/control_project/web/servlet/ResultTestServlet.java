@@ -2,13 +2,10 @@ package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.data.Applicant;
 import it_academy.control_project.data.Faculty;
-import it_academy.control_project.data.User;
 import it_academy.control_project.service.IApplicantService;
 import it_academy.control_project.service.IFacultyService;
-import it_academy.control_project.service.IUserService;
 import it_academy.control_project.service.impl.DefaultApplicantService;
 import it_academy.control_project.service.impl.DefaultFacultyService;
-import it_academy.control_project.service.impl.DefaultUserService;
 import it_academy.control_project.web.WebUtils;
 
 import javax.servlet.ServletException;

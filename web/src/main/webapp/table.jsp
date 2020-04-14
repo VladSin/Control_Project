@@ -14,7 +14,7 @@
 </head>
 <body>
 <center>
-    <h3 style="color: darkslateblue">Страница на доработке((( Приносим свои извинения! </h3>
+    <h3 style="color: darkslateblue">Список сдачи тестирования</h3>
     <c:if test="${applicants != null}">
         <c:forEach items="${applicants}" var="applicant">
             <table>

@@ -1,6 +1,0 @@
-DefaultSecurityService.class
-DefaultSalaryService.class
-ISalaryService.class
-ISecurityService.class
-DefaultUserService.class
-IUserService.class

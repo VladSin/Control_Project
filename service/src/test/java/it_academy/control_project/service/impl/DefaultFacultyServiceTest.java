@@ -28,7 +28,7 @@ class DefaultFacultyServiceTest {
     }
 
     @Test
-    void getExistingUser(){
+    void getExistingFaculty(){
         when(dao.getFaculty(1)).thenReturn(new Faculty(1L, "faculty", 10));
         Faculty facultyFromDb = service.getFaculty(1);
         assertNotNull(facultyFromDb);
@@ -44,7 +44,7 @@ class DefaultFacultyServiceTest {
     }
 
     @Test
-    void getUser(){
+    void getFaculty(){
         when(dao.getFaculty(1)).thenReturn(new Faculty(1L, "faculty", 10));
         final Faculty facultyFromDb = service.getFaculty(1);
         assertNotNull(facultyFromDb);
@@ -54,5 +54,42 @@ class DefaultFacultyServiceTest {
         assertEquals(facultyFromDb.getId(), faculty.getId());
         assertEquals(facultyFromDb.getFaculty(), faculty.getFaculty());
         assertEquals(facultyFromDb.getMark(), faculty.getMark());
+    }
+
+    @Test
+    void saveFaculty(){
+        when(dao.getFaculty(1)).thenReturn(new Faculty(1L, "faculty", 10));
+        final Faculty facultyFromDb = service.getFaculty(1);
+        assertNotNull(facultyFromDb);
+
+        when(dao.saveFaculty(facultyFromDb)).thenReturn(facultyFromDb);
+        final Faculty faculty = service.saveFaculty(facultyFromDb);
+
+        assertNotNull(faculty);
+        assertEquals(facultyFromDb.getId(), faculty.getId());
+        assertEquals(facultyFromDb.getMark(), faculty.getMark());
+        assertEquals(facultyFromDb.getFaculty(), faculty.getFaculty());
+    }
+
+    @Test
+    void deleteFaculty(){
+        when(dao.getFaculty(1)).thenReturn(new Faculty(1L, "faculty", 10));
+        final Faculty facultyFromDb = service.getFaculty(1);
+        assertNotNull(facultyFromDb);
+
+        when(dao.deleteFaculty(1L)).thenReturn(true);
+        final boolean delete = service.deleteFaculty(1L);
+        assertTrue(delete);
+    }
+
+    @Test
+    void updateFaculty(){
+        when(dao.getFaculty(1)).thenReturn(new Faculty(1L, "faculty", 10));
+        final Faculty facultyFromDb = service.getFaculty(1);
+        assertNotNull(facultyFromDb);
+
+        when(dao.updateFaculty(facultyFromDb)).thenReturn(true);
+        final boolean update = service.updateFaculty(facultyFromDb);
+        assertTrue(update);
     }
 }

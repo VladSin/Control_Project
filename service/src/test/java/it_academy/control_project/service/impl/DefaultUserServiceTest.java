@@ -59,4 +59,43 @@ class DefaultUserServiceTest {
         assertEquals(userFromDb.getPhone(), user.getPhone());
         assertEquals(userFromDb.getEmail(), user.getEmail());
     }
+
+    @Test
+    void saveUser(){
+        when(dao.getUser(1)).thenReturn(new User(1L, "User", "User", "+375299999999", "user@mail.ru"));
+        final User userFromDb = service.getUser(1);
+        assertNotNull(userFromDb);
+
+        when(dao.saveUser(userFromDb)).thenReturn(userFromDb);
+        final User user = service.saveUser(userFromDb);
+
+        assertNotNull(user);
+        assertEquals(userFromDb.getId(), user.getId());
+        assertEquals(userFromDb.getName(), user.getName());
+        assertEquals(userFromDb.getSurname(), user.getSurname());
+        assertEquals(userFromDb.getPhone(), user.getPhone());
+        assertEquals(userFromDb.getEmail(), user.getEmail());
+    }
+
+    @Test
+    void deleteUser(){
+        when(dao.getUser(1)).thenReturn(new User(1L, "User", "User", "+375299999999", "user@mail.ru"));
+        final User userFromDb = service.getUser(1);
+        assertNotNull(userFromDb);
+
+        when(dao.deleteUser(1L)).thenReturn(true);
+        final boolean delete = service.deleteUser(1L);
+        assertTrue(delete);
+    }
+
+    @Test
+    void updateUser(){
+        when(dao.getUser(1)).thenReturn(new User(1L, "User", "User", "+375299999999", "user@mail.ru"));
+        final User userFromDb = service.getUser(1);
+        assertNotNull(userFromDb);
+
+        when(dao.updateUser(userFromDb)).thenReturn(true);
+        final boolean update = service.updateUser(userFromDb);
+        assertTrue(update);
+    }
 }

@@ -22,7 +22,6 @@ import java.time.LocalDateTime;
 @WebServlet("/math")
 public class MathExamServlet extends HttpServlet {
 
-    private IExamService examService = DefaultExamService.getInstance();
     private IApplicantService applicantService = DefaultApplicantService.getInstance();
     private static final Logger log = LoggerFactory.getLogger(MathExamServlet.class);
 

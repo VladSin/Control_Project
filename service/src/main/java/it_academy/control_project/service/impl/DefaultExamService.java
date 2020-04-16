@@ -1,8 +1,6 @@
 package it_academy.control_project.service.impl;
 
-import it_academy.control_project.dao.IAuthUserStorage;
 import it_academy.control_project.dao.IExamStorage;
-import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
 import it_academy.control_project.dao.impl.DefaultExamStorage;
 import it_academy.control_project.data.Exam;
 import it_academy.control_project.service.IExamService;

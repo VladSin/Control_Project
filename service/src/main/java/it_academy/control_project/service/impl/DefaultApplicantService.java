@@ -47,5 +47,4 @@ public class DefaultApplicantService implements IApplicantService {
     public List<Applicant> getApplicant() {
         return applicantStorage.getApplicant();
     }
-
 }

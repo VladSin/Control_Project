@@ -10,6 +10,7 @@ import java.util.List;
 public class DefaultFacultyService implements IFacultyService {
 
     private IFacultyStorage facultyStorage = DefaultFacultyStorage.getInstance();
+
     private static class SingletonHolder {
         static final IFacultyService HOLDER_INSTANCE = new DefaultFacultyService();
     }

@@ -21,14 +21,14 @@ class DefaultExamServiceTest {
     DefaultExamService service;
 
     @Test
-    void getNonExistentUser(){
+    void getNonExistentExam(){
         when(dao.getExam(0)).thenReturn(null);
         Exam exam = service.getExam(0);
         assertNull(exam);
     }
 
     @Test
-    void getExistingUser(){
+    void getExistingExam(){
         when(dao.getExam(1)).thenReturn(new Exam(1L, 1L, "question", "answer"));
         Exam examFromDb = service.getExam(1);
         assertNotNull(examFromDb);
@@ -44,7 +44,7 @@ class DefaultExamServiceTest {
     }
 
     @Test
-    void getUser(){
+    void getExam(){
         when(dao.getExam(1)).thenReturn(new Exam(1L, 1L, "question", "answer"));
         Exam examFromDb = service.getExam(1);
         assertNotNull(examFromDb);
@@ -57,4 +57,41 @@ class DefaultExamServiceTest {
         assertEquals(examFromDb.getAnswer(), exam.getAnswer());
     }
 
+    @Test
+    void saveExam(){
+        when(dao.getExam(1)).thenReturn(new Exam(1L, 1L, "question", "answer"));
+        Exam examFromDb = service.getExam(1);
+        assertNotNull(examFromDb);
+
+        when(dao.saveExam(examFromDb)).thenReturn(examFromDb);
+        final Exam exam = service.saveExam(examFromDb);
+
+        assertNotNull(exam);
+        assertEquals(examFromDb.getId(), exam.getId());
+        assertEquals(examFromDb.getFacultyId(), exam.getFacultyId());
+        assertEquals(examFromDb.getQuestion(), exam.getQuestion());
+        assertEquals(examFromDb.getAnswer(), exam.getAnswer());
+    }
+
+    @Test
+    void deleteExam(){
+        when(dao.getExam(1)).thenReturn(new Exam(1L, 1L, "question", "answer"));
+        Exam examFromDb = service.getExam(1);
+        assertNotNull(examFromDb);
+
+        when(dao.deleteExam(1L)).thenReturn(true);
+        final boolean delete = service.deleteExam(1L);
+        assertTrue(delete);
+    }
+
+    @Test
+    void updateExam(){
+        when(dao.getExam(1)).thenReturn(new Exam(1L, 1L, "question", "answer"));
+        Exam examFromDb = service.getExam(1);
+        assertNotNull(examFromDb);
+
+        when(dao.updateExam(examFromDb)).thenReturn(true);
+        final boolean update = service.updateExam(examFromDb);
+        assertTrue(update);
+    }
 }

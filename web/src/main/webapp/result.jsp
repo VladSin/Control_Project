@@ -34,6 +34,21 @@
             <th><c:out value="${faculty.mark}"/></th>
         </tr>
     </table>
+    <h3 style="color: blue">Ответы на Ваш экзамен</h3>
+    <table>
+        <c:if test="${exams != null}">
+            <c:forEach items="${exams}" var="exam">
+                <c:if test="${exam.facultyId == applicant.facultyId}">
+                    <table>
+                        <tr>
+                            <td>Вопрос: ${exam.question}</td>
+                            <td>Ответ: ${exam.answer}</td>
+                        </tr>
+                    </table>
+                </c:if>
+            </c:forEach>
+        </c:if>
+    </table>
     <a href="${pageContext.request.contextPath}/index.jsp">Вернуться на начальную страницу</a>
 </center>
 </body>

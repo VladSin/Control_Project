@@ -2,27 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/filter/ValidateUserFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/converter/ApplicantConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/converter/AuthorizationUserConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/converter/ExamConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/converter/FacultyConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/converter/UserConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/entity/ApplicantEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/entity/AuthorizationUserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/entity/ExamEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/entity/FacultyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultAuthUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/test/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/AuthUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/it_academy/control_project/data/EFaculty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/CalculatorValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IApplicantStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/ApplicantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IAuthUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/AuthUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IExamStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/ExamDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IFacultyStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/FacultyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/IUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DataSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultApplicantStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultApplicantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultAuthUserStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultExamStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultExamDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultFacultyStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultFacultyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it_academy/control_project/dao/impl/DefaultUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultApplicantStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultApplicantDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultAuthUserStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultAuthUserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultExamStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultExamDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultFacultyStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultFacultyDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultUserStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it_academy/control_project/dao/impl/DefaultUserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IApplicantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/ApplicantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IAuthUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/ExamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IFacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/FacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/ISecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultApplicantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultApplicantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultAuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultAuthUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultExamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultFacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultFacultyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it_academy/control_project/service/impl/DefaultUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultApplicantServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultApplicantServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultAuthUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultAuthUserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultExamServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultExamServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultFacultyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultFacultyServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it_academy/control_project/service/impl/DefaultUserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/filter/ValidateUserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/filter/ValidateUserFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/FacultyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/FacultyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/MathExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/MathExamServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/PhysExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/PhysExamServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/ProgExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/ProgExamServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/ResultTestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/ResultTestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/table.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/TableServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/TableServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it_academy/control_project/web/servlet/UserServlet.java" afterDir="false" />
     </list>
-    <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13">
-      <change beforePath="$PROJECT_DIR$/Service_module/src/test/java/CalculatorValueTest.java" beforeDir="false" />
-    </list>
+    <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,19 +91,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -109,7 +139,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dao/src/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dao/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2731183" />
@@ -120,31 +150,49 @@
       <recent name="it_academy.control_project.service.impl" />
       <recent name="it_academy.control_project.dao.impl" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="it_academy.control_project.dao.impl" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dell\control_project\dao\src\test" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="it_academy.control_project.dao.impl" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\control_project\dao\src\test\resources" />
+      <recent name="C:\Users\dell\control_project\dao\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DefaultSecurityServiceTest.getNonExistentService">
-    <configuration name="DefaultFacultyServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+  <component name="RunManager" selected="JUnit.DefaultAuthUserDaoTest.saveAuthUser">
+    <configuration name="DefaultAuthUserDaoTest.getAuthUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dao" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it_academy.control_project.service.impl.*" />
+          <option name="PATTERN" value="it_academy.control_project.dao.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it_academy.control_project.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="it_academy.control_project.service.impl.DefaultFacultyServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="it_academy.control_project.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="it_academy.control_project.dao.impl.DefaultAuthUserDaoTest" />
+      <option name="METHOD_NAME" value="getAuthUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultAuthUserDaoTest.saveAuthUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it_academy.control_project.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it_academy.control_project.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="it_academy.control_project.dao.impl.DefaultAuthUserDaoTest" />
+      <option name="METHOD_NAME" value="saveAuthUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,21 +224,6 @@
       <option name="MAIN_CLASS_NAME" value="it_academy.control_project.service.impl.DefaultSecurityServiceTest" />
       <option name="METHOD_NAME" value="getNonExistentService" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DefaultUserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it_academy.control_project.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it_academy.control_project.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="it_academy.control_project.service.impl.DefaultUserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -298,21 +331,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Remote.Unnamed" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
-      <item itemvalue="JUnit.DefaultFacultyServiceTest" />
-      <item itemvalue="JUnit.DefaultUserServiceTest" />
       <item itemvalue="JUnit.DefaultUserServiceTest.deleteUser" />
       <item itemvalue="JUnit.DefaultSecurityServiceTest.getNonExistentService" />
       <item itemvalue="JUnit.DefaultSecurityServiceTest" />
+      <item itemvalue="Remote.Unnamed" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
+      <item itemvalue="JUnit.DefaultAuthUserDaoTest.saveAuthUser" />
+      <item itemvalue="JUnit.DefaultAuthUserDaoTest.getAuthUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DefaultAuthUserDaoTest.saveAuthUser" />
+        <item itemvalue="JUnit.DefaultAuthUserDaoTest.getAuthUser" />
         <item itemvalue="JUnit.DefaultSecurityServiceTest.getNonExistentService" />
         <item itemvalue="JUnit.DefaultSecurityServiceTest" />
         <item itemvalue="JUnit.DefaultUserServiceTest.deleteUser" />
-        <item itemvalue="JUnit.DefaultUserServiceTest" />
-        <item itemvalue="JUnit.DefaultFacultyServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -363,6 +396,9 @@
       <workItem from="1586892475216" duration="1149000" />
       <workItem from="1587039339810" duration="4419000" />
       <workItem from="1587059008622" duration="9079000" />
+      <workItem from="1589217365964" duration="1696000" />
+      <workItem from="1589220189536" duration="623000" />
+      <workItem from="1589473130608" duration="8238000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -544,6 +580,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Final commit in this branch" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="71" key="#Assign_Data_Sources" timestamp="1589187716303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="71" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1589187716303" />
     <state x="361" y="71" key="#Inspections" timestamp="1587061216172">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -556,30 +596,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1586604909019" />
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586804096502">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589482788167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586804096502" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589482788167" />
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586798721967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1586798721967" />
-    <state x="818" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1587065646651">
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1589479453207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="818" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587065646651" />
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589479453207" />
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586602459956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586602459956" />
-    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586626836472">
+    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589219692924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586626836472" />
-    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586628742269">
+    <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1589219692924" />
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589475338646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1586628742269" />
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1589475338646" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586686212261">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -596,22 +636,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="271" y="112" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586719032206" />
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1587066275109">
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1589475303248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587066275109" />
-    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1587066275109">
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589475303248" />
+    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1589475303248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587066275109" />
-    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1587066275109">
+    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589475303248" />
+    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1589475303248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587066275109" />
-    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1587066275109">
+    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589475303248" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1589475303248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587066275109" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589475303248" />
     <state width="1493" height="280" key="GridCell.Tab.1.bottom" timestamp="1587062788191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -696,10 +736,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="108" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586341650364" />
+    <state x="475" y="41" key="refactoring.ChangeSignatureDialog" timestamp="1589481197622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="41" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1589481197622" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1586693735515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586693735515" />
+    <state x="361" y="71" key="scopes" timestamp="1589473585403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1589473585403" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587061964790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

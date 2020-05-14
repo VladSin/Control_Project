@@ -1,7 +1,7 @@
 package it_academy.control_project.web.filter;
 
 import it_academy.control_project.data.User;
-import it_academy.control_project.service.IUserService;
+import it_academy.control_project.service.UserService;
 import it_academy.control_project.service.impl.DefaultUserService;
 import it_academy.control_project.web.WebUtils;
 
@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 @WebFilter("/faculty")
 public class ValidateUserFilter implements Filter {
 
-    private IUserService userService = DefaultUserService.getInstance();
+    private UserService userService = DefaultUserService.getInstance();
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 

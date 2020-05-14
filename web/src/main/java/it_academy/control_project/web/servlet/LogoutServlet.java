@@ -1,6 +1,6 @@
 package it_academy.control_project.web.servlet;
 
-import it_academy.control_project.service.ISecurityService;
+import it_academy.control_project.service.SecurityService;
 import it_academy.control_project.web.WebUtils;
 
 import javax.servlet.ServletException;
@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet("/logout")
 public class LogoutServlet extends HttpServlet {
 
-    private ISecurityService securityService;
+    private SecurityService securityService;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

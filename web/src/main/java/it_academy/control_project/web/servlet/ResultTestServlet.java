@@ -3,9 +3,9 @@ package it_academy.control_project.web.servlet;
 import it_academy.control_project.data.Applicant;
 import it_academy.control_project.data.Exam;
 import it_academy.control_project.data.Faculty;
-import it_academy.control_project.service.IApplicantService;
-import it_academy.control_project.service.IExamService;
-import it_academy.control_project.service.IFacultyService;
+import it_academy.control_project.service.ApplicantService;
+import it_academy.control_project.service.ExamService;
+import it_academy.control_project.service.FacultyService;
 import it_academy.control_project.service.impl.DefaultApplicantService;
 import it_academy.control_project.service.impl.DefaultExamService;
 import it_academy.control_project.service.impl.DefaultFacultyService;
@@ -22,9 +22,9 @@ import java.util.List;
 @WebServlet("/result")
 public class ResultTestServlet extends HttpServlet {
 
-    private IExamService examService = DefaultExamService.getInstance();
-    private IApplicantService applicantService = DefaultApplicantService.getInstance();
-    private IFacultyService facultyService = DefaultFacultyService.getInstance();
+    private ExamService examService = DefaultExamService.getInstance();
+    private ApplicantService applicantService = DefaultApplicantService.getInstance();
+    private FacultyService facultyService = DefaultFacultyService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

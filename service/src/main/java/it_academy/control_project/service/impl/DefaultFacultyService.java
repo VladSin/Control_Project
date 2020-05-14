@@ -1,50 +1,45 @@
 package it_academy.control_project.service.impl;
 
-import it_academy.control_project.dao.IFacultyStorage;
-import it_academy.control_project.dao.impl.DefaultFacultyStorage;
+import it_academy.control_project.dao.FacultyDao;
+import it_academy.control_project.dao.impl.DefaultFacultyDao;
 import it_academy.control_project.data.Faculty;
-import it_academy.control_project.service.IFacultyService;
+import it_academy.control_project.service.FacultyService;
 
 import java.util.List;
 
-public class DefaultFacultyService implements IFacultyService {
+public class DefaultFacultyService implements FacultyService {
 
-    private IFacultyStorage facultyStorage = DefaultFacultyStorage.getInstance();
+    private FacultyDao facultyDao = DefaultFacultyDao.getInstance();
 
     private static class SingletonHolder {
-        static final IFacultyService HOLDER_INSTANCE = new DefaultFacultyService();
+        static final FacultyService HOLDER_INSTANCE = new DefaultFacultyService();
     }
-    public static IFacultyService getInstance() {
+    public static FacultyService getInstance() {
         return DefaultFacultyService.SingletonHolder.HOLDER_INSTANCE;
     }
 
     @Override
     public Faculty saveFaculty(Faculty faculty) {
-        return facultyStorage.saveFaculty(faculty);
-    }
-
-    @Override
-    public List<Faculty> saveFaculty(List<Faculty> faculties) {
-        return facultyStorage.saveFaculty(faculties);
+        return facultyDao.saveFaculty(faculty);
     }
 
     @Override
     public boolean deleteFaculty(long id) {
-        return facultyStorage.deleteFaculty(id);
+        return facultyDao.deleteFaculty(id);
     }
 
     @Override
     public boolean updateFaculty(Faculty faculty) {
-        return facultyStorage.updateFaculty(faculty);
+        return facultyDao.updateFaculty(faculty);
     }
 
     @Override
     public Faculty getFaculty(long id) {
-        return facultyStorage.getFaculty(id);
+        return facultyDao.getFaculty(id);
     }
 
     @Override
     public List<Faculty> getFaculty() {
-        return facultyStorage.getFaculty();
+        return facultyDao.getFaculty();
     }
 }

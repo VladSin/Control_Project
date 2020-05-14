@@ -2,7 +2,7 @@ package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.data.AuthorizationUser;
 import it_academy.control_project.service.impl.DefaultSecurityService;
-import it_academy.control_project.service.ISecurityService;
+import it_academy.control_project.service.SecurityService;
 import it_academy.control_project.web.WebUtils;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +18,7 @@ import org.slf4j.Logger;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
-    private ISecurityService securityService = DefaultSecurityService.getInstance();
+    private SecurityService securityService = DefaultSecurityService.getInstance();
 
     private static final Logger log = LoggerFactory.getLogger(LoginServlet.class);
 

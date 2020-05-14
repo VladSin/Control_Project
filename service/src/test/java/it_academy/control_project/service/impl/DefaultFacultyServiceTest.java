@@ -1,6 +1,6 @@
 package it_academy.control_project.service.impl;
 
-import it_academy.control_project.dao.IFacultyStorage;
+import it_academy.control_project.dao.FacultyDao;
 import it_academy.control_project.data.Faculty;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,7 +15,7 @@ import static org.mockito.Mockito.when;
 class DefaultFacultyServiceTest {
 
     @Mock
-    IFacultyStorage dao;
+    FacultyDao dao;
 
     @InjectMocks
     DefaultFacultyService service;

@@ -1,9 +1,8 @@
 package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.data.Faculty;
-import it_academy.control_project.data.User;
 import it_academy.control_project.service.impl.DefaultFacultyService;
-import it_academy.control_project.service.IFacultyService;
+import it_academy.control_project.service.FacultyService;
 import it_academy.control_project.web.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,13 +13,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.*;
-import java.util.List;
 
 @WebServlet("/faculty")
 public class FacultyServlet extends HttpServlet {
 
-    private IFacultyService facultyService = DefaultFacultyService.getInstance();
+    private FacultyService facultyService = DefaultFacultyService.getInstance();
     private static final Logger log = LoggerFactory.getLogger(FacultyServlet.class);
 
     @Override

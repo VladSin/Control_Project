@@ -1,6 +1,6 @@
 package it_academy.control_project.service.impl;
 
-import it_academy.control_project.dao.IExamStorage;
+import it_academy.control_project.dao.ExamDao;
 import it_academy.control_project.data.Exam;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,7 +15,7 @@ import static org.mockito.Mockito.when;
 class DefaultExamServiceTest {
 
     @Mock
-    IExamStorage dao;
+    ExamDao dao;
 
     @InjectMocks
     DefaultExamService service;

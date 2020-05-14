@@ -1,11 +1,8 @@
 package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.data.Applicant;
-import it_academy.control_project.data.Exam;
-import it_academy.control_project.service.IApplicantService;
-import it_academy.control_project.service.IExamService;
+import it_academy.control_project.service.ApplicantService;
 import it_academy.control_project.service.impl.DefaultApplicantService;
-import it_academy.control_project.service.impl.DefaultExamService;
 import it_academy.control_project.web.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +19,7 @@ import java.time.LocalDateTime;
 @WebServlet("/math")
 public class MathExamServlet extends HttpServlet {
 
-    private IApplicantService applicantService = DefaultApplicantService.getInstance();
+    private ApplicantService applicantService = DefaultApplicantService.getInstance();
     private static final Logger log = LoggerFactory.getLogger(MathExamServlet.class);
 
     @Override

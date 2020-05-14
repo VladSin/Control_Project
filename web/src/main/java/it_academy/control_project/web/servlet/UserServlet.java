@@ -2,7 +2,7 @@ package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.data.User;
 import it_academy.control_project.service.impl.DefaultUserService;
-import it_academy.control_project.service.IUserService;
+import it_academy.control_project.service.UserService;
 import it_academy.control_project.web.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 @WebServlet("/user")
 public class UserServlet extends HttpServlet {
 
-    private IUserService userService = DefaultUserService.getInstance();
+    private UserService userService = DefaultUserService.getInstance();
     private static final Logger log = LoggerFactory.getLogger(UserServlet.class);
 
     @Override

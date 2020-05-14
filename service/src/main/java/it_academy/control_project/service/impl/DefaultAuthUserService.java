@@ -1,55 +1,50 @@
 package it_academy.control_project.service.impl;
 
-import it_academy.control_project.dao.IAuthUserStorage;
-import it_academy.control_project.dao.impl.DefaultAuthUserStorage;
+import it_academy.control_project.dao.AuthUserDao;
+import it_academy.control_project.dao.impl.DefaultAuthUserDao;
 import it_academy.control_project.data.AuthorizationUser;
-import it_academy.control_project.service.IAuthUserService;
+import it_academy.control_project.service.AuthUserService;
 
 import java.util.List;
 
-public class DefaultAuthUserService implements IAuthUserService {
+public class DefaultAuthUserService implements AuthUserService {
 
-    private IAuthUserStorage authUserStorage = DefaultAuthUserStorage.getInstance();
+    private AuthUserDao authUserDao = DefaultAuthUserDao.getInstance();
 
     private static class SingletonHolder{
-        static final IAuthUserService HOLDER_INSTANCE = new DefaultAuthUserService();
+        static final AuthUserService HOLDER_INSTANCE = new DefaultAuthUserService();
     }
-    public static IAuthUserService getInstance(){
+    public static AuthUserService getInstance(){
         return SingletonHolder.HOLDER_INSTANCE;
     }
 
     @Override
     public AuthorizationUser saveAuthUser(AuthorizationUser authorizationUser) {
-        return authUserStorage.saveAuthUser(authorizationUser);
-    }
-
-    @Override
-    public List<AuthorizationUser> saveAuthUser(List<AuthorizationUser> authorizationUsers) {
-        return authUserStorage.saveAuthUser(authorizationUsers);
+        return authUserDao.saveAuthUser(authorizationUser);
     }
 
     @Override
     public boolean deleteAuthUser(long id) {
-        return authUserStorage.deleteAuthUser(id);
+        return authUserDao.deleteAuthUser(id);
     }
 
     @Override
     public boolean updateAuthUser(AuthorizationUser authorizationUser) {
-        return authUserStorage.updateAuthUser(authorizationUser);
+        return authUserDao.updateAuthUser(authorizationUser);
     }
 
     @Override
     public AuthorizationUser getAuthUser(long id) {
-        return authUserStorage.getAuthUser(id);
+        return authUserDao.getAuthUser(id);
+    }
+
+    @Override
+    public AuthorizationUser getAuthUser(String login) {
+        return authUserDao.getAuthUser(login);
     }
 
     @Override
     public List<AuthorizationUser> getAuthUser() {
-        return authUserStorage.getAuthUser();
-    }
-
-    @Override
-    public AuthorizationUser getLogin(String login) {
-        return authUserStorage.getLogin(login);
+        return authUserDao.getAuthUser();
     }
 }

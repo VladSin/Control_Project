@@ -1,8 +1,8 @@
 package it_academy.control_project.web.servlet;
 
 import it_academy.control_project.data.Applicant;
-import it_academy.control_project.service.IApplicantService;
-import it_academy.control_project.service.IExamService;
+import it_academy.control_project.service.ApplicantService;
+import it_academy.control_project.service.ExamService;
 import it_academy.control_project.service.impl.DefaultApplicantService;
 import it_academy.control_project.service.impl.DefaultExamService;
 import it_academy.control_project.web.WebUtils;
@@ -20,8 +20,8 @@ import java.time.LocalDateTime;
 @WebServlet("/phys")
 public class PhysExamServlet extends HttpServlet {
 
-    private IExamService examService = DefaultExamService.getInstance();
-    private IApplicantService applicantService = DefaultApplicantService.getInstance();
+    private ExamService examService = DefaultExamService.getInstance();
+    private ApplicantService applicantService = DefaultApplicantService.getInstance();
     private static final Logger log = LoggerFactory.getLogger(PhysExamServlet.class);
 
     @Override

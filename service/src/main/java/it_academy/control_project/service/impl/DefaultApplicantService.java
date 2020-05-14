@@ -1,50 +1,45 @@
 package it_academy.control_project.service.impl;
 
-import it_academy.control_project.dao.IApplicantStorage;
-import it_academy.control_project.dao.impl.DefaultApplicantStorage;
+import it_academy.control_project.dao.ApplicantDao;
+import it_academy.control_project.dao.impl.DefaultApplicantDao;
 import it_academy.control_project.data.Applicant;
-import it_academy.control_project.service.IApplicantService;
+import it_academy.control_project.service.ApplicantService;
 
 import java.util.List;
 
-public class DefaultApplicantService implements IApplicantService {
+public class DefaultApplicantService implements ApplicantService {
 
-    private IApplicantStorage applicantStorage = DefaultApplicantStorage.getInstance();
+    private ApplicantDao applicantDao = DefaultApplicantDao.getInstance();
 
     private static class SingletonHolder {
-        static final IApplicantService HOLDER_INSTANCE = new DefaultApplicantService();
+        static final ApplicantService HOLDER_INSTANCE = new DefaultApplicantService();
     }
-    public static IApplicantService getInstance() {
+    public static ApplicantService getInstance() {
         return DefaultApplicantService.SingletonHolder.HOLDER_INSTANCE;
     }
 
     @Override
     public Applicant saveApplicant(Applicant applicant) {
-        return applicantStorage.saveApplicant(applicant);
-    }
-
-    @Override
-    public List<Applicant> saveApplicant(List<Applicant> applicants) {
-        return applicantStorage.saveApplicant(applicants);
+        return applicantDao.saveApplicant(applicant);
     }
 
     @Override
     public boolean deleteApplicant(long id) {
-        return applicantStorage.deleteApplicant(id);
+        return applicantDao.deleteApplicant(id);
     }
 
     @Override
     public boolean updateApplicant(Applicant applicant) {
-        return applicantStorage.updateApplicant(applicant);
+        return applicantDao.updateApplicant(applicant);
     }
 
     @Override
     public Applicant getApplicant(long id) {
-        return applicantStorage.getApplicant(id);
+        return applicantDao.getApplicant(id);
     }
 
     @Override
     public List<Applicant> getApplicant() {
-        return applicantStorage.getApplicant();
+        return applicantDao.getApplicant();
     }
 }

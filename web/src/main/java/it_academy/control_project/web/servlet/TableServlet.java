@@ -3,9 +3,9 @@ package it_academy.control_project.web.servlet;
         import it_academy.control_project.data.Applicant;
         import it_academy.control_project.data.Faculty;
         import it_academy.control_project.data.User;
-        import it_academy.control_project.service.IApplicantService;
-        import it_academy.control_project.service.IFacultyService;
-        import it_academy.control_project.service.IUserService;
+        import it_academy.control_project.service.ApplicantService;
+        import it_academy.control_project.service.FacultyService;
+        import it_academy.control_project.service.UserService;
         import it_academy.control_project.service.impl.DefaultApplicantService;
         import it_academy.control_project.service.impl.DefaultFacultyService;
         import it_academy.control_project.service.impl.DefaultUserService;
@@ -22,9 +22,9 @@ package it_academy.control_project.web.servlet;
 @WebServlet("/table")
 public class TableServlet extends HttpServlet {
 
-    private IApplicantService applicantService = DefaultApplicantService.getInstance();
-    private IUserService userService = DefaultUserService.getInstance();
-    private IFacultyService facultyService = DefaultFacultyService.getInstance();
+    private ApplicantService applicantService = DefaultApplicantService.getInstance();
+    private UserService userService = DefaultUserService.getInstance();
+    private FacultyService facultyService = DefaultFacultyService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

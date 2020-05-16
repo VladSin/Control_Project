@@ -86,5 +86,7 @@ class DefaultAuthUserDaoTest {
             assertEquals(authUserList.get(i).getPassword(), authUser.get(i).getPassword());
             assertEquals(authUserList.get(i).getRole(), authUser.get(i).getRole());
         }
+        authUser = authUserDao.getAuthUser();
+        assertNotNull(authUser);
     }
 }

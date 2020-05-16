@@ -77,4 +77,15 @@ public class DefaultApplicantDao implements ApplicantDao {
                 .map(ApplicantConverter::fromEntity)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public List<Applicant> getApplicant(int number) {
+        final List<ApplicantEntity> applicantEntities = HibernateUtil.getSession().createQuery("from ApplicantEntity ")
+                .setMaxResults(number)
+                .setFirstResult(0)
+                .list();
+        return applicantEntities.stream()
+                .map(ApplicantConverter::fromEntity)
+                .collect(Collectors.toList());
+    }
 }

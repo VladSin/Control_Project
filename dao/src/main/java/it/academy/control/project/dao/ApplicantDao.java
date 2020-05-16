@@ -15,4 +15,6 @@ public interface ApplicantDao {
     Applicant getApplicant(long id);
 
     List<Applicant> getApplicant();
+
+    List<Applicant> getApplicant(int number);
 }

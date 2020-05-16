@@ -79,12 +79,33 @@ class DefaultExamDaoTest {
         for (Exam e: faculties) {
             examList.add(examDao.saveExam(e));
         }
-
         assertNotNull(examList);
         for (int i = 0; i < examList.size(); i++) {
             assertEquals(examList.get(i).getFacultyId(), faculties.get(i).getFacultyId());
             assertEquals(examList.get(i).getQuestion(), faculties.get(i).getQuestion());
             assertEquals(examList.get(i).getAnswer(), faculties.get(i).getAnswer());
         }
+        faculties = examDao.getExam();
+        assertNotNull(faculties);
+    }
+
+    @Test
+    void getListNumber(){
+        List<Exam> faculties = new ArrayList<>();
+        faculties.add(new Exam(null, 1L, "question1", "answer1"));
+        faculties.add(new Exam(null, 2L, "question2", "answer2"));
+
+        List<Exam> examList = new ArrayList<>();
+        for (Exam e: faculties) {
+            examList.add(examDao.saveExam(e));
+        }
+        assertNotNull(examList);
+        for (int i = 0; i < examList.size(); i++) {
+            assertEquals(examList.get(i).getFacultyId(), faculties.get(i).getFacultyId());
+            assertEquals(examList.get(i).getQuestion(), faculties.get(i).getQuestion());
+            assertEquals(examList.get(i).getAnswer(), faculties.get(i).getAnswer());
+        }
+        faculties = examDao.getExam(1);
+        assertNotNull(faculties);
     }
 }

@@ -7,6 +7,7 @@ import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.Exam;
 
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -73,6 +74,17 @@ public class DefaultExamDao implements ExamDao {
     public List<Exam> getExam() {
         final List<ExamEntity> examEntities = HibernateUtil.getSession().createQuery("from ExamEntity ")
                 .list();
+        return examEntities.stream()
+                .map(ExamConverter::fromEntity)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Exam> getExam(int number) {
+        final List<ExamEntity> examEntities = HibernateUtil.getSession().createQuery("from ExamEntity ")
+                .setMaxResults(number)
+                .setFirstResult(0)
+                .getResultList();
         return examEntities.stream()
                 .map(ExamConverter::fromEntity)
                 .collect(Collectors.toList());

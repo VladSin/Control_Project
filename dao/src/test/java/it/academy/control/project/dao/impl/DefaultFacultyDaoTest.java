@@ -84,5 +84,7 @@ class DefaultFacultyDaoTest {
             assertEquals(facultyList.get(i).getFaculty(), faculties.get(i).getFaculty());
             assertEquals(facultyList.get(i).getMark(), faculties.get(i).getMark());
         }
+        faculties = facultyDao.getFaculty();
+        assertNotNull(faculties);
     }
 }

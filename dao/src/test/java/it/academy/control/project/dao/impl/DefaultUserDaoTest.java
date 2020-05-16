@@ -90,5 +90,8 @@ class DefaultUserDaoTest {
             assertEquals(userList.get(i).getPhone(), users.get(i).getPhone());
             assertEquals(userList.get(i).getEmail(), users.get(i).getEmail());
         }
+
+        users = userDao.getUser();
+        assertNotNull(users);
     }
 }

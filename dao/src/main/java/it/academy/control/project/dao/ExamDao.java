@@ -15,4 +15,6 @@ public interface ExamDao {
     Exam getExam(long id);
 
     List<Exam> getExam();
+
+    List<Exam> getExam(int number);
 }

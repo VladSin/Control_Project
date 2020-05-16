@@ -86,5 +86,29 @@ class DefaultApplicantDaoTest {
             assertEquals(applicantList.get(i).getFacultyId(), applicants.get(i).getFacultyId());
             assertEquals(applicantList.get(i).getMark(), applicants.get(i).getMark());
         }
+        applicants = applicantDao.getApplicant();
+        assertNotNull(applicants);
+    }
+
+    @Test
+    void getListNumber(){
+        List<Applicant> applicants = new ArrayList<>();
+        applicants.add(new Applicant(null, 1L, 1L, 10));
+        applicants.add(new Applicant(null, 2L, 2L, 10));
+
+        List<Applicant> applicantList = new ArrayList<>();
+        for (Applicant a: applicants) {
+            applicantList.add(applicantDao.saveApplicant(a));
+        }
+
+        assertNotNull(applicantList);
+        for (int i = 0; i < applicantList.size(); i++) {
+            assertEquals(applicantList.get(i).getUserId(), applicants.get(i).getUserId());
+            assertEquals(applicantList.get(i).getFacultyId(), applicants.get(i).getFacultyId());
+            assertEquals(applicantList.get(i).getMark(), applicants.get(i).getMark());
+        }
+
+        applicants = applicantDao.getApplicant(1);
+        assertNotNull(applicants);
     }
 }

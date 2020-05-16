@@ -21,7 +21,7 @@ under the License.
 <!--
  | This is the configuration file for Maven. It can be specified at two levels:
  |
- |  1. it_academy.control_project.data.User Level. This settings.xml file provides configuration for a single user,
+ |  1. User Level. This settings.xml file provides configuration for a single user,
  |                 and is normally provided in ${user.home}/.m2/settings.xml.
  |
  |                 NOTE: This location can be overridden with the CLI option:

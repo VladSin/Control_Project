@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  it_academy.control_project.data.User: dell
+  User: dell
   Date: 09.04.2020
   Time: 14:49
   To change this template use File | Settings | File Templates.

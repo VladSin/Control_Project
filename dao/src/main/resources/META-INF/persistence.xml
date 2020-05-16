@@ -5,11 +5,11 @@
              version="2.0">
     <persistence-unit name="control.project" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>it_academy.control_project.dao.entity.ApplicantEntity</class>
-        <class>it_academy.control_project.dao.entity.AuthorizationUserEntity</class>
-        <class>it_academy.control_project.dao.entity.ExamEntity</class>
-        <class>it_academy.control_project.dao.entity.FacultyEntity</class>
-        <class>it_academy.control_project.dao.entity.UserEntity</class>
+        <class>it.academy.control.project.dao.entity.ApplicantEntity</class>
+        <class>it.academy.control.project.dao.entity.AuthorizationUserEntity</class>
+        <class>it.academy.control.project.dao.entity.ExamEntity</class>
+        <class>it.academy.control.project.dao.entity.FacultyEntity</class>
+        <class>it.academy.control.project.dao.entity.UserEntity</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

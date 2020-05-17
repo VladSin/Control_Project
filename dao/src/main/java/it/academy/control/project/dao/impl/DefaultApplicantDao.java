@@ -2,7 +2,9 @@ package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.ApplicantDao;
 import it.academy.control.project.dao.converter.ApplicantConverter;
+import it.academy.control.project.dao.converter.UserConverter;
 import it.academy.control.project.dao.entity.ApplicantEntity;
+import it.academy.control.project.dao.entity.UserEntity;
 import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.Applicant;
 
@@ -28,6 +30,13 @@ public class DefaultApplicantDao implements ApplicantDao {
     @Override
     public Applicant saveApplicant(Applicant applicant) {
         ApplicantEntity applicantEntity = ApplicantConverter.toEntity(applicant);
+        try {
+            UserEntity userEntity = UserConverter.toEntity(DefaultUserDao.getInstance().getUser(applicant.getUserId()));
+            applicantEntity.setUserEntity(userEntity);
+            applicantEntity.setUserId(userEntity.getId());
+        } catch (NullPointerException e){
+
+        }
         final Session session = HibernateUtil.getSession();
         session.beginTransaction();
         session.save(applicantEntity);

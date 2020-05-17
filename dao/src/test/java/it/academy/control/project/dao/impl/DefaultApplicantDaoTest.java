@@ -1,8 +1,14 @@
 package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.ApplicantDao;
+import it.academy.control.project.dao.UserDao;
+import it.academy.control.project.dao.entity.ApplicantEntity;
+import it.academy.control.project.dao.entity.UserEntity;
+import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.Applicant;
 import it.academy.control.project.data.AuthorizationUser;
+import it.academy.control.project.data.User;
+import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -55,19 +61,37 @@ class DefaultApplicantDaoTest {
         assertEquals(toUpdate.getMark(), afterUpdate.getMark());
     }
 
+
     @Test
     void getApplicant() {
-        final Applicant applicantToSave = new Applicant(null, 1L, 1L, 10);
-        final Applicant savedApplicant = applicantDao.saveApplicant(applicantToSave);
-        final Long id = savedApplicant.getId();
+        final User user = new User(null, "name", "surname", "phone","email");
+        User userToSave = DefaultUserDao.getInstance().saveUser(user);
+        assertNotNull(userToSave);
 
-        final Applicant applicant = applicantDao.getApplicant(id);
-        assertNotNull(applicant);
-        assertEquals(applicantToSave.getUserId(), applicant.getUserId());
-        assertEquals(applicantToSave.getFacultyId(), applicant.getFacultyId());
-        assertEquals(applicantToSave.getMark(), applicant.getMark());
-        assertEquals(id, applicant.getId());
+        final Applicant applicant = new Applicant(null, userToSave.getId(), 1L, 10);
+        Applicant applicantToSave = applicantDao.saveApplicant(applicant);
+        assertNotNull(applicantToSave);
+
+        assertEquals(userToSave.getId(), applicantToSave.getUserId());
     }
+//    @Test
+//    void getApplicant() {
+//        final ApplicantEntity applicantEntity = new ApplicantEntity(null, 1L, 1L, 10, null);
+//        final UserEntity userEntity = new UserEntity(null, "name", "surname", "phone","email", null);
+//
+//        userEntity.setApplicantEntity(applicantEntity);
+//        applicantEntity.setUserEntity(userEntity);
+//
+//        final Session session = HibernateUtil.getSession();
+//        session.beginTransaction();
+//        session.save(userEntity);
+//        session.save(applicantEntity);
+//        session.getTransaction().commit();
+//
+//        final User user = DefaultUserDao.getInstance().getUser(1L);
+//        final Applicant applicant = applicantDao.getApplicant(user.getId());
+//        assertNotNull(applicant);
+//    }
 
     @Test
     void getList(){

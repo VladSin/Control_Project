@@ -101,9 +101,9 @@ class DefaultFacultyServiceTest {
         List<Faculty> faculties = new ArrayList<>();
         faculties.add(new Faculty(1L, "Faculty1", 10));
         faculties.add(new Faculty(2L, "Faculty2", 10));
-        when(dao.getFaculty()).thenReturn(faculties);
+        when(dao.getFaculties()).thenReturn(faculties);
 
-        List<Faculty> facultiesDao = dao.getFaculty();
+        List<Faculty> facultiesDao = dao.getFaculties();
         assertNotNull(facultiesDao);
         for (int i = 0; i < facultiesDao.size(); i++) {
             assertEquals(facultiesDao.get(i).getId(), faculties.get(i).getId());

@@ -102,9 +102,26 @@ class DefaultApplicantServiceTest {
         List<Applicant> applicants = new ArrayList<>();
         applicants.add(new Applicant(1L, 1L, 1L, 10));
         applicants.add(new Applicant(2L, 2L, 2L, 10));
-        when(dao.getApplicant()).thenReturn(applicants);
+        when(dao.getApplicants()).thenReturn(applicants);
 
-        List<Applicant> applicantDao = dao.getApplicant();
+        List<Applicant> applicantDao = dao.getApplicants();
+        assertNotNull(applicantDao);
+        for (int i = 0; i < applicantDao.size(); i++) {
+            assertEquals(applicantDao.get(i).getId(), applicants.get(i).getId());
+            assertEquals(applicantDao.get(i).getUserId(), applicants.get(i).getUserId());
+            assertEquals(applicantDao.get(i).getFacultyId(), applicants.get(i).getFacultyId());
+            assertEquals(applicantDao.get(i).getMark(), applicants.get(i).getMark());
+        }
+    }
+
+    @Test
+    void getListNumber() {
+        List<Applicant> applicants = new ArrayList<>();
+        applicants.add(new Applicant(1L, 1L, 1L, 10));
+        applicants.add(new Applicant(2L, 2L, 2L, 10));
+        when(dao.getApplicants(2)).thenReturn(applicants);
+
+        List<Applicant> applicantDao = dao.getApplicants(2);
         assertNotNull(applicantDao);
         for (int i = 0; i < applicantDao.size(); i++) {
             assertEquals(applicantDao.get(i).getId(), applicants.get(i).getId());

@@ -29,13 +29,13 @@ public class TableServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        List<Applicant> applicants = applicantService.getApplicant();
+        List<Applicant> applicants = applicantService.getApplicants();
         request.setAttribute("applicants", applicants);
 
-        List<User> users = userService.getUser();
+        List<User> users = userService.getUsers();
         request.setAttribute("users", users);
 
-        List<Faculty> faculties = facultyService.getFaculty();
+        List<Faculty> faculties = facultyService.getFaculties();
         request.setAttribute("faculties", faculties);
 
         WebUtils.forward("table", request, response);

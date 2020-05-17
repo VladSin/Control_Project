@@ -103,9 +103,43 @@ class DefaultExamServiceTest {
         List<Exam> exams = new ArrayList<>();
         exams.add(new Exam(1L, 1L,"question1", "answer1"));
         exams.add(new Exam(2L, 2L,"question2", "answer2"));
-        when(dao.getExam()).thenReturn(exams);
+        when(dao.getExams()).thenReturn(exams);
 
-        List<Exam> examsDao = dao.getExam();
+        List<Exam> examsDao = dao.getExams();
+        assertNotNull(examsDao);
+        for (int i = 0; i < examsDao.size(); i++) {
+            assertEquals(examsDao.get(i).getId(), exams.get(i).getId());
+            assertEquals(examsDao.get(i).getFacultyId(), exams.get(i).getFacultyId());
+            assertEquals(examsDao.get(i).getQuestion(), exams.get(i).getQuestion());
+            assertEquals(examsDao.get(i).getAnswer(), exams.get(i).getAnswer());
+        }
+    }
+
+    @Test
+    void getListFaculty() {
+        List<Exam> exams = new ArrayList<>();
+        exams.add(new Exam(1L, 1L,"question1", "answer1"));
+        exams.add(new Exam(2L, 1L,"question2", "answer2"));
+        when(dao.getExams(1L)).thenReturn(exams);
+
+        List<Exam> examsDao = dao.getExams(1L);
+        assertNotNull(examsDao);
+        for (int i = 0; i < examsDao.size(); i++) {
+            assertEquals(examsDao.get(i).getId(), exams.get(i).getId());
+            assertEquals(examsDao.get(i).getFacultyId(), exams.get(i).getFacultyId());
+            assertEquals(examsDao.get(i).getQuestion(), exams.get(i).getQuestion());
+            assertEquals(examsDao.get(i).getAnswer(), exams.get(i).getAnswer());
+        }
+    }
+
+    @Test
+    void getListNumber() {
+        List<Exam> exams = new ArrayList<>();
+        exams.add(new Exam(1L, 1L,"question1", "answer1"));
+        exams.add(new Exam(2L, 2L,"question2", "answer2"));
+        when(dao.getExams(2)).thenReturn(exams);
+
+        List<Exam> examsDao = dao.getExams(2);
         assertNotNull(examsDao);
         for (int i = 0; i < examsDao.size(); i++) {
             assertEquals(examsDao.get(i).getId(), exams.get(i).getId());

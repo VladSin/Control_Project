@@ -11,6 +11,10 @@ import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -70,17 +74,43 @@ public class DefaultExamDao implements ExamDao {
        }
     }
 
+//    @Override
+//    public List<Exam> getExams() {
+//        final List<ExamEntity> examEntities = HibernateUtil.getSession().createQuery("from ExamEntity ")
+//                .list();
+//        return examEntities.stream()
+//                .map(ExamConverter::fromEntity)
+//                .collect(Collectors.toList());
+//    }
+
     @Override
-    public List<Exam> getExam() {
-        final List<ExamEntity> examEntities = HibernateUtil.getSession().createQuery("from ExamEntity ")
-                .list();
+    public List<Exam> getExams() {
+        Query<ExamEntity> query = HibernateUtil.getSession().createQuery("from ExamEntity ")
+                .setCacheable(true);
+        return query.stream()
+                .map(ExamConverter::fromEntity)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Exam> getExams(Long facultyId) {
+        final Session session = HibernateUtil.getSession();
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<ExamEntity> criteria = cb.createQuery(ExamEntity.class);
+        Root<ExamEntity> entityRoot = criteria.from(ExamEntity.class);
+        Predicate predicate = cb.and(
+                cb.equal(entityRoot.get("facultyId"),  facultyId)
+        );
+        criteria.select(entityRoot).where(predicate);
+
+        List<ExamEntity> examEntities = session.createQuery(criteria).getResultList();
         return examEntities.stream()
                 .map(ExamConverter::fromEntity)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public List<Exam> getExam(int number) {
+    public List<Exam> getExams(int number) {
         final List<ExamEntity> examEntities = HibernateUtil.getSession().createQuery("from ExamEntity ")
                 .setMaxResults(number)
                 .setFirstResult(0)

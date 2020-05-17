@@ -14,7 +14,9 @@ public interface ExamDao {
 
     Exam getExam(long id);
 
-    List<Exam> getExam();
+    List<Exam> getExams();
 
-    List<Exam> getExam(int number);
+    List<Exam> getExams(Long facultyId);
+
+    List<Exam> getExams(int number);
 }

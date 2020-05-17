@@ -104,9 +104,9 @@ class DefaultAuthUserServiceTest {
         List<AuthorizationUser> authorizationUserList = new ArrayList<>();
         authorizationUserList.add(new AuthorizationUser(1L, "login1", "password1", "role1"));
         authorizationUserList.add(new AuthorizationUser(2L, "login2", "password2", "role2"));
-        when(dao.getAuthUser()).thenReturn(authorizationUserList);
+        when(dao.getAuthUsers()).thenReturn(authorizationUserList);
 
-        List<AuthorizationUser> authorizationUsersDao = dao.getAuthUser();
+        List<AuthorizationUser> authorizationUsersDao = dao.getAuthUsers();
         assertNotNull(authorizationUsersDao);
         for (int i = 0; i < authorizationUserList.size(); i++) {
             assertEquals(authorizationUsersDao.get(i).getId(), authorizationUserList.get(i).getId());

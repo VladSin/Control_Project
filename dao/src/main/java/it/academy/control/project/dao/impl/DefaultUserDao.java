@@ -70,7 +70,7 @@ public class DefaultUserDao implements UserDao {
     }
 
     @Override
-    public List<User> getUser() {
+    public List<User> getUsers() {
         final List<UserEntity> userEntities = HibernateUtil.getSession().createQuery("from UserEntity ")
                 .list();
         return userEntities.stream()

@@ -5,14 +5,43 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/ApplicantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/ApplicantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/AuthUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/AuthUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/ExamDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/ExamDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/FacultyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/FacultyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/entity/ApplicantEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/entity/ApplicantEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/entity/AuthorizationUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/entity/AuthorizationUserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/entity/ExamEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/entity/ExamEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultApplicantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultApplicantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultAuthUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultAuthUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultExamDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultExamDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultFacultyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultFacultyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/ehcache.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultApplicantDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultApplicantDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultAuthUserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultAuthUserDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultExamDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultExamDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultFacultyDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultFacultyDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultUserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/control/project/dao/impl/DefaultUserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/ApplicantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/ApplicantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/AuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/AuthUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/ExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/ExamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/FacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/FacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultApplicantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultApplicantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultAuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultAuthUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultExamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultFacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultFacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/control/project/service/impl/DefaultUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultApplicantServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultApplicantServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultAuthUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultAuthUserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultExamServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultExamServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultFacultyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultFacultyServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultSecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultSecurityServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultUserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/FacultyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/FacultyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/ResultTestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/ResultTestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/TableServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/TableServlet.java" afterDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +50,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="47" />
+    <option name="myElementSize" value="15" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -49,12 +78,6 @@
         <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="university_test: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -115,21 +138,29 @@
       <recent name="it_academy.control_project.service.impl" />
       <recent name="it_academy.control_project.dao.impl" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="it_academy.control_project.dao.impl" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dell\control_project\dao\src\test\resources" />
       <recent name="C:\Users\dell\control_project\dao\src\test" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="it_academy.control_project.dao.impl" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.it.academy.control.project.dao.impl in dao">
+  <component name="RunManager" selected="JUnit.DefaultExamServiceTest.getListFaculty">
+    <configuration name="All in service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DefaultApplicantDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dao" />
       <extension name="coverage">
@@ -160,46 +191,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DefaultExamDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dao" />
+    <configuration name="DefaultExamServiceTest.getListFaculty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.academy.control.project.dao.impl.*" />
+          <option name="PATTERN" value="it.academy.control.project.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.academy.control.project.dao.impl" />
-      <option name="MAIN_CLASS_NAME" value="it.academy.control.project.dao.impl.DefaultExamDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DefaultUserDaoTest.getList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.academy.control.project.dao.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.academy.control.project.dao.impl" />
-      <option name="MAIN_CLASS_NAME" value="it.academy.control.project.dao.impl.DefaultUserDaoTest" />
-      <option name="METHOD_NAME" value="getList" />
+      <option name="PACKAGE_NAME" value="it.academy.control.project.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="it.academy.control.project.service.impl.DefaultExamServiceTest" />
+      <option name="METHOD_NAME" value="getListFaculty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="it.academy.control.project.dao.impl in dao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="it.academy.control.project.dao in dao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dao" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.academy.control.project.dao.impl.*" />
+          <option name="PATTERN" value="it.academy.control.project.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.academy.control.project.dao.impl" />
+      <option name="PACKAGE_NAME" value="it.academy.control.project.dao" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -292,21 +308,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.it.academy.control.project.dao in dao" />
       <item itemvalue="Remote.Unnamed" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
-      <item itemvalue="JUnit.DefaultExamDaoTest" />
       <item itemvalue="JUnit.DefaultAuthUserDaoTest" />
       <item itemvalue="JUnit.DefaultApplicantDaoTest" />
-      <item itemvalue="JUnit.DefaultUserDaoTest.getList" />
-      <item itemvalue="JUnit.it.academy.control.project.dao.impl in dao" />
+      <item itemvalue="JUnit.All in service" />
+      <item itemvalue="JUnit.DefaultExamServiceTest.getListFaculty" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.it.academy.control.project.dao.impl in dao" />
-        <item itemvalue="JUnit.DefaultUserDaoTest.getList" />
+        <item itemvalue="JUnit.DefaultExamServiceTest.getListFaculty" />
+        <item itemvalue="JUnit.All in service" />
+        <item itemvalue="JUnit.it.academy.control.project.dao in dao" />
         <item itemvalue="JUnit.DefaultApplicantDaoTest" />
         <item itemvalue="JUnit.DefaultAuthUserDaoTest" />
-        <item itemvalue="JUnit.DefaultExamDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +331,22 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="university@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="university@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@71d094d" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="university@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6454c362" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -365,7 +396,8 @@
       <workItem from="1589561024353" duration="2342000" />
       <workItem from="1589572914846" duration="6173000" />
       <workItem from="1589608868555" duration="9486000" />
-      <workItem from="1589626987205" duration="7136000" />
+      <workItem from="1589626987205" duration="16051000" />
+      <workItem from="1589704304985" duration="3792000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -521,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589618283930</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added methods with PAGINATION for classes: DefaultApplicantDao and DefaultExamDao and also tests for them">
+      <created>1589639264441</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1589639264441</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +599,8 @@
     <MESSAGE value="Final commit in this branch" />
     <MESSAGE value="Rewritten Dao module according to Hibernate + small changes" />
     <MESSAGE value="Covered by Service and Dao tests + small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Covered by Service and Dao tests + small changes" />
+    <MESSAGE value="Added methods with PAGINATION for classes: DefaultApplicantDao and DefaultExamDao and also tests for them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods with PAGINATION for classes: DefaultApplicantDao and DefaultExamDao and also tests for them" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="71" key="#Assign_Data_Sources" timestamp="1589187716303">
@@ -583,18 +623,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1586604909019" />
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589628542275">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589645650840">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589628542275" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589645650840" />
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1589635519416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1589635519416" />
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1589630110662">
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1589641697546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589630110662" />
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589641697546" />
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586602459956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -603,58 +643,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="272" width="469" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1589219692924" />
-    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589475338646">
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589641443816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1589475338646" />
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1589641443816" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589578915659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589578915659" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1589642576811">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589642576811" />
     <state x="449" y="57" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1586803747191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="57" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1536.824@0.0.1536.824" timestamp="1586803747191" />
-    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1589618280583">
+    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1589639262788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589618280583" />
+    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589639262788" />
     <state x="271" y="112" key="FileChooserDialogImpl" timestamp="1586719032206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="271" y="112" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586719032206" />
-    <state width="1493" height="181" key="GridCell.Tab.0.bottom" timestamp="1589638994215">
+    <state width="1493" height="184" key="GridCell.Tab.0.bottom" timestamp="1589706538169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589638994215" />
-    <state width="1493" height="181" key="GridCell.Tab.0.center" timestamp="1589638994215">
+    <state width="1493" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589706538169" />
+    <state width="1493" height="184" key="GridCell.Tab.0.center" timestamp="1589706538169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589638994215" />
-    <state width="1493" height="181" key="GridCell.Tab.0.left" timestamp="1589638994215">
+    <state width="1493" height="184" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589706538169" />
+    <state width="1493" height="184" key="GridCell.Tab.0.left" timestamp="1589706538168">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589638994215" />
-    <state width="1493" height="181" key="GridCell.Tab.0.right" timestamp="1589638994215">
+    <state width="1493" height="184" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589706538168" />
+    <state width="1493" height="184" key="GridCell.Tab.0.right" timestamp="1589706538169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589638994215" />
-    <state width="1493" height="280" key="GridCell.Tab.1.bottom" timestamp="1589579180266">
+    <state width="1493" height="184" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589706538169" />
+    <state width="1493" height="184" key="GridCell.Tab.1.bottom" timestamp="1589706538169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="280" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589579180266" />
-    <state width="1493" height="280" key="GridCell.Tab.1.center" timestamp="1589579180266">
+    <state width="1493" height="184" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589706538169" />
+    <state width="1493" height="184" key="GridCell.Tab.1.center" timestamp="1589706538169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="280" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589579180266" />
-    <state width="1493" height="280" key="GridCell.Tab.1.left" timestamp="1589579180266">
+    <state width="1493" height="184" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589706538169" />
+    <state width="1493" height="184" key="GridCell.Tab.1.left" timestamp="1589706538169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="280" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589579180266" />
-    <state width="1493" height="280" key="GridCell.Tab.1.right" timestamp="1589579180266">
+    <state width="1493" height="184" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589706538169" />
+    <state width="1493" height="184" key="GridCell.Tab.1.right" timestamp="1589706538169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="280" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589579180266" />
+    <state width="1493" height="184" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589706538169" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1586682523317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -671,18 +715,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586719146331" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589618288879">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589639272643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589618288879" />
-    <state x="656" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589635302161">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589639272643" />
+    <state x="656" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589647414933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="656" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1589635302161" />
-    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog" timestamp="1586627360601">
+    <state x="656" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1589647414933" />
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog" timestamp="1589646995726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1586627360601" />
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1589646995726" />
     <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1586596849194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -707,10 +751,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586339890177" />
-    <state x="528" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587064491575">
+    <state x="528" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589705019975">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="528" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1587064491575" />
+    <state x="528" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1589705019975" />
     <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1586803528307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -741,22 +785,40 @@
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587061964790" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/control_project$DefaultApplicantDaoTest.ic" NAME="DefaultApplicantDaoTest Coverage Results" MODIFIED="1589638755957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/control_project$DefaultApplicantDaoTest.ic" NAME="DefaultApplicantDaoTest Coverage Results" MODIFIED="1589706005731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>it.academy.control.project.dao.impl.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/control_project$DefaultExamDaoTest.ic" NAME="DefaultExamDaoTest Coverage Results" MODIFIED="1589638253229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>it.academy.control.project.dao.impl.*</FILTER>
+    <SUITE FILE_PATH="coverage/control_project$it_academy_control_project_service_impl_in_service.ic" NAME="it.academy.control.project.service.impl in service Coverage Results" MODIFIED="1589643154697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.service.impl.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/control_project$All_in_service.ic" NAME="All in service Coverage Results" MODIFIED="1589618036670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/control_project$it_academy_control_project_dao_impl_in_dao.ic" NAME="it.academy.control.project.dao.impl in dao Coverage Results" MODIFIED="1589638994147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>it.academy.control.project.dao.impl.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/control_project$All_in_dao.ic" NAME="All in dao Coverage Results" MODIFIED="1589617944926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/control_project$it_academy_control_project_dao_converter_in_dao.ic" NAME="it.academy.control.project.dao.converter in dao Coverage Results" MODIFIED="1589617771872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/control_project$ApplicantConverterTest.ic" NAME="ApplicantConverterTest Coverage Results" MODIFIED="1589643047043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>it.academy.control.project.dao.converter.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/control_project$DefaultAuthUserDaoTest.ic" NAME="DefaultAuthUserDaoTest Coverage Results" MODIFIED="1589638481488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/control_project$All_in_service.ic" NAME="All in service Coverage Results" MODIFIED="1589706132265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/control_project$it_academy_control_project_dao_in_dao.ic" NAME="it.academy.control.project.dao in dao Coverage Results" MODIFIED="1589706063265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.dao.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/control_project$DefaultSecurityServiceTest_login.ic" NAME="DefaultSecurityServiceTest.login Coverage Results" MODIFIED="1589643424891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/control_project$All_in_dao.ic" NAME="All in dao Coverage Results" MODIFIED="1589643091771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/control_project$DefaultAuthUserDaoTest.ic" NAME="DefaultAuthUserDaoTest Coverage Results" MODIFIED="1589705933612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>it.academy.control.project.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/control_project$DefaultApplicantServiceTest.ic" NAME="DefaultApplicantServiceTest Coverage Results" MODIFIED="1589644091098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/control_project$DefaultExamDaoTest.ic" NAME="DefaultExamDaoTest Coverage Results" MODIFIED="1589705683017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/control_project$it_academy_control_project_dao_impl_in_dao.ic" NAME="it.academy.control.project.dao.impl in dao Coverage Results" MODIFIED="1589642730927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/control_project$it_academy_control_project_dao_converter_in_dao.ic" NAME="it.academy.control.project.dao.converter in dao Coverage Results" MODIFIED="1589643065384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.dao.converter.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/control_project$DefaultExamServiceTest.ic" NAME="DefaultExamServiceTest Coverage Results" MODIFIED="1589643986157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.academy.control.project.service.impl.*</FILTER>
     </SUITE>
   </component>
 </project>

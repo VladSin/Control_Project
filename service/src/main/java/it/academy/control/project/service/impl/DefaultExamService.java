@@ -39,7 +39,17 @@ public class DefaultExamService implements ExamService {
     }
 
     @Override
-    public List<Exam> getExam() {
-        return examDao.getExam();
+    public List<Exam> getExams() {
+        return examDao.getExams();
+    }
+
+    @Override
+    public List<Exam> getExams(Long facultyId) {
+        return examDao.getExams(facultyId);
+    }
+
+    @Override
+    public List<Exam> getExams(int number) {
+        return examDao.getExams(number);
     }
 }

@@ -39,7 +39,7 @@ public class DefaultFacultyService implements FacultyService {
     }
 
     @Override
-    public List<Faculty> getFaculty() {
-        return facultyDao.getFaculty();
+    public List<Faculty> getFaculties() {
+        return facultyDao.getFaculties();
     }
 }

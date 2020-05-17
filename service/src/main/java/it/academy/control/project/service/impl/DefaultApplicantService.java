@@ -39,7 +39,12 @@ public class DefaultApplicantService implements ApplicantService {
     }
 
     @Override
-    public List<Applicant> getApplicant() {
-        return applicantDao.getApplicant();
+    public List<Applicant> getApplicants() {
+        return applicantDao.getApplicants();
+    }
+
+    @Override
+    public List<Applicant> getApplicants(int number) {
+        return applicantDao.getApplicants(number);
     }
 }

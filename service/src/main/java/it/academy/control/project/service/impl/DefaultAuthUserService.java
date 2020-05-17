@@ -39,7 +39,7 @@ public class DefaultAuthUserService implements AuthUserService {
     }
 
     @Override
-    public List<AuthorizationUser> getAuthUser() {
-        return authUserDao.getAuthUser();
+    public List<AuthorizationUser> getAuthUsers() {
+        return authUserDao.getAuthUsers();
     }
 }

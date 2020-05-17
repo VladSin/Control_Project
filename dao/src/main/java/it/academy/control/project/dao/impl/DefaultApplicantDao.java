@@ -7,6 +7,7 @@ import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.Applicant;
 
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -70,16 +71,16 @@ public class DefaultApplicantDao implements ApplicantDao {
     }
 
     @Override
-    public List<Applicant> getApplicant() {
-        final List<ApplicantEntity> applicantEntities = HibernateUtil.getSession().createQuery("from ApplicantEntity ")
-                .list();
-        return applicantEntities.stream()
+    public List<Applicant> getApplicants() {
+        Query<ApplicantEntity> query = HibernateUtil.getSession().createQuery("from ApplicantEntity ")
+                .setCacheable(true);
+        return query.stream()
                 .map(ApplicantConverter::fromEntity)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public List<Applicant> getApplicant(int number) {
+    public List<Applicant> getApplicants(int number) {
         final List<ApplicantEntity> applicantEntities = HibernateUtil.getSession().createQuery("from ApplicantEntity ")
                 .setMaxResults(number)
                 .setFirstResult(0)

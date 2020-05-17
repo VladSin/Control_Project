@@ -7,6 +7,7 @@ import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.AuthorizationUser;
 
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -71,10 +72,10 @@ public class DefaultAuthUserDao implements AuthUserDao {
     }
 
     @Override
-    public List<AuthorizationUser> getAuthUser() {
-        final List<AuthorizationUserEntity> authUser = HibernateUtil.getSession().createQuery("from AuthorizationUserEntity")
-                .list();
-        return authUser.stream()
+    public List<AuthorizationUser> getAuthUsers() {
+        Query<AuthorizationUserEntity> query = HibernateUtil.getSession().createQuery("from AuthorizationUserEntity")
+                .setCacheable(true);
+        return query.stream()
                 .map(AuthorizationUserConverter::fromEntity)
                 .collect(Collectors.toList());
     }

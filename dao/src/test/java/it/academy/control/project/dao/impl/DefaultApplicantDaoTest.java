@@ -86,7 +86,7 @@ class DefaultApplicantDaoTest {
             assertEquals(applicantList.get(i).getFacultyId(), applicants.get(i).getFacultyId());
             assertEquals(applicantList.get(i).getMark(), applicants.get(i).getMark());
         }
-        applicants = applicantDao.getApplicant();
+        applicants = applicantDao.getApplicants();
         assertNotNull(applicants);
     }
 
@@ -108,7 +108,7 @@ class DefaultApplicantDaoTest {
             assertEquals(applicantList.get(i).getMark(), applicants.get(i).getMark());
         }
 
-        applicants = applicantDao.getApplicant(1);
+        applicants = applicantDao.getApplicants(1);
         assertNotNull(applicants);
     }
 }

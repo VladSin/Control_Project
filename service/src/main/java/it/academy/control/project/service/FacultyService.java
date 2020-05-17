@@ -14,5 +14,5 @@ public interface FacultyService {
 
     Faculty getFaculty(long id);
 
-    List<Faculty> getFaculty();
+    List<Faculty> getFaculties();
 }

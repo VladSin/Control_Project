@@ -70,7 +70,7 @@ public class DefaultFacultyDao implements FacultyDao {
     }
 
     @Override
-    public List<Faculty> getFaculty() {
+    public List<Faculty> getFaculties() {
         final List<FacultyEntity> facultyEntities = HibernateUtil.getSession().createQuery("from FacultyEntity")
                 .list();
         return facultyEntities.stream()

@@ -32,23 +32,23 @@ public class FacultyServlet extends HttpServlet {
             WebUtils.forward("exam", request, response);
         } else if (subject.equals("Programming")){
 
-            Faculty exam = facultyService.getFaculty(1);
-            log.info("faculty {} logged", exam.getId());
-            request.getSession().setAttribute("test", exam);
+            Faculty faculty = facultyService.getFaculty(1);
+            log.info("faculty {} logged", 1);
+            request.getSession().setAttribute("test", faculty);
             WebUtils.redirect("/prog", request, response);
             return;
         } else if (subject.equals("Mathematics")){
 
-            Faculty exam = facultyService.getFaculty(2);
-            log.info("faculty {} logged", exam.getId());
-            request.getSession().setAttribute("test", exam);
+            Faculty faculty = facultyService.getFaculty(2);
+            log.info("faculty {} logged", 2);
+            request.getSession().setAttribute("test", faculty);
             WebUtils.redirect("/math", request, response);
             return;
         } else if (subject.equals("Physics")){
 
-            Faculty exam = facultyService.getFaculty(3);
-            log.info("faculty {} logged", exam.getId());
-            request.getSession().setAttribute("test", exam);
+            Faculty faculty = facultyService.getFaculty(3);
+            log.info("faculty {} logged", 3);
+            request.getSession().setAttribute("test", faculty);
             WebUtils.redirect("/phys", request, response);
             return;
         }

@@ -107,9 +107,9 @@ class DefaultUserServiceTest {
         List<User> users = new ArrayList<>();
         users.add(new User(1L, "User1", "User1", "+375299999999", "user1@mail.ru"));
         users.add(new User(2L, "User2", "User2", "+375299999999", "user2@mail.ru"));
-        when(dao.getUser()).thenReturn(users);
+        when(dao.getUsers()).thenReturn(users);
 
-        List<User> userDao = dao.getUser();
+        List<User> userDao = dao.getUsers();
         assertNotNull(userDao);
         for (int i = 0; i < userDao.size(); i++) {
             assertEquals(userDao.get(i).getId(), users.get(i).getId());

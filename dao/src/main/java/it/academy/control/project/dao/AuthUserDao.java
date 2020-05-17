@@ -14,5 +14,5 @@ public interface AuthUserDao {
 
     AuthorizationUser getAuthUser(long id);
 
-    List<AuthorizationUser> getAuthUser();
+    List<AuthorizationUser> getAuthUsers();
 }

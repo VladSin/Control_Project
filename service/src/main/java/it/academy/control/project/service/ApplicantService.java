@@ -14,5 +14,7 @@ public interface ApplicantService {
 
     Applicant getApplicant(long id);
 
-    List<Applicant> getApplicant();
+    List<Applicant> getApplicants();
+
+    List<Applicant> getApplicants(int number);
 }

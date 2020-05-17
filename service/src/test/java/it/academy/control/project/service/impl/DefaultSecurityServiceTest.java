@@ -23,11 +23,19 @@ public class DefaultSecurityServiceTest {
 
     @Test
     void login(){
-        when(dao.login("login", "password")).thenReturn(new AuthorizationUser(1L,"login", "password", "role"));
-        final AuthorizationUser userFromDb = dao.login("login", "password");
+        when(dao.login("User", "User")).thenReturn(new AuthorizationUser(1L,"User", "User", "role"));
+        when(dao.login("Teacher", "Teacher")).thenReturn(new AuthorizationUser(2L,"Teacher", "Teacher", "role"));
+
+        AuthorizationUser userFromDb = dao.login("User", "User");
         assertNotNull(userFromDb);
-        assertEquals(userFromDb.getLogin(), "login");
-        assertEquals(userFromDb.getPassword(),"password");
+        assertEquals(userFromDb.getLogin(), "User");
+        assertEquals(userFromDb.getPassword(),"User");
+        assertEquals(userFromDb.getRole(), "role");
+
+        userFromDb = dao.login("Teacher", "Teacher");
+        assertNotNull(userFromDb);
+        assertEquals(userFromDb.getLogin(), "Teacher");
+        assertEquals(userFromDb.getPassword(),"Teacher");
         assertEquals(userFromDb.getRole(), "role");
     }
 }

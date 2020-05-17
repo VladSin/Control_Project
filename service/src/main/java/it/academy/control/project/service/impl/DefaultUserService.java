@@ -39,7 +39,7 @@ public class DefaultUserService implements UserService {
     }
 
     @Override
-    public List<User> getUser() {
-        return userDao.getUser();
+    public List<User> getUsers() {
+        return userDao.getUsers();
     }
 }

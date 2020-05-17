@@ -1,6 +1,7 @@
 package it.academy.control.project.service.impl;
 
 import it.academy.control.project.dao.FacultyDao;
+import it.academy.control.project.data.Exam;
 import it.academy.control.project.data.Faculty;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -109,6 +110,23 @@ class DefaultFacultyServiceTest {
             assertEquals(facultiesDao.get(i).getId(), faculties.get(i).getId());
             assertEquals(facultiesDao.get(i).getFaculty(), faculties.get(i).getFaculty());
             assertEquals(facultiesDao.get(i).getMark(), faculties.get(i).getMark());
+        }
+    }
+
+    @Test
+    void getExam(){
+        List<Exam> exams = new ArrayList<>();
+        exams.add(new Exam(1L, 1L, "question1", "answer1"));
+        exams.add(new Exam(2L, 2L, "question2", "answer2"));
+        when(dao.getExamForFaculty()).thenReturn(exams);
+
+        List<Exam> examsDao = dao.getExamForFaculty();
+        assertNotNull(examsDao);
+        for (int i = 0; i < examsDao.size(); i++) {
+            assertEquals(examsDao.get(i).getId(), exams.get(i).getId());
+            assertEquals(examsDao.get(i).getFacultyId(), exams.get(i).getFacultyId());
+            assertEquals(examsDao.get(i).getQuestion(), exams.get(i).getQuestion());
+            assertEquals(examsDao.get(i).getAnswer(), exams.get(i).getAnswer());
         }
     }
 }

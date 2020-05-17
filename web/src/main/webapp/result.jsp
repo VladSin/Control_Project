@@ -10,6 +10,8 @@
 <html>
 <head>
     <title>Результаты теста</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/backgroundStyle.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/tableStyle.css">
 </head>
 <body>
 <br>
@@ -23,33 +25,25 @@
     </c:if>
 
     <table>
-        <tr>
-        <br>
-            <th>Ваш результат: </th>
-            <th><c:out value="${applicant.mark}"/></th>
-        </tr>
-
-        <tr>
-            <th>Требования факультета: </th>
-            <th><c:out value="${faculty.mark}"/></th>
-        </tr>
+        <tr><th>Ваш результат</th><th>Требования факультета</th></tr>
+        <tr><td><c:out value="${applicant.mark}"/></td><td><c:out value="${faculty.mark}"/></tr>
     </table>
-    <h3 style="color: blue">Ответы на Ваш экзамен</h3>
+    <h2 style="color: blue">Ответы на Ваш экзамен</h2>
     <table>
+        <tr><th>Вопросы</th><th>Ответы</th></tr>
         <c:if test="${exams != null}">
             <c:forEach items="${exams}" var="exam">
                 <c:if test="${exam.facultyId == applicant.facultyId}">
-                    <table>
-                        <tr>
-                            <td>Вопрос: ${exam.question}</td>
-                            <td>Ответ: ${exam.answer}</td>
-                        </tr>
-                    </table>
+                    <tr>
+                        <td>${exam.question}</td>
+                        <td>${exam.answer}</td>
+                    </tr>
                 </c:if>
             </c:forEach>
         </c:if>
+
     </table>
-    <a href="${pageContext.request.contextPath}/index.jsp">Вернуться на начальную страницу</a>
+    <a href="${pageContext.request.contextPath}/index.jsp">Return</a>
 </center>
 </body>
 </html>

@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Тест</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/listStyle.css">
 </head>
 <body onload="var v_date_init = new Date(); tm_init = v_date_init.getTime();">
 
@@ -20,14 +21,14 @@
         <div class="question">
             <span class="question_n">Physics: question 1: </span> Angle of incidence is equal to angle of reflection
         </div>
-        <ul>
+        <ul class="pills">
             <li><input type="radio" name="test[6]" value="0" id="test_6_0"  /> <label for="test_6_0">True</label></li>
             <li><input type="radio" name="test[6]" value="1" id="test_6_1"  /> <label for="test_6_1">False</label></li>
         </ul>
         <div class="question">
             <span class="question_n">Physics: question 2: </span> 123, 117, 108, 99, ?
         </div>
-        <ul>
+        <ul class="pills">
             <li><input type="radio" name="test[7]" value="0" id="test_7_0"  /> <label for="test_7_0">81</label></li>
             <li><input type="radio" name="test[7]" value="1" id="test_7_1"  /> <label for="test_7_1">83</label></li>
             <li><input type="radio" name="test[7]" value="2" id="test_7_2"  /> <label for="test_7_2">85</label></li>
@@ -36,7 +37,7 @@
         <div class="question">
             <span class="question_n">Physics: question 3: </span> Who was the first author of the theory of relativity?
         </div>
-        <ul>
+        <ul class="pills">
             <li><input type="radio" name="test[8]" value="0" id="test_8_0"  /> <label for="test_8_0">Einstein</label></li>
             <li><input type="radio" name="test[8]" value="1" id="test_8_1"  /> <label for="test_8_1">Ampere</label></li>
             <li><input type="radio" name="test[8]" value="2" id="test_8_2"  /> <label for="test_8_2">Tesla</label></li>
@@ -44,7 +45,7 @@
             <li><input type="radio" name="test[8]" value="4" id="test_8_4"  /> <label for="test_8_4">Poincare</label></li>
         </ul>
 
-        <input type="submit" name="input_submit" value="Узнать результат" />
+        <input type="submit" name="input_submit" value="Check" />
     </div>
 </form>
 

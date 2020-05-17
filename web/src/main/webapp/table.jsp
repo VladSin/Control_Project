@@ -11,35 +11,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Таблица абитуриентов</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/backgroundStyle.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/tableStyle.css">
 </head>
-<body style="color:burlywood; background-color:#FFFFFF">
+<body>
 <center>
-    <h3 style="color: darkslateblue">Список сдачи тестирования</h3>
-    <c:if test="${applicants != null}">
-        <c:forEach items="${applicants}" var="applicant">
-            <c:forEach items="${users}" var="user">
-
-                <table>
-                    <tr>
+    <h1 style="color: darkslateblue">Список сдачи тестирования</h1>
+    <table>
+        <tr><th>Имя</th><th>Фамилия</th><th>Балл за тест</th></tr>
+        <c:if test="${applicants != null}">
+            <c:forEach items="${applicants}" var="applicant">
+                <c:forEach items="${users}" var="user">
                         <c:if test="${applicant.userId == user.id}">
                             <c:if test="${applicant.mark >= 8}">
-                                <th style="color: green">Абитуриента: ${user.name}</th>
-                                <th style="color: green">${user.surname}</th>
-                                <th style="color: green">Оцека: ${applicant.mark}</th>
+                                <tr>
+                                    <td style="color: green">${user.name}</td>
+                                    <td style="color: green">${user.surname}</td>
+                                    <td style="color: green">${applicant.mark}</td>
+                                </tr>
                             </c:if>
                             <c:if test="${applicant.mark < 8}">
-                                <th style="color: red">Абитуриента: ${user.name}</th>
-                                <th style="color: red">${user.surname}</th>
-                                <th style="color: red">Оцека: ${applicant.mark}</th>
+                                <tr>
+                                    <td style="color: red">${user.name}</td>
+                                    <td style="color: red">${user.surname}</td>
+                                    <td style="color: red">${applicant.mark}</td>
+                                </tr>
                             </c:if>
                         </c:if>
-                    </tr>
-                </table>
-
+                </c:forEach>
             </c:forEach>
-        </c:forEach>
-    </c:if>
-    <a href="${pageContext.request.contextPath}/index.jsp">Вернуться на начальную страницу</a>
+        </c:if>
+    </table>
+
+    <a href="${pageContext.request.contextPath}/index.jsp">Return</a>
 </center>
 </body>
 </html>

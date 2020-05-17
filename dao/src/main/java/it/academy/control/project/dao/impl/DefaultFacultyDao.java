@@ -1,9 +1,12 @@
 package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.FacultyDao;
+import it.academy.control.project.dao.converter.ExamConverter;
 import it.academy.control.project.dao.converter.FacultyConverter;
+import it.academy.control.project.dao.entity.ExamEntity;
 import it.academy.control.project.dao.entity.FacultyEntity;
 import it.academy.control.project.dao.util.HibernateUtil;
+import it.academy.control.project.data.Exam;
 import it.academy.control.project.data.Faculty;
 
 import org.hibernate.Session;
@@ -75,6 +78,18 @@ public class DefaultFacultyDao implements FacultyDao {
                 .list();
         return facultyEntities.stream()
                 .map(FacultyConverter::fromEntity)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Exam> getExamForFaculty(){
+        FacultyEntity facultyEntity = new FacultyEntity();
+        facultyEntity.setExamEntities(new DefaultExamDao().getExams().stream()
+                .map(ExamConverter::toEntity)
+                .collect(Collectors.toList()));
+
+        return facultyEntity.getExamEntities().stream()
+                .map(ExamConverter::fromEntity)
                 .collect(Collectors.toList());
     }
 }

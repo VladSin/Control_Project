@@ -12,12 +12,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Ввод данных пользователя</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/backgroundStyle.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/formStyle.css">
 </head>
 
 <body>
-<a href="${pageContext.request.contextPath}/logout"></a>
+<a href="${pageContext.request.contextPath}/logout">Login</a>
 <center>
-    <h2 style="color: green">Введите свои данные</h2>
+    <h1 style="color: green">Введите свои данные</h1>
     <form action="${pageContext.request.contextPath}/user" method="post">
 
         <label for="name"></label>
@@ -32,7 +34,7 @@
         <label for="email"></label>
         <input id="email" type="text" name="email" placeholder="Email"><br/>
 
-        <input type="submit">
+        <input type="submit" value="Submit">
     </form>
     <p style="color: red">${error}</p>
 </center>

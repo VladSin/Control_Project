@@ -10,6 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Страница для абитуриентов</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/backgroundStyle.css">
 </head>
 <body>
 <center>
@@ -19,13 +20,13 @@
     <form action="${pageContext.request.contextPath}/faculty" method="post">
 
         <label for="exam"></label>
-        <input id="exam" type="text" name="exam" placeholder="Field of the choice" list="examinations" />
+        <input id="exam" type="text" name="exam" placeholder="Choice" list="examinations" />
         <datalist id="examinations">
             <option value="Programming">
             <option value="Mathematics">
             <option value="Physics">
         </datalist>
-        <input type="submit" name="exam" value="Начать" />
+        <input type="submit" name="exam" value="Start" />
 
     </form>
 </center>

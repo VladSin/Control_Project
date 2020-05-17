@@ -9,6 +9,8 @@
 <html>
 <head>
     <title>Начальная страница</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/backgroundStyle.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/topTextStyle.css">
 </head>
 <body>
 <center>

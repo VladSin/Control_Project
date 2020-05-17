@@ -36,7 +36,8 @@ public class ResultTestServlet extends HttpServlet {
         Faculty faculty = facultyService.getFaculty(applicant.getFacultyId());
         request.setAttribute("faculty", faculty);
 
-        List<Exam> exams = examService.getExams();
+        List<Exam> exams = facultyService.getExamForFaculty();
+        //List<Exam> exams = examService.getExams();
         request.setAttribute("exams", exams);
 
         WebUtils.forward("result", request, response);

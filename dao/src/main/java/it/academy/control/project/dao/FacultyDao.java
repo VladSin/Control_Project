@@ -1,5 +1,6 @@
 package it.academy.control.project.dao;
 
+import it.academy.control.project.data.Exam;
 import it.academy.control.project.data.Faculty;
 
 import java.util.List;
@@ -15,4 +16,6 @@ public interface FacultyDao {
     Faculty getFaculty(long id);
 
     List<Faculty> getFaculties();
+
+    List<Exam> getExamForFaculty();
 }

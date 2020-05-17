@@ -2,6 +2,7 @@ package it.academy.control.project.service.impl;
 
 import it.academy.control.project.dao.FacultyDao;
 import it.academy.control.project.dao.impl.DefaultFacultyDao;
+import it.academy.control.project.data.Exam;
 import it.academy.control.project.data.Faculty;
 import it.academy.control.project.service.FacultyService;
 
@@ -41,5 +42,10 @@ public class DefaultFacultyService implements FacultyService {
     @Override
     public List<Faculty> getFaculties() {
         return facultyDao.getFaculties();
+    }
+
+    @Override
+    public List<Exam> getExamForFaculty() {
+        return facultyDao.getExamForFaculty();
     }
 }

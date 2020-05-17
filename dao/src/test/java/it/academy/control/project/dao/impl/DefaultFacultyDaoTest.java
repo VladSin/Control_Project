@@ -2,6 +2,7 @@ package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.FacultyDao;
 import it.academy.control.project.dao.util.HibernateUtil;
+import it.academy.control.project.data.Exam;
 import it.academy.control.project.data.Faculty;
 import org.junit.AfterClass;
 import org.junit.jupiter.api.Test;
@@ -88,6 +89,21 @@ class DefaultFacultyDaoTest {
         }
         faculties = facultyDao.getFaculties();
         assertNotNull(faculties);
+    }
+
+    @Test
+    void getExams(){
+        List<Exam> exams = new ArrayList<>();
+        exams.add(new Exam(null, 1L,"question1", "answer1"));
+        exams.add(new Exam(null, 2L,"question2", "answer2"));
+
+        List<Exam> examList = new ArrayList<>();
+        for (Exam f: exams) {
+            examList.add(DefaultExamDao.getInstance().saveExam(f));
+        }
+        assertNotNull(examList);
+        exams = facultyDao.getExamForFaculty();
+        assertNotNull(exams);
     }
 
     @AfterClass

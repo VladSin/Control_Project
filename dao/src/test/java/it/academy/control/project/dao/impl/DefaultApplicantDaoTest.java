@@ -9,6 +9,8 @@ import it.academy.control.project.data.Applicant;
 import it.academy.control.project.data.AuthorizationUser;
 import it.academy.control.project.data.User;
 import org.hibernate.Session;
+import org.junit.AfterClass;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -74,24 +76,6 @@ class DefaultApplicantDaoTest {
 
         assertEquals(userToSave.getId(), applicantToSave.getUserId());
     }
-//    @Test
-//    void getApplicant() {
-//        final ApplicantEntity applicantEntity = new ApplicantEntity(null, 1L, 1L, 10, null);
-//        final UserEntity userEntity = new UserEntity(null, "name", "surname", "phone","email", null);
-//
-//        userEntity.setApplicantEntity(applicantEntity);
-//        applicantEntity.setUserEntity(userEntity);
-//
-//        final Session session = HibernateUtil.getSession();
-//        session.beginTransaction();
-//        session.save(userEntity);
-//        session.save(applicantEntity);
-//        session.getTransaction().commit();
-//
-//        final User user = DefaultUserDao.getInstance().getUser(1L);
-//        final Applicant applicant = applicantDao.getApplicant(user.getId());
-//        assertNotNull(applicant);
-//    }
 
     @Test
     void getList(){
@@ -134,5 +118,10 @@ class DefaultApplicantDaoTest {
 
         applicants = applicantDao.getApplicants(1);
         assertNotNull(applicants);
+    }
+
+    @AfterClass
+    public void cleanUp() {
+        HibernateUtil.closeEMFactory();
     }
 }

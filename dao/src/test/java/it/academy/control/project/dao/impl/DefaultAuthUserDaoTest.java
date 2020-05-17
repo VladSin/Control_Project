@@ -1,7 +1,9 @@
 package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.AuthUserDao;
+import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.AuthorizationUser;
+import org.junit.AfterClass;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -88,5 +90,10 @@ class DefaultAuthUserDaoTest {
         }
         authUser = authUserDao.getAuthUsers();
         assertNotNull(authUser);
+    }
+
+    @AfterClass
+    public void cleanUp() {
+        HibernateUtil.closeEMFactory();
     }
 }

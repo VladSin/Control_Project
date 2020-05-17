@@ -2,6 +2,7 @@ package it.academy.control.project.dao.entity;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import sun.management.snmp.util.SnmpTableCache;
 
 import javax.persistence.*;
 
@@ -11,15 +12,32 @@ import javax.persistence.*;
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class ExamEntity {
 
-    private Long id;
-    private Long facultyId;
-    private String question;
-    private String answer;
-
-    public ExamEntity(){}
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "faculty_id", updatable = false, insertable = false)
+    private Long facultyId;
+
+    @Column(name = "question")
+    private String question;
+
+    @Column(name = "answer")
+    private String answer;
+
+    @ManyToOne
+    @JoinColumn(name = "faculty_id")
+    private FacultyEntity facultyEntity;
+
+    public ExamEntity(){}
+    public ExamEntity(Long id, Long facultyId, String question, String answer, FacultyEntity facultyEntity){
+        this.id = id;
+        this.facultyId = facultyId;
+        this.question = question;
+        this.answer = answer;
+        this.facultyEntity = facultyEntity;
+    }
+
     public Long getId() {
         return id;
     }
@@ -27,7 +45,6 @@ public class ExamEntity {
         this.id = id;
     }
 
-    @Column(name = "faculty_id")
     public Long getFacultyId() {
         return facultyId;
     }
@@ -35,7 +52,6 @@ public class ExamEntity {
         this.facultyId = facultyId;
     }
 
-    @Column(name = "question")
     public String getQuestion() {
         return question;
     }
@@ -43,11 +59,17 @@ public class ExamEntity {
         this.question = question;
     }
 
-    @Column(name = "answer")
     public String getAnswer() {
         return answer;
     }
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public FacultyEntity getFacultyEntity() {
+        return facultyEntity;
+    }
+    public void setFacultyEntity(FacultyEntity facultyEntity) {
+        this.facultyEntity = facultyEntity;
     }
 }

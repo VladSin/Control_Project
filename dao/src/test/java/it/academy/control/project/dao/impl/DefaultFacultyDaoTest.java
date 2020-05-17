@@ -1,7 +1,9 @@
 package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.FacultyDao;
+import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.Faculty;
+import org.junit.AfterClass;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -86,5 +88,10 @@ class DefaultFacultyDaoTest {
         }
         faculties = facultyDao.getFaculties();
         assertNotNull(faculties);
+    }
+
+    @AfterClass
+    public void cleanUp() {
+        HibernateUtil.closeEMFactory();
     }
 }

@@ -1,7 +1,10 @@
 package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.ExamDao;
+import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.Exam;
+import it.academy.control.project.data.Faculty;
+import org.junit.AfterClass;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -57,16 +60,15 @@ class DefaultExamDaoTest {
 
     @Test
     void getExam() {
-        final Exam examToSave = new Exam(null, 1L, "question", "answer");
-        final Exam savedExam = examDao.saveExam(examToSave);
-        final Long id = savedExam.getId();
+        final Faculty faculty = new Faculty(null, "faculty", 10);
+        Faculty facultyToSave = DefaultFacultyDao.getInstance().saveFaculty(faculty);
+        assertNotNull(facultyToSave);
 
-        final Exam exam = examDao.getExam(id);
-        assertNotNull(exam);
+        final Exam exam = new Exam(null, facultyToSave.getId(), "question", "answer");
+        Exam examToSave = examDao.saveExam(exam);
+        assertNotNull(examToSave);
 
-        assertEquals(examToSave.getFacultyId(), exam.getFacultyId());
-        assertEquals(examToSave.getQuestion(), exam.getQuestion());
-        assertEquals(examToSave.getAnswer(), exam.getAnswer());
+        assertEquals(facultyToSave.getId(), examToSave.getFacultyId());
     }
 
     @Test
@@ -127,5 +129,10 @@ class DefaultExamDaoTest {
         }
         faculties = examDao.getExams(1);
         assertNotNull(faculties);
+    }
+
+    @AfterClass
+    public void cleanUp() {
+        HibernateUtil.closeEMFactory();
     }
 }

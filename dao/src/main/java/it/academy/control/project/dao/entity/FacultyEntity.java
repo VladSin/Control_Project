@@ -1,19 +1,36 @@
 package it.academy.control.project.dao.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "faculty")
 public class FacultyEntity {
 
-    private Long id;
-    private String faculty;
-    private int mark;
-
-    public FacultyEntity(){}
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "faculty")
+    private String faculty;
+
+    @Column(name = "mark")
+    private int mark;
+
+    @OneToMany(mappedBy = "facultyEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ExamEntity> examEntities = new ArrayList<>();
+
+    public FacultyEntity(){}
+    public FacultyEntity(Long id, String faculty, int mark, List<ExamEntity> examEntities){
+        this.id = id;
+        this.faculty = faculty;
+        this.mark = mark;
+        this.examEntities = examEntities;
+    }
+
+
     public Long getId() {
         return id;
     }
@@ -21,7 +38,6 @@ public class FacultyEntity {
         this.id = id;
     }
 
-    @Column(name = "faculty")
     public String getFaculty() {
         return faculty;
     }
@@ -29,11 +45,17 @@ public class FacultyEntity {
         this.faculty = faculty;
     }
 
-    @Column(name = "mark")
     public int getMark() {
         return mark;
     }
     public void setMark(int mark) {
         this.mark = mark;
+    }
+
+    public List<ExamEntity> getExamEntities() {
+        return examEntities;
+    }
+    public void setExamEntities(List<ExamEntity> examEntities) {
+        this.examEntities = examEntities;
     }
 }

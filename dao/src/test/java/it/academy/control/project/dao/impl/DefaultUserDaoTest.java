@@ -1,7 +1,9 @@
 package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.UserDao;
+import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.User;
+import org.junit.AfterClass;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -91,7 +93,12 @@ class DefaultUserDaoTest {
             assertEquals(userList.get(i).getEmail(), users.get(i).getEmail());
         }
 
-        users = userDao.getUsers();
-        assertNotNull(users);
+//        users = userDao.getUsers();
+//        assertNotNull(users);
+    }
+
+    @AfterClass
+    public void cleanUp() {
+        HibernateUtil.closeEMFactory();
     }
 }

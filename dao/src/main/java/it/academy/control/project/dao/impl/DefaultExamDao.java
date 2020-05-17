@@ -2,7 +2,9 @@ package it.academy.control.project.dao.impl;
 
 import it.academy.control.project.dao.ExamDao;
 import it.academy.control.project.dao.converter.ExamConverter;
+import it.academy.control.project.dao.converter.FacultyConverter;
 import it.academy.control.project.dao.entity.ExamEntity;
+import it.academy.control.project.dao.entity.FacultyEntity;
 import it.academy.control.project.dao.util.HibernateUtil;
 import it.academy.control.project.data.Exam;
 
@@ -32,6 +34,13 @@ public class DefaultExamDao implements ExamDao {
     @Override
     public Exam saveExam(Exam exam) {
         ExamEntity examEntity = ExamConverter.toEntity(exam);
+        try{
+            FacultyEntity facultyEntity = FacultyConverter.toEntity(DefaultFacultyDao.getInstance().getFaculty(exam.getFacultyId()));
+            examEntity.setFacultyEntity(facultyEntity);
+            examEntity.setFacultyId(facultyEntity.getId());
+        } catch (NullPointerException e){
+
+        }
         final Session session = HibernateUtil.getSession();
         session.beginTransaction();
         session.save(examEntity);
@@ -73,15 +82,6 @@ public class DefaultExamDao implements ExamDao {
            return null;
        }
     }
-
-//    @Override
-//    public List<Exam> getExams() {
-//        final List<ExamEntity> examEntities = HibernateUtil.getSession().createQuery("from ExamEntity ")
-//                .list();
-//        return examEntities.stream()
-//                .map(ExamConverter::fromEntity)
-//                .collect(Collectors.toList());
-//    }
 
     @Override
     public List<Exam> getExams() {

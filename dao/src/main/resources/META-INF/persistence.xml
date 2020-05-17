@@ -20,7 +20,7 @@
             <property name="hibernate.use_sql_comments" value="false"/>
             <property name="hibernate.show_sql" value="true"/>
 
-            <property name="hibernate.connection.pool_size" value="10"/>
+            <property name="hibernate.connection.pool_size" value="30"/>
             <property name="hibernate.connection.isolation" value="2"/>
 
             <property name="hibernate.cache.region.factory_class"

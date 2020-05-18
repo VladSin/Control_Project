@@ -24,7 +24,7 @@ class DefaultApplicantDaoTest {
 
     @Test
     void saveApplicant() {
-        final Applicant applicantToSave = new Applicant(null, 1L, 1L, 10);
+        final Applicant applicantToSave = new Applicant(null, 2L, 1L, 10);
         final Applicant savedApplicant = applicantDao.saveApplicant(applicantToSave);
         assertEquals(applicantToSave.getUserId(), savedApplicant.getUserId());
         assertEquals(applicantToSave.getFacultyId(), savedApplicant.getFacultyId());
@@ -34,7 +34,7 @@ class DefaultApplicantDaoTest {
 
     @Test
     void deleteApplicant() {
-        final Applicant applicantToSave = new Applicant(null, 1L, 1L, 10);
+        final Applicant applicantToSave = new Applicant(null, 3L, 1L, 10);
         final Applicant savedApplicant = applicantDao.saveApplicant(applicantToSave);
         final Long id = savedApplicant.getId();
         final Applicant applicant = applicantDao.getApplicant(id);
@@ -49,11 +49,11 @@ class DefaultApplicantDaoTest {
 
     @Test
     void updateApplicant() {
-        final Applicant applicantToSave = new Applicant(null, 1L, 1L, 10);
+        final Applicant applicantToSave = new Applicant(null, 4L, 1L, 10);
         final Applicant savedApplicant = applicantDao.saveApplicant(applicantToSave);
         final Long id = savedApplicant.getId();
 
-        final Applicant toUpdate = new Applicant(id, 2L, 2L, savedApplicant.getMark());
+        final Applicant toUpdate = new Applicant(id, 5L, 2L, savedApplicant.getMark());
         final boolean updated = applicantDao.updateApplicant(toUpdate);
         assertTrue(updated);
 
@@ -80,8 +80,8 @@ class DefaultApplicantDaoTest {
     @Test
     void getList(){
         List<Applicant> applicants = new ArrayList<>();
-        applicants.add(new Applicant(null, 1L, 1L, 10));
-        applicants.add(new Applicant(null, 2L, 2L, 10));
+        applicants.add(new Applicant(null, 6L, 1L, 10));
+        applicants.add(new Applicant(null, 7L, 2L, 10));
 
         List<Applicant> applicantList = new ArrayList<>();
         for (Applicant a: applicants) {
@@ -101,8 +101,8 @@ class DefaultApplicantDaoTest {
     @Test
     void getListNumber(){
         List<Applicant> applicants = new ArrayList<>();
-        applicants.add(new Applicant(null, 1L, 1L, 10));
-        applicants.add(new Applicant(null, 2L, 2L, 10));
+        applicants.add(new Applicant(null, 8L, 1L, 10));
+        applicants.add(new Applicant(null, 9L, 2L, 10));
 
         List<Applicant> applicantList = new ArrayList<>();
         for (Applicant a: applicants) {

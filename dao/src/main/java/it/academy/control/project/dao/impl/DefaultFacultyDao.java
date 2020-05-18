@@ -34,7 +34,7 @@ public class DefaultFacultyDao implements FacultyDao {
         session.beginTransaction();
         session.save(facultyEntity);
         session.getTransaction().commit();
-        log.info("authUser saved:{}", faculty);
+        log.info("faculty saved:{}", faculty);
         return FacultyConverter.fromEntity(facultyEntity);
     }
 

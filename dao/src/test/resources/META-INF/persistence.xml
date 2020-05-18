@@ -10,6 +10,8 @@
         <class>it.academy.control.project.dao.entity.ExamEntity</class>
         <class>it.academy.control.project.dao.entity.FacultyEntity</class>
         <class>it.academy.control.project.dao.entity.UserEntity</class>
+        <class>it.academy.control.project.dao.entity.UniversityEntity</class>
+        <class>it.academy.control.project.dao.entity.StudentEntity</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

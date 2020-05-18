@@ -69,9 +69,9 @@ public class DefaultApplicantDao implements ApplicantDao {
     @Override
     public Applicant getApplicant(long id) {
         final Session session = HibernateUtil.getSession();
-        ApplicantEntity authUserEntity = session.load(ApplicantEntity.class, id);
+        ApplicantEntity applicantEntity = session.load(ApplicantEntity.class, id);
         try{
-            Applicant applicant = ApplicantConverter.fromEntity(authUserEntity);
+            Applicant applicant = ApplicantConverter.fromEntity(applicantEntity);
             return applicant;
         } catch (RuntimeException e){
             log.info("applicant not found by id{}", id);

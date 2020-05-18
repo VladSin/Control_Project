@@ -43,6 +43,7 @@
         </c:if>
 
     </table>
+    <a href="${pageContext.request.contextPath}/login">Login</a>
     <a href="${pageContext.request.contextPath}/index.jsp">Return</a>
 </center>
 </body>

@@ -18,6 +18,7 @@
 
 <body>
 <a href="${pageContext.request.contextPath}/logout">Login</a>
+<a href="${pageContext.request.contextPath}/index.jsp">Return</a>
 <center>
     <h1 style="color: green">Введите свои данные</h1>
     <form action="${pageContext.request.contextPath}/user" method="post">

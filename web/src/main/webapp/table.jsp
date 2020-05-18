@@ -22,27 +22,28 @@
         <c:if test="${applicants != null}">
             <c:forEach items="${applicants}" var="applicant">
                 <c:forEach items="${users}" var="user">
-                        <c:if test="${applicant.userId == user.id}">
-                            <c:if test="${applicant.mark >= 8}">
-                                <tr>
-                                    <td style="color: green">${user.name}</td>
-                                    <td style="color: green">${user.surname}</td>
-                                    <td style="color: green">${applicant.mark}</td>
-                                </tr>
-                            </c:if>
-                            <c:if test="${applicant.mark < 8}">
-                                <tr>
-                                    <td style="color: red">${user.name}</td>
-                                    <td style="color: red">${user.surname}</td>
-                                    <td style="color: red">${applicant.mark}</td>
-                                </tr>
-                            </c:if>
+                    <c:if test="${applicant.userId == user.id}">
+                        <c:if test="${applicant.mark >= 8}">
+                            <tr>
+                                <td style="color: green">${user.name}</td>
+                                <td style="color: green">${user.surname}</td>
+                                <td style="color: green">${applicant.mark}</td>
+                            </tr>
                         </c:if>
+                        <c:if test="${applicant.mark < 8}">
+                            <tr>
+                                <td style="color: red">${user.name}</td>
+                                <td style="color: red">${user.surname}</td>
+                                <td style="color: red">${applicant.mark}</td>
+                            </tr>
+                        </c:if>
+                    </c:if>
                 </c:forEach>
             </c:forEach>
         </c:if>
     </table>
 
+    <a href="${pageContext.request.contextPath}/student">Students</a>
     <a href="${pageContext.request.contextPath}/index.jsp">Return</a>
 </center>
 </body>

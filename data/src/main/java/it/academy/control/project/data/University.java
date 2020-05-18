@@ -1,5 +1,6 @@
 package it.academy.control.project.data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class University {
@@ -11,6 +12,10 @@ public class University {
         this.id = id;
         this.university = university;
         this.students = students;
+    }
+    public University(Long id, String university) {
+        this.id = id;
+        this.university = university;
     }
 
     public Long getId() {
@@ -30,7 +35,13 @@ public class University {
     public List<Student> getStudents() {
         return students;
     }
-    public void setStudents(List<Student> students) {
-        this.students = students;
+    public void setStudents(Student student) {
+        if(this.students == null){
+            List<Student> students = new ArrayList<>();
+            students.add(student);
+            this.students = students;
+        } else {
+            this.students.add(student);
+        }
     }
 }

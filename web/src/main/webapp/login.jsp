@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  it_academy.control_project.data.User: dell
+  User: dell
   Date: 26.03.2020
   Time: 16:11
   To change this template use File | Settings | File Templates.
@@ -12,6 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Страница для абитуриентов</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/backgroundStyle.css">
 </head>
 <body>
 <center>
@@ -23,7 +24,7 @@
     <label for="password"></label>
     <input id="password" type="password" name="password" placeholder="Password"><br/>
 
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 <p style="color: red">${error}</p>
 </center>

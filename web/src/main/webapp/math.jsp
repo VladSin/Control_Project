@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Тест</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/listStyle.css">
 </head>
 <body onload="var v_date_init = new Date(); tm_init = v_date_init.getTime();">
 
@@ -20,7 +21,7 @@
         <div class="question">
             <span class="question_n">Mathematics: question 1: </span> Solve: 7+7:7+7*7-7=
         </div>
-        <ul>
+        <ul class="pills">
             <li><input type="radio" name="test[3]" value="0" id="test_3_0"  /> <label for="test_3_0">44</label></li>
             <li><input type="radio" name="test[3]" value="1" id="test_3_1"  /> <label for="test_3_1">14</label></li>
             <li><input type="radio" name="test[3]" value="2" id="test_3_2"  /> <label for="test_3_2">50</label></li>
@@ -30,7 +31,7 @@
         <div class="question">
             <span class="question_n">Mathematics: question 2: </span> 3, 8, 15, 24, 35, 48, 63, 80, ?
         </div>
-        <ul>
+        <ul class="pills">
             <li><input type="radio" name="test[4]" value="0" id="test_4_0"  /> <label for="test_4_0">81</label></li>
             <li><input type="radio" name="test[4]" value="1" id="test_4_1"  /> <label for="test_4_1">97</label></li>
             <li><input type="radio" name="test[4]" value="2" id="test_4_2"  /> <label for="test_4_2">99</label></li>
@@ -40,7 +41,7 @@
         <div class="question">
             <span class="question_n">Mathematics: question 3: </span> 1, 1, 2, 3, 5, 8, 13, 21, 34... What is the name of this row?
         </div>
-        <ul>
+        <ul class="pills">
             <li><input type="radio" name="test[5]" value="0" id="test_5_0"  /> <label for="test_5_0">Descartes</label></li>
             <li><input type="radio" name="test[5]" value="1" id="test_5_1"  /> <label for="test_5_1">Fibonacci</label></li>
             <li><input type="radio" name="test[5]" value="2" id="test_5_2"  /> <label for="test_5_2">Newton</label></li>
@@ -48,7 +49,7 @@
             <li><input type="radio" name="test[5]" value="4" id="test_5_4"  /> <label for="test_5_4">Lagrange</label></li>
         </ul>
 
-        <input type="submit" name="input_submit" value="Узнать результат" />
+        <input type="submit" name="input_submit" value="Check" />
     </div>
 </form>
 

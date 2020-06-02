@@ -54,7 +54,7 @@ public class PhysExamServlet extends HttpServlet {
             University university = new University(2L, "Physics");
             Student student = new Student(null, applicant.getUserId());
             student.setUniversities(university);
-            university.setStudents(student);
+            university.addStudents(student);
             studentService.saveStudent(student);
         }
 

@@ -14,8 +14,7 @@ public class University {
         this.students = students;
     }
     public University(Long id, String university) {
-        this.id = id;
-        this.university = university;
+        this(id, university, new ArrayList<>());
     }
 
     public Long getId() {
@@ -35,7 +34,11 @@ public class University {
     public List<Student> getStudents() {
         return students;
     }
-    public void setStudents(Student student) {
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+
+    public void addStudents(Student student) {
         if(this.students == null){
             List<Student> students = new ArrayList<>();
             students.add(student);

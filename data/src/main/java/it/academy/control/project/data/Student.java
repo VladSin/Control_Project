@@ -36,6 +36,10 @@ public class Student {
         return universities;
     }
     public void setUniversities(University university) {
+        this.universities = universities;
+    }
+
+    public void addUniversities(University university){
         if(this.universities == null){
             List<University> universities = new ArrayList<>();
             universities.add(university);

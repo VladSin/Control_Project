@@ -1,5 +1,6 @@
 package it.academy.control.project.service.impl;
 
+import it.academy.control.project.dao.AuthUserDao;
 import it.academy.control.project.data.AuthorizationUser;
 import it.academy.control.project.service.SecurityService;
 import org.junit.jupiter.api.Test;
@@ -16,23 +17,23 @@ import static org.mockito.Mockito.when;
 public class DefaultSecurityServiceTest {
 
     @Mock
-    SecurityService dao;
+    AuthUserDao dao;
 
     @InjectMocks
     DefaultSecurityService service;
 
     @Test
     void login(){
-        when(dao.login("User", "User")).thenReturn(new AuthorizationUser(1L,"User", "User", "role"));
-        when(dao.login("Teacher", "Teacher")).thenReturn(new AuthorizationUser(2L,"Teacher", "Teacher", "role"));
+        when(dao.getAuthUser(1L)).thenReturn(new AuthorizationUser(1L,"User", "User", "role"));
+        when(dao.getAuthUser(2L)).thenReturn(new AuthorizationUser(2L,"Teacher", "Teacher", "role"));
 
-        AuthorizationUser userFromDb = dao.login("User", "User");
+        AuthorizationUser userFromDb = service.login("User", "User");
         assertNotNull(userFromDb);
         assertEquals(userFromDb.getLogin(), "User");
         assertEquals(userFromDb.getPassword(),"User");
         assertEquals(userFromDb.getRole(), "role");
 
-        userFromDb = dao.login("Teacher", "Teacher");
+        userFromDb = service.login("Teacher", "Teacher");
         assertNotNull(userFromDb);
         assertEquals(userFromDb.getLogin(), "Teacher");
         assertEquals(userFromDb.getPassword(),"Teacher");

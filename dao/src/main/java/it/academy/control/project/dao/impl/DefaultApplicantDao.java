@@ -33,7 +33,6 @@ public class DefaultApplicantDao implements ApplicantDao {
         try {
             UserEntity userEntity = UserConverter.toEntity(DefaultUserDao.getInstance().getUser(applicant.getUserId()));
             applicantEntity.setUserEntity(userEntity);
-            applicantEntity.setUserId(userEntity.getId());
         } catch (NullPointerException e){
 
         }

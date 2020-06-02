@@ -60,7 +60,7 @@ public class ProgExamServlet extends HttpServlet {
             University university = new University(2L, "Programming");
             Student student = new Student(null, applicant.getUserId());
             student.setUniversities(university);
-            university.setStudents(student);
+            university.addStudents(student);
             studentService.saveStudent(student);
         }
 

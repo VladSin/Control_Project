@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="A new link is written: Many-To-Many.&#10;Added all actions to modules: service and dao&#10;Added tests for new entities: UniversityEntity and StudentEntity.">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/StudentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/student.jsp" afterDir="false" />
+    <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultApplicantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/control/project/dao/impl/DefaultApplicantDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/src/main/java/it/academy/control/project/data/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/it/academy/control/project/data/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/src/main/java/it/academy/control/project/data/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/it/academy/control/project/data/University.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultSecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/it/academy/control/project/service/impl/DefaultSecurityServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/MathExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/MathExamServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/PhysExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/PhysExamServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/ProgExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/contro/project/web/servlet/ProgExamServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/table.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" afterDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +52,21 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="university: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="student_university: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="university_test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="university@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="university_test: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="student_university: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -135,7 +147,7 @@
       <recent name="it_academy.control_project.dao.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in dao">
+  <component name="RunManager" selected="JUnit.it.academy.control.project.service.impl in service">
     <configuration name="All in dao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dao" />
       <option name="PACKAGE_NAME" value="" />
@@ -159,22 +171,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DefaultStudentDaoTest.saveApplicant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.academy.control.project.dao.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.academy.control.project.dao.impl" />
-      <option name="MAIN_CLASS_NAME" value="it.academy.control.project.dao.impl.DefaultStudentDaoTest" />
-      <option name="METHOD_NAME" value="saveApplicant" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DefaultUserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dao" />
       <extension name="coverage">
@@ -190,15 +186,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="it.academy.control.project.dao.impl in dao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="it.academy.control.project.dao in dao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dao" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.academy.control.project.dao.impl.*" />
+          <option name="PATTERN" value="it.academy.control.project.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.academy.control.project.dao.impl" />
+      <option name="PACKAGE_NAME" value="it.academy.control.project.dao" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="it.academy.control.project.service.impl in service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.academy.control.project.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.academy.control.project.service.impl" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,21 +301,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Remote.Unnamed" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
       <item itemvalue="JUnit.DefaultStudentDaoTest" />
-      <item itemvalue="JUnit.DefaultStudentDaoTest.saveApplicant" />
-      <item itemvalue="JUnit.it.academy.control.project.dao.impl in dao" />
       <item itemvalue="JUnit.All in dao" />
       <item itemvalue="JUnit.DefaultUserDaoTest" />
+      <item itemvalue="Remote.Unnamed" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
+      <item itemvalue="JUnit.it.academy.control.project.dao in dao" />
+      <item itemvalue="JUnit.it.academy.control.project.service.impl in service" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.it.academy.control.project.service.impl in service" />
+        <item itemvalue="JUnit.it.academy.control.project.dao in dao" />
         <item itemvalue="JUnit.All in dao" />
         <item itemvalue="JUnit.DefaultUserDaoTest" />
         <item itemvalue="JUnit.DefaultStudentDaoTest" />
-        <item itemvalue="JUnit.DefaultStudentDaoTest.saveApplicant" />
-        <item itemvalue="JUnit.it.academy.control.project.dao.impl in dao" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +387,12 @@
       <workItem from="1589626987205" duration="16051000" />
       <workItem from="1589704304985" duration="25068000" />
       <workItem from="1589740346863" duration="10725000" />
-      <workItem from="1589786164911" duration="22808000" />
+      <workItem from="1589786164911" duration="22886000" />
+      <workItem from="1589820737658" duration="2211000" />
+      <workItem from="1590004922527" duration="60000" />
+      <workItem from="1590053171744" duration="415000" />
+      <workItem from="1590065789060" duration="339000" />
+      <workItem from="1591094645861" duration="896000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -575,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589800271815</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Final commit!!!&#10;Working version of the project, but far from the latest!)))">
+      <created>1589810105570</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1589810105570</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +617,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <MESSAGE value="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary." />
     <MESSAGE value="Starting to work on database structure.&#10;Main work on Dao." />
     <MESSAGE value="Added interactions with &quot;Applicant,&quot; Exam, &quot;Faculty&quot; models to Dao and Service modules" />
@@ -620,7 +641,8 @@
     <MESSAGE value="Added One-To-Many relationship between entities: ExamEntity and FacultyEntity(main)." />
     <MESSAGE value="CSS styles are added. The WEB module is edited!" />
     <MESSAGE value="A new link is written: Many-To-Many.&#10;Added all actions to modules: service and dao&#10;Added tests for new entities: UniversityEntity and StudentEntity." />
-    <option name="LAST_COMMIT_MESSAGE" value="A new link is written: Many-To-Many.&#10;Added all actions to modules: service and dao&#10;Added tests for new entities: UniversityEntity and StudentEntity." />
+    <MESSAGE value="Final commit!!!&#10;Working version of the project, but far from the latest!)))" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit!!!&#10;Working version of the project, but far from the latest!)))" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="71" key="#Assign_Data_Sources" timestamp="1589187716303">
@@ -655,10 +677,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="529" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1589744237703" />
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1589803547062">
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1589824105618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589803547062" />
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589824105618" />
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586602459956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -683,30 +705,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="57" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1536.824@0.0.1536.824" timestamp="1586803747191" />
-    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1589801058413">
+    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1589810104214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589801058413" />
+    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589810104214" />
     <state x="271" y="112" key="FileChooserDialogImpl" timestamp="1586719032206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="271" y="112" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586719032206" />
-    <state width="1493" height="435" key="GridCell.Tab.0.bottom" timestamp="1589806200371">
+    <state width="1493" height="299" key="GridCell.Tab.0.bottom" timestamp="1591095402569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="435" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589806200371" />
-    <state width="1493" height="435" key="GridCell.Tab.0.center" timestamp="1589806200371">
+    <state width="1493" height="299" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591095402569" />
+    <state width="1493" height="299" key="GridCell.Tab.0.center" timestamp="1591095402569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="435" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589806200371" />
-    <state width="1493" height="435" key="GridCell.Tab.0.left" timestamp="1589806200371">
+    <state width="1493" height="299" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591095402569" />
+    <state width="1493" height="299" key="GridCell.Tab.0.left" timestamp="1591095402569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="435" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589806200371" />
-    <state width="1493" height="435" key="GridCell.Tab.0.right" timestamp="1589806200371">
+    <state width="1493" height="299" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591095402569" />
+    <state width="1493" height="299" key="GridCell.Tab.0.right" timestamp="1591095402569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="435" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589806200371" />
+    <state width="1493" height="299" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591095402569" />
     <state width="1493" height="184" key="GridCell.Tab.1.bottom" timestamp="1589735958488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -739,10 +761,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589728203100" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589801064962">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589810130327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589801064962" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589810130327" />
     <state x="656" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589647414933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -767,6 +789,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="635" y="159" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1586684335886" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591095214650">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1591095214650" />
     <state x="449" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586803341859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -779,10 +805,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1589705019975" />
-    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1586803528307">
+    <state x="463" y="144" width="611" height="536" key="find.popup" timestamp="1589824499717">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586803528307" />
+    <state x="463" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1589824499717" />
     <state x="550" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1586603375642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -803,10 +829,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1589473585403" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589713155910">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589824656095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589713155910" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589824656095" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/control_project$DefaultApplicantDaoTest.ic" NAME="DefaultApplicantDaoTest Coverage Results" MODIFIED="1589706005731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

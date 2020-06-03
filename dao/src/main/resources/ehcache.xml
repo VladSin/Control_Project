@@ -5,22 +5,22 @@
                   timeToIdleSeconds="120"
                   timeToLiveSeconds="200"
                   memoryStoreEvictionPolicy="LRU"/>
-    <cache name="it.academy.control.project.dao.entity.ExamEntity"
+    <cache name="it.academy.vladsin.control.project.dao.entity.ExamEntity"
            maxEntriesLocalHeap="45"
            timeToLiveSeconds="300"
            eternal="false">
     </cache>
-    <cache name="it.academy.control.project.dao.entity.AuthorizationUserEntity"
+    <cache name="it.academy.vladsin.control.project.dao.entity.AuthorizationUserEntity"
            maxEntriesLocalHeap="2"
            timeToLiveSeconds="300"
            eternal="false">
     </cache>
-    <cache name="it.academy.control.project.dao.entity.ApplicantEntity"
+    <cache name="it.academy.vladsin.control.project.dao.entity.ApplicantEntity"
            maxEntriesLocalHeap="45"
            timeToLiveSeconds="300"
            eternal="false">
     </cache>
-    <cache name="it.academy.control.project.dao.entity.StudentEntity"
+    <cache name="it.academy.vladsin.control.project.dao.entity.StudentEntity"
            maxEntriesLocalHeap="45"
            timeToLiveSeconds="300"
            eternal="false">

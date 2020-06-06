@@ -23,4 +23,4 @@
   + Framework Hibernate (5.4.5 Final);
   + Unit-tests (junit-jupiter);
   + Filters;
-  + Framework Spring (ведется интеграция);
+  + Framework Spring (ведется интеграция в ветви spring_updating);

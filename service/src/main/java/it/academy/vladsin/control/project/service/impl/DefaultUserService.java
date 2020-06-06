@@ -1,44 +1,46 @@
 package it.academy.vladsin.control.project.service.impl;
 
 import it.academy.vladsin.control.project.dao.UserDao;
-import it.academy.vladsin.control.project.dao.impl.DefaultUserDao;
 import it.academy.vladsin.control.project.data.User;
 import it.academy.vladsin.control.project.service.UserService;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 public class DefaultUserService implements UserService {
 
-    private UserDao userDao = DefaultUserDao.getInstance();
+    private final UserDao userDao;
 
-    private static class SingletonHolder{
-        static final UserService HOLDER_INSTANCE = new DefaultUserService();
-    }
-    public static UserService getInstance(){
-        return SingletonHolder.HOLDER_INSTANCE;
+    public DefaultUserService(UserDao userDao) {
+        this.userDao = userDao;
     }
 
     @Override
+    @Transactional
     public User saveUser(User user) {
         return userDao.saveUser(user);
     }
 
     @Override
+    @Transactional
     public boolean deleteUser(long id) {
         return userDao.deleteUser(id);
     }
 
     @Override
+    @Transactional
     public boolean updateUser(User user) {
         return userDao.updateUser(user);
     }
 
     @Override
+    @Transactional
     public User getUser(long id) {
         return userDao.getUser(id);
     }
 
     @Override
+    @Transactional
     public List<User> getUsers() {
         return userDao.getUsers();
     }

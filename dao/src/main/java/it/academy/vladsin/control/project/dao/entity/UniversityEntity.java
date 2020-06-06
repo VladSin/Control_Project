@@ -3,6 +3,7 @@ package it.academy.vladsin.control.project.dao.entity;
 
 import it.academy.vladsin.control.project.dao.converter.StudentConverter;
 import it.academy.vladsin.control.project.data.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.util.ArrayList;

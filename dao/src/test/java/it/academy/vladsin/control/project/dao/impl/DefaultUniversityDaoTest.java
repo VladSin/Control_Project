@@ -1,19 +1,33 @@
 package it.academy.vladsin.control.project.dao.impl;
 
 import it.academy.vladsin.control.project.dao.UniversityDao;
-import it.academy.vladsin.control.project.dao.util.HibernateUtil;
+import it.academy.vladsin.control.project.dao.config.DaoConfig;
 import it.academy.vladsin.control.project.data.University;
-import org.junit.AfterClass;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = DaoConfig.class)
+@Transactional
+@Commit
 public class DefaultUniversityDaoTest {
 
-    UniversityDao universityDao = DefaultUniversityDao.getInstance();
+    @Autowired
+    private UniversityDao universityDao;
+
+    @Autowired
+    SessionFactory sessionFactory;
 
     @Test
     void saveUniversity() {
@@ -29,8 +43,7 @@ public class DefaultUniversityDaoTest {
         final University universityToSave = new University(null, "university", null);
         final University savedUniversity = universityDao.saveUniversity(universityToSave);
         final Long id = savedUniversity.getId();
-        final University university = universityDao.getUniversity(id);
-        assertNotNull(university);
+        sessionFactory.getCurrentSession().clear();
 
         final boolean deleted = universityDao.deleteUniversity(id);
         assertTrue(deleted);
@@ -44,6 +57,7 @@ public class DefaultUniversityDaoTest {
         final University universityToSave = new University(null, "university", null);
         final University savedUniversity = universityDao.saveUniversity(universityToSave);
         final Long id = savedUniversity.getId();
+        sessionFactory.getCurrentSession().clear();
 
         final University toUpdate = new University(id, "university", null);
         final boolean updated = universityDao.updateUniversity(toUpdate);
@@ -73,10 +87,5 @@ public class DefaultUniversityDaoTest {
         }
         universities = universityDao.getUniversities();
         assertNotNull(universities);
-    }
-
-    @AfterClass
-    public void cleanUp() {
-        HibernateUtil.closeEMFactory();
     }
 }

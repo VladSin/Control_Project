@@ -1,19 +1,33 @@
 package it.academy.vladsin.control.project.dao.impl;
 
 import it.academy.vladsin.control.project.dao.AuthUserDao;
-import it.academy.vladsin.control.project.dao.util.HibernateUtil;
+import it.academy.vladsin.control.project.dao.config.DaoConfig;
 import it.academy.vladsin.control.project.data.AuthorizationUser;
-import org.junit.AfterClass;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = DaoConfig.class)
+@Transactional
+@Commit
 class DefaultAuthUserDaoTest {
 
-    AuthUserDao authUserDao = DefaultAuthUserDao.getInstance();
+    @Autowired
+    private AuthUserDao authUserDao;
+
+    @Autowired
+    SessionFactory sessionFactory;
 
     @Test
     void saveAuthUser() {
@@ -31,10 +45,11 @@ class DefaultAuthUserDaoTest {
         final Long id = savedAuthUser.getId();
         final AuthorizationUser authorizationUser = authUserDao.getAuthUser(id);
         assertNotNull(authorizationUser);
+        sessionFactory.getCurrentSession().clear();
 
         final boolean deleted = authUserDao.deleteAuthUser(id);
         assertTrue(deleted);
-        authUserDao.deleteAuthUser(id);
+
         final AuthorizationUser afterDelete = authUserDao.getAuthUser(id);
         assertNull(afterDelete);
     }
@@ -44,11 +59,12 @@ class DefaultAuthUserDaoTest {
         final AuthorizationUser authUserToSave = new AuthorizationUser(null, "login", "password", "role");
         final AuthorizationUser savedAuthUser = authUserDao.saveAuthUser(authUserToSave);
         final Long id = savedAuthUser.getId();
+        sessionFactory.getCurrentSession().clear();
 
         final AuthorizationUser toUpdate = new AuthorizationUser(id, "login2", "password2", "role2");
         final boolean updated = authUserDao.updateAuthUser(toUpdate);
         assertTrue(updated);
-        authUserDao.updateAuthUser(toUpdate);
+
         final AuthorizationUser afterUpdate = authUserDao.getAuthUser(id);
         assertEquals(toUpdate.getId(), afterUpdate.getId());
         assertEquals(toUpdate.getLogin(), afterUpdate.getLogin());
@@ -90,10 +106,5 @@ class DefaultAuthUserDaoTest {
         }
         authUser = authUserDao.getAuthUsers();
         assertNotNull(authUser);
-    }
-
-    @AfterClass
-    public void cleanUp() {
-        HibernateUtil.closeEMFactory();
     }
 }

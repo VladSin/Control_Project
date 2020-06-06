@@ -1,19 +1,33 @@
 package it.academy.vladsin.control.project.dao.impl;
 
 import it.academy.vladsin.control.project.dao.StudentDao;
-import it.academy.vladsin.control.project.dao.util.HibernateUtil;
+import it.academy.vladsin.control.project.dao.config.DaoConfig;
 import it.academy.vladsin.control.project.data.Student;
-import org.junit.AfterClass;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = DaoConfig.class)
+@Transactional
+@Commit
 public class DefaultStudentDaoTest {
 
-    StudentDao studentDao = DefaultStudentDao.getInstance();
+    @Autowired
+    private StudentDao studentDao;
+
+    @Autowired
+    SessionFactory sessionFactory;
 
     @Test
     void saveStudent() {
@@ -31,6 +45,7 @@ public class DefaultStudentDaoTest {
         final Long id = savedStudent.getId();
         final Student student = studentDao.getStudent(id);
         assertNotNull(student);
+        sessionFactory.getCurrentSession().clear();
 
         final boolean deleted = studentDao.deleteStudent(id);
         assertTrue(deleted);
@@ -44,6 +59,7 @@ public class DefaultStudentDaoTest {
         final Student studentToSave = new Student(null, 1L, null);
         final Student savedStudent = studentDao.saveStudent(studentToSave);
         final Long id = savedStudent.getId();
+        sessionFactory.getCurrentSession().clear();
 
         final Student toUpdate = new Student(id, 2L, null);
         final boolean updated = studentDao.updateStudent(toUpdate);
@@ -93,10 +109,5 @@ public class DefaultStudentDaoTest {
         }
         students = studentDao.getStudents(1);
         assertNotNull(students);
-    }
-
-    @AfterClass
-    public void cleanUp() {
-        HibernateUtil.closeEMFactory();
     }
 }

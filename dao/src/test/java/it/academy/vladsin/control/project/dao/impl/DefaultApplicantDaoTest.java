@@ -1,20 +1,33 @@
 package it.academy.vladsin.control.project.dao.impl;
 
 import it.academy.vladsin.control.project.dao.ApplicantDao;
-import it.academy.vladsin.control.project.dao.util.HibernateUtil;
+import it.academy.vladsin.control.project.dao.config.DaoConfig;
 import it.academy.vladsin.control.project.data.Applicant;
-import it.academy.vladsin.control.project.data.User;
-import org.junit.AfterClass;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = DaoConfig.class)
+@Transactional
+@Commit
 class DefaultApplicantDaoTest {
 
-    ApplicantDao applicantDao = DefaultApplicantDao.getInstance();
+    @Autowired
+    private ApplicantDao applicantDao;
+
+    @Autowired
+    SessionFactory sessionFactory;
 
     @Test
     void saveApplicant() {
@@ -31,11 +44,12 @@ class DefaultApplicantDaoTest {
         final Applicant applicantToSave = new Applicant(null, 3L, 1L, 10);
         final Applicant savedApplicant = applicantDao.saveApplicant(applicantToSave);
         final Long id = savedApplicant.getId();
-        final Applicant applicant = applicantDao.getApplicant(id);
-        assertNotNull(applicant);
+        assertNotNull(savedApplicant);
+        assertNotNull(id);
 
         final boolean deleted = applicantDao.deleteApplicant(id);
         assertTrue(deleted);
+        sessionFactory.getCurrentSession().clear();
 
         final Applicant afterDelete = applicantDao.getApplicant(id);
         assertNull(afterDelete);
@@ -46,6 +60,9 @@ class DefaultApplicantDaoTest {
         final Applicant applicantToSave = new Applicant(null, 4L, 1L, 10);
         final Applicant savedApplicant = applicantDao.saveApplicant(applicantToSave);
         final Long id = savedApplicant.getId();
+        assertNotNull(savedApplicant);
+        assertNotNull(id);
+        sessionFactory.getCurrentSession().clear();
 
         final Applicant toUpdate = new Applicant(id, 5L, 2L, savedApplicant.getMark());
         final boolean updated = applicantDao.updateApplicant(toUpdate);
@@ -60,15 +77,12 @@ class DefaultApplicantDaoTest {
 
     @Test
     void getApplicant() {
-        final User user = new User(null, "name", "surname", "phone","email");
-        User userToSave = DefaultUserDao.getInstance().saveUser(user);
-        assertNotNull(userToSave);
-
-        final Applicant applicant = new Applicant(null, userToSave.getId(), 1L, 10);
+        final Applicant applicant = new Applicant(null, 1L, 1L, 10);
         Applicant applicantToSave = applicantDao.saveApplicant(applicant);
         assertNotNull(applicantToSave);
 
-        assertEquals(userToSave.getId(), applicantToSave.getUserId());
+        Applicant applicantToGet = applicantDao.getApplicant(1L);
+        assertNotNull(applicantToGet);
     }
 
     @Test
@@ -112,10 +126,5 @@ class DefaultApplicantDaoTest {
 
         applicants = applicantDao.getApplicants(1);
         assertNotNull(applicants);
-    }
-
-    @AfterClass
-    public void cleanUp() {
-        HibernateUtil.closeEMFactory();
     }
 }

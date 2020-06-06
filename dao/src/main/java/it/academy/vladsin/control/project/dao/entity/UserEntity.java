@@ -1,5 +1,7 @@
 package it.academy.vladsin.control.project.dao.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.*;
 
 @Entity
@@ -27,8 +29,8 @@ public class UserEntity {
     private ApplicantEntity applicantEntity;
 
 
-    public UserEntity(){
-    }
+    public UserEntity(){ }
+    @Autowired(required = true)
     public UserEntity(Long id, String name, String surname, String phone, String email, ApplicantEntity applicantEntity){
         this.applicantEntity = applicantEntity;
         this.email = email;

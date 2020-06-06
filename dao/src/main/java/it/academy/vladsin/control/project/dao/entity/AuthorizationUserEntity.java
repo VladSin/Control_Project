@@ -2,6 +2,7 @@ package it.academy.vladsin.control.project.dao.entity;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 
@@ -16,8 +17,7 @@ public class AuthorizationUserEntity {
     private String password;
     private String role;
 
-    public AuthorizationUserEntity(){
-    }
+    public AuthorizationUserEntity(){}
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

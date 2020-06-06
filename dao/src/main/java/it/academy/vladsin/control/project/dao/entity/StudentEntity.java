@@ -4,6 +4,7 @@ import it.academy.vladsin.control.project.dao.converter.UniversityConverter;
 import it.academy.vladsin.control.project.data.University;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.util.ArrayList;

@@ -5,10 +5,10 @@ import it.academy.vladsin.control.project.dao.converter.ApplicantConverter;
 import it.academy.vladsin.control.project.dao.converter.UserConverter;
 import it.academy.vladsin.control.project.dao.entity.ApplicantEntity;
 import it.academy.vladsin.control.project.dao.entity.UserEntity;
-import it.academy.vladsin.control.project.dao.util.HibernateUtil;
 import it.academy.vladsin.control.project.data.Applicant;
 
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,55 +20,50 @@ public class DefaultApplicantDao implements ApplicantDao {
 
     private static final Logger log = LoggerFactory.getLogger(DefaultApplicantDao.class);
 
-    private static class SingletonHolder{
-        static final ApplicantDao HOLDER_INSTANCE = new DefaultApplicantDao();
-    }
-    public static ApplicantDao getInstance(){
-        return SingletonHolder.HOLDER_INSTANCE;
+    private final SessionFactory factory;
+
+    public DefaultApplicantDao(SessionFactory factory) {
+        this.factory = factory;
     }
 
     @Override
     public Applicant saveApplicant(Applicant applicant) {
         ApplicantEntity applicantEntity = ApplicantConverter.toEntity(applicant);
         try {
-            UserEntity userEntity = UserConverter.toEntity(DefaultUserDao.getInstance().getUser(applicant.getUserId()));
+            UserEntity userEntity = UserConverter.toEntity(new DefaultUserDao(factory).getUser(applicant.getUserId()));
             applicantEntity.setUserEntity(userEntity);
         } catch (NullPointerException e){
-
+            log.info("user is not found for:{}", applicant);
+            throw new RuntimeException(e);
         }
-        final Session session = HibernateUtil.getSession();
-        session.beginTransaction();
+        final Session session = factory.getCurrentSession();
         session.save(applicantEntity);
-        session.getTransaction().commit();
         log.info("applicant saved:{}", applicant);
         return ApplicantConverter.fromEntity(applicantEntity);
     }
 
     @Override
     public boolean deleteApplicant(long id) {
-        final Session session = HibernateUtil.getSession();
-        session.beginTransaction();
+        final Session session = factory.getCurrentSession();
         session.createQuery("delete from ApplicantEntity as a where a.id = :id")
                 .setParameter("id", id)
                 .executeUpdate();
-        session.getTransaction().commit();
+        session.flush();
         return true;
     }
 
     @Override
     public boolean updateApplicant(Applicant applicant) {
         ApplicantEntity applicantEntity = ApplicantConverter.toEntity(applicant);
-        final Session session = HibernateUtil.getSession();
-        session.beginTransaction();
+        final Session session = factory.getCurrentSession();
         session.update(applicantEntity);
-        session.getTransaction().commit();
         return true;
     }
 
     @Override
     public Applicant getApplicant(long id) {
-        final Session session = HibernateUtil.getSession();
-        ApplicantEntity applicantEntity = session.load(ApplicantEntity.class, id);
+        final Session session = factory.getCurrentSession();
+        ApplicantEntity applicantEntity = session.get(ApplicantEntity.class, id);
         try{
             Applicant applicant = ApplicantConverter.fromEntity(applicantEntity);
             return applicant;
@@ -80,7 +75,7 @@ public class DefaultApplicantDao implements ApplicantDao {
 
     @Override
     public List<Applicant> getApplicants() {
-        Query<ApplicantEntity> query = HibernateUtil.getSession().createQuery("from ApplicantEntity ")
+        Query<ApplicantEntity> query = factory.getCurrentSession().createQuery("from ApplicantEntity ")
                 .setCacheable(true);
         return query.stream()
                 .map(ApplicantConverter::fromEntity)
@@ -89,7 +84,7 @@ public class DefaultApplicantDao implements ApplicantDao {
 
     @Override
     public List<Applicant> getApplicants(int number) {
-        final List<ApplicantEntity> applicantEntities = HibernateUtil.getSession().createQuery("from ApplicantEntity ")
+        final List<ApplicantEntity> applicantEntities = factory.getCurrentSession().createQuery("from ApplicantEntity ")
                 .setMaxResults(number)
                 .setFirstResult(0)
                 .list();

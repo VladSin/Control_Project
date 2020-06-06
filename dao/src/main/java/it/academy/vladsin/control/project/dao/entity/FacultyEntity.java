@@ -1,5 +1,7 @@
 package it.academy.vladsin.control.project.dao.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

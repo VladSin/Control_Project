@@ -1,22 +1,20 @@
 package it.academy.vladsin.control.project.service.impl;
 
 import it.academy.vladsin.control.project.dao.AuthUserDao;
-import it.academy.vladsin.control.project.dao.impl.DefaultAuthUserDao;
 import it.academy.vladsin.control.project.data.AuthorizationUser;
 import it.academy.vladsin.control.project.service.SecurityService;
+import org.springframework.transaction.annotation.Transactional;
 
 public class DefaultSecurityService implements SecurityService {
 
-    private AuthUserDao authUserDao = DefaultAuthUserDao.getInstance();
+    private final AuthUserDao authUserDao;
 
-    private static class SingletonHolder {
-        static final SecurityService HOLDER_INSTANCE = new DefaultSecurityService();
-    }
-    public static SecurityService getInstance(){
-        return SingletonHolder.HOLDER_INSTANCE;
+    public DefaultSecurityService(AuthUserDao authUserDao) {
+        this.authUserDao = authUserDao;
     }
 
     @Override
+    @Transactional
     public AuthorizationUser login(String login, String password) {
         if (login.equals("User")){
             return authUserDao.getAuthUser(1);

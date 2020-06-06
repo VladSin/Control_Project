@@ -2,6 +2,7 @@ package it.academy.vladsin.control.project.dao.entity;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 
@@ -28,9 +29,7 @@ public class ApplicantEntity {
     @JoinColumn(name = "user_id")
     private UserEntity userEntity;
 
-
-    public ApplicantEntity(){
-    }
+    public ApplicantEntity(){}
     public ApplicantEntity(Long id, Long userId, Long facultyId, int mark, UserEntity userEntity){
         this.userEntity = userEntity;
         this.mark = mark;

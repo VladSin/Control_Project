@@ -1,20 +1,33 @@
 package it.academy.vladsin.control.project.dao.impl;
 
 import it.academy.vladsin.control.project.dao.FacultyDao;
-import it.academy.vladsin.control.project.dao.util.HibernateUtil;
-import it.academy.vladsin.control.project.data.Exam;
+import it.academy.vladsin.control.project.dao.config.DaoConfig;
 import it.academy.vladsin.control.project.data.Faculty;
-import org.junit.AfterClass;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = DaoConfig.class)
+@Transactional
+@Commit
 class DefaultFacultyDaoTest {
 
-    FacultyDao facultyDao = DefaultFacultyDao.getInstance();
+    @Autowired
+    private FacultyDao facultyDao;
+
+    @Autowired
+    SessionFactory sessionFactory;
 
     @Test
     void saveFaculty() {
@@ -30,9 +43,7 @@ class DefaultFacultyDaoTest {
         final Faculty facultyToSave = new Faculty(null,"faculty", 10);
         final Faculty savedFaculty = facultyDao.saveFaculty(facultyToSave);
         final Long id = savedFaculty.getId();
-
-        final Faculty faculty = facultyDao.getFaculty(id);
-        assertNotNull(faculty);
+        sessionFactory.getCurrentSession().clear();
 
         final boolean deleted = facultyDao.deleteFaculty(id);
         assertTrue(deleted);
@@ -46,6 +57,7 @@ class DefaultFacultyDaoTest {
         final Faculty facultyToSave = new Faculty(null,"faculty", 10);
         final Faculty savedFaculty = facultyDao.saveFaculty(facultyToSave);
         final Long id = savedFaculty.getId();
+        sessionFactory.getCurrentSession().clear();
 
         final Faculty toUpdate = new Faculty(id,"faculty", 10);
         final boolean update = facultyDao.updateFaculty(toUpdate);
@@ -89,25 +101,5 @@ class DefaultFacultyDaoTest {
         }
         faculties = facultyDao.getFaculties();
         assertNotNull(faculties);
-    }
-
-    @Test
-    void getExams(){
-        List<Exam> exams = new ArrayList<>();
-        exams.add(new Exam(null, 1L,"question1", "answer1"));
-        exams.add(new Exam(null, 2L,"question2", "answer2"));
-
-        List<Exam> examList = new ArrayList<>();
-        for (Exam f: exams) {
-            examList.add(DefaultExamDao.getInstance().saveExam(f));
-        }
-        assertNotNull(examList);
-        exams = facultyDao.getExamForFaculty();
-        assertNotNull(exams);
-    }
-
-    @AfterClass
-    public void cleanUp() {
-        HibernateUtil.closeEMFactory();
     }
 }

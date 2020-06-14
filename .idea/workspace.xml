@@ -2,49 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/DaoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/DatasourceSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/HibernateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/SettingsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/test/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/config/ServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/RootConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebApplicationInitialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/AfterExamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/ExamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FacultyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/StudentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/request/CreateUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/ApplicantEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/ApplicantEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/AuthorizationUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/AuthorizationUserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/ExamEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/ExamEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/FacultyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/FacultyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/StudentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/StudentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/UniversityEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/UniversityEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultApplicantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultApplicantDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultAuthUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultAuthUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultExamDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultExamDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultFacultyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultFacultyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultStudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultStudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultUniversityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultUniversityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/impl/DefaultUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/util/HibernateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/datasource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultApplicantDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultApplicantDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultAuthUserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultAuthUserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultExamDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultExamDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultFacultyDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultFacultyDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultStudentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultStudentDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultUniversityDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultUniversityDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultUserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/it/academy/vladsin/control/project/dao/impl/DefaultUserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/resources/datasource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultApplicantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultApplicantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultAuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultAuthUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultExamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultExamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultFacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultFacultyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultSecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultStudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultUniversityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultUniversityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/it/academy/vladsin/control/project/service/impl/DefaultUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/SettingsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/SettingsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuntFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuntFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/ValidateUserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/ValidateUserFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/FacultyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/LogoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/MathExamServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/PhysExamServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/ProgExamServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/ResultTestServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/StudentServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/TableServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/TeacherServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +82,8 @@
         <option value="FxmlFile" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -162,7 +152,7 @@
       <recent name="it_academy.control_project.dao.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.it.academy.vladsin.control.project.service.impl in service">
+  <component name="RunManager" selected="Remote.Unnamed">
     <configuration name="DefaultExamDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dao" />
       <extension name="coverage">
@@ -324,13 +314,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Remote.Unnamed" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
       <item itemvalue="JUnit.DefaultUserDaoTest" />
       <item itemvalue="JUnit.DefaultExamDaoTest.saveExam" />
       <item itemvalue="JUnit.DefaultExamDaoTest" />
       <item itemvalue="JUnit.it.academy.vladsin.control.project.dao in dao" />
       <item itemvalue="JUnit.it.academy.vladsin.control.project.service.impl in service" />
+      <item itemvalue="Remote.Unnamed" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
     </list>
     <recent_temporary>
       <list>
@@ -426,7 +416,14 @@
       <workItem from="1591269163295" duration="626000" />
       <workItem from="1591298130852" duration="1447000" />
       <workItem from="1591370708344" duration="2354000" />
-      <workItem from="1591430458510" duration="2200000" />
+      <workItem from="1591430458510" duration="2704000" />
+      <workItem from="1591444929968" duration="587000" />
+      <workItem from="1591549021269" duration="3983000" />
+      <workItem from="1591553133785" duration="2261000" />
+      <workItem from="1591608726835" duration="2839000" />
+      <workItem from="1591631295439" duration="4638000" />
+      <workItem from="1591704885222" duration="513000" />
+      <workItem from="1592130987337" duration="1463000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -645,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591180138897</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Spring has been successfully integrated into the Dao and Service modules!">
+      <created>1591432686454</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1591432686454</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added interactions with &quot;Applicant,&quot; Exam, &quot;Faculty&quot; models to Dao and Service modules" />
     <MESSAGE value="Authorization work (not finished)" />
     <MESSAGE value="The test.jsp is created" />
     <MESSAGE value="All classes in Dao module executed in agreement with &quot;crud&quot;.&#10;Also the Service module was rewritten" />
@@ -690,17 +693,18 @@
     <MESSAGE value="Final commit!!!&#10;Working version of the project, but far from the latest!)))" />
     <MESSAGE value="Small fix" />
     <MESSAGE value="Small correction. Let's fill work!))" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small correction. Let's fill work!))" />
+    <MESSAGE value="Spring has been successfully integrated into the Dao and Service modules!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring has been successfully integrated into the Dao and Service modules!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="71" key="#Assign_Data_Sources" timestamp="1589187716303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="71" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1589187716303" />
-    <state x="361" y="71" key="#Inspections" timestamp="1591263973366">
+    <state x="361" y="71" key="#Inspections" timestamp="1591610317953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1591263973366" />
+    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1591610317953" />
     <state x="361" y="71" key="#Notifications" timestamp="1589490420794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -725,18 +729,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="529" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1589744237703" />
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1591252243970">
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1591639371794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591252243970" />
+    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591639371794" />
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591432232439">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1591432232439" />
-    <state x="566" y="272" width="490" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591252280011">
+    <state x="566" y="272" width="490" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591635657955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="272" width="490" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1591252280011" />
+    <state x="566" y="272" width="490" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1591635657955" />
     <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591253208131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -753,46 +757,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="57" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1536.824@0.0.1536.824" timestamp="1586803747191" />
-    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1591180135788">
+    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1591432684306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591180135788" />
+    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591432684306" />
     <state x="271" y="112" key="FileChooserDialogImpl" timestamp="1586719032206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="271" y="112" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586719032206" />
-    <state width="1493" height="89" key="GridCell.Tab.0.bottom" timestamp="1591432341098">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591432341098" />
-    <state width="1493" height="89" key="GridCell.Tab.0.center" timestamp="1591432341098">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591432341098" />
-    <state width="1493" height="89" key="GridCell.Tab.0.left" timestamp="1591432341098">
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591432341098" />
-    <state width="1493" height="89" key="GridCell.Tab.0.right" timestamp="1591432341098">
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591432341098" />
-    <state width="1493" height="162" key="GridCell.Tab.1.bottom" timestamp="1591264012966">
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
+    <state width="1493" height="148" key="GridCell.Tab.1.bottom" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591264012966" />
-    <state width="1493" height="162" key="GridCell.Tab.1.center" timestamp="1591264012966">
+    <state width="1493" height="148" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
+    <state width="1493" height="148" key="GridCell.Tab.1.center" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591264012966" />
-    <state width="1493" height="162" key="GridCell.Tab.1.left" timestamp="1591264012966">
+    <state width="1493" height="148" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
+    <state width="1493" height="148" key="GridCell.Tab.1.left" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591264012966" />
-    <state width="1493" height="162" key="GridCell.Tab.1.right" timestamp="1591264012966">
+    <state width="1493" height="148" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
+    <state width="1493" height="148" key="GridCell.Tab.1.right" timestamp="1591640896217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591264012966" />
+    <state width="1493" height="148" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591640896217" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1591214410061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -809,10 +813,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589728203100" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589810130327">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591432697261">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589810130327" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591432697261" />
     <state x="656" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589647414933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

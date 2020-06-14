@@ -10,6 +10,7 @@ import java.io.IOException;
 
 @WebFilter("/user")
 public class AuthFilter implements Filter {
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 

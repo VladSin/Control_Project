@@ -15,7 +15,10 @@
     <footer>
         <link rel="stylesheet" type="text/css" href="assests/css/footerStyle.css"/>
         <div class="overlay">
-            <h6>21.06.2020</h6>
+            <h6>Message</h6>
+<!--            <h6><spring:message code="page.title"/></h6>-->
+<!--            <a href="${requestScope['javax.servlet.forward.request_uri']}?locale=ru" style="padding: 5px">RU</a>-->
+<!--            <a href="${requestScope['javax.servlet.forward.request_uri']}?locale=en" style="padding: 5px">EN</a>-->
         </div>
     </footer>
 

@@ -30,7 +30,7 @@ public class TeacherController {
 
     @GetMapping("/teacher")
     public String doGetTeacher(){
-        return "table";
+        return "redirect:/table";
     }
 
     @GetMapping("/table")

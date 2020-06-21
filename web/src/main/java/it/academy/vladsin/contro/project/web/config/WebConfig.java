@@ -4,10 +4,14 @@ import it.academy.vladsin.contro.project.web.controller.*;
 import it.academy.vladsin.control.project.service.config.ServiceConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
+
+import java.util.Locale;
 
 @Configuration
 @EnableWebMvc
@@ -76,5 +80,23 @@ public class WebConfig {
         final TilesConfigurer tilesConfigurer = new TilesConfigurer();
         tilesConfigurer.setDefinitions("/WEB-INF/tiles.xml");
         return tilesConfigurer;
+    }
+
+//    @Bean
+//    public ReloadableResourceBundleMessageSource messageSource(){
+//        ReloadableResourceBundleMessageSource source = new ReloadableResourceBundleMessageSource();
+//        source.setBasename("classpath:i18n/messages");
+//        source.setDefaultEncoding("UTF-8");
+//
+//        return source;
+//    }
+
+    @Bean
+    public CookieLocaleResolver localeResolver(){
+        CookieLocaleResolver resolver = new CookieLocaleResolver();
+        resolver.setDefaultLocale(Locale.forLanguageTag("en"));
+        resolver.setCookieName("LocaleCookie");
+        resolver.setCookieMaxAge(3600);
+        return resolver;
     }
 }

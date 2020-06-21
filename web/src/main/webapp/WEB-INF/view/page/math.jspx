@@ -9,7 +9,7 @@
     <html>
     <head>
         <title>Тест</title>
-        <link rel="stylesheet" type="text/css" href="assests/listStyle.css"/>
+        <link rel="stylesheet" type="text/css" href="assests/css/listStyle.css"/>
     </head>
     <body onload="var v_date_init = new Date(); tm_init = v_date_init.getTime();">
 

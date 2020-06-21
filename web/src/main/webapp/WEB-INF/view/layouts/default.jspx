@@ -9,9 +9,6 @@
             doctype-root-element="html" omit-xml-declaration="false"/>
 <jsp:directive.page pageEncoding="UTF-8" contentType="text/html; UTF-8"/>
 
-<head>
-    <title>CP</title>
-</head>
 <body>
 <tiles:insertAttribute name="header"/>
 <tiles:insertAttribute name="body"/>

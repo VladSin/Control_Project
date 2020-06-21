@@ -2,58 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FirstPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/tiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/common/footer.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/common/header.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/layouts/default.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/exam.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/index.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/login.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/math.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/phys.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/prog.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/result.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/student.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/table.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/user.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/ResourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/WebUtils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/RootConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebApplicationInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebApplicationInitialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/AfterExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/AfterExamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/ExamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FacultyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LogoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/StudentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuntFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/EncodingFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/ValidateUserFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/exam.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/math.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/phys.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/prog.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/backgroundStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/backgroundStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/formStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/formStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/listStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/listStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/spanStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/spanStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/tableStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/tableStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/textStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/textStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/topTextStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/topTextStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/student.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/table.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" beforeDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +56,8 @@
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jspx File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -454,7 +407,7 @@
       <workItem from="1592397194202" duration="3178000" />
       <workItem from="1592580794465" duration="2777000" />
       <workItem from="1592652399557" duration="2585000" />
-      <workItem from="1592723960897" duration="374000" />
+      <workItem from="1592723960897" duration="2437000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -687,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592132711569</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="The Tiles frame template is used as the data view. There are problems...">
+      <created>1592724450944</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1592724450945</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +667,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="The test.jsp is created" />
     <MESSAGE value="All classes in Dao module executed in agreement with &quot;crud&quot;.&#10;Also the Service module was rewritten" />
     <MESSAGE value="Problems with connection to the db.&#10;Problems with tests to the Dao module." />
     <MESSAGE value="Database problem resolved, data transfer working!&#10;The task remains to complete the tests in the service module and with their work" />
@@ -732,7 +691,8 @@
     <MESSAGE value="Small correction. Let's fill work!))" />
     <MESSAGE value="Spring has been successfully integrated into the Dao and Service modules!" />
     <MESSAGE value="Spring has been successfully integrated into the Web module!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring has been successfully integrated into the Web module!" />
+    <MESSAGE value="The Tiles frame template is used as the data view. There are problems..." />
+    <option name="LAST_COMMIT_MESSAGE" value="The Tiles frame template is used as the data view. There are problems..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="71" key="#Assign_Data_Sources" timestamp="1589187716303">
@@ -767,18 +727,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="529" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1589744237703" />
-    <state x="338" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1592653061051">
+    <state x="338" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1592725339594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="338" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592653061051" />
+    <state x="338" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592725339594" />
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591432232439">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1591432232439" />
-    <state x="566" y="272" width="490" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591635657955">
+    <state x="566" y="272" width="515" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592725376030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="272" width="490" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1591635657955" />
+    <state x="566" y="272" width="515" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1592725376030" />
     <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591253208131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -795,10 +755,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="57" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1536.824@0.0.1536.824" timestamp="1586803747191" />
-    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1592132709670">
+    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1592726414842">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592132709670" />
+    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592726414842" />
     <state x="271" y="112" key="FileChooserDialogImpl" timestamp="1586719032206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

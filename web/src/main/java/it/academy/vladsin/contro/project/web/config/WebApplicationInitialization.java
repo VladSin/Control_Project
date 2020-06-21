@@ -11,12 +11,20 @@ import javax.servlet.Filter;
 public class WebApplicationInitialization extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{RootConfig.class};
+        return new Class[]{
+                RootConfig.class,
+                WebSecurityConfig.class,
+                ResourceConfig.class
+        };
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{WebConfig.class, ServiceConfig.class, DaoConfig.class};
+        return new Class[]{
+                WebConfig.class,
+                ServiceConfig.class,
+                DaoConfig.class
+        };
     }
 
     @Override
@@ -30,10 +38,5 @@ public class WebApplicationInitialization extends AbstractAnnotationConfigDispat
 //        delegateFilterProxy.setTargetBeanName("springSecurityFFilterChain");
 //        return new Filter[]{delegateFilterProxy};
         return super.getServletFilters();
-    }
-
-
-    public void addResourceHandler(ResourceHandlerRegistry registry){
-        registry.addResourceHandler("/assests/**").addResourceLocations("/assests/");
     }
 }

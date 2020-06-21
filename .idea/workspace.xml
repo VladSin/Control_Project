@@ -2,39 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02d3bbf-6f30-491f-9287-ccc34dc5517e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/RootConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebApplicationInitialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/AfterExamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/ExamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FacultyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/StudentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/TeacherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/request/CreateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FirstPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/tiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/common/footer.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/common/header.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/layouts/default.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/exam.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/index.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/login.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/math.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/phys.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/prog.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/result.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/student.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/table.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/user.jspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/SettingsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/it/academy/vladsin/control/project/dao/config/SettingsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuntFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuntFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/EncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/ValidateUserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/ValidateUserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/FacultyServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/LogoutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/MathExamServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/PhysExamServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/ProgExamServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/ResultTestServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/StudentServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/TableServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/TeacherServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/WebUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/RootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebApplicationInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebApplicationInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/AfterExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/AfterExamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/ExamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/FacultyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/LogoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/StudentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuntFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/EncodingFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/it/academy/vladsin/contro/project/web/filter/ValidateUserFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/exam.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/math.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/phys.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/prog.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/backgroundStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/backgroundStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/formStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/formStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/listStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/listStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/spanStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/spanStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/tableStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/tableStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/textStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/textStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/topTextStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assests/css/topTextStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/student.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/table.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/user.jsp" beforeDir="false" />
     </list>
     <list id="2285e238-c11f-4317-a424-61822b2f539e" name="Revert &quot;Added another test&quot;" comment="Revert &quot;Added another test&quot;&#10;&#10;This reverts commit 5fb8ff13" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +102,9 @@
         <option value="Jsp File" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="Jspx File" />
       </list>
     </option>
   </component>
@@ -112,6 +133,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -140,9 +162,10 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\control_project\web\src\main\webapp\WEB-INF\view\page" />
+      <recent name="C:\Users\dell\control_project\web\src\main\webapp" />
       <recent name="C:\Users\dell\control_project\web\src\main\webapp\resources" />
       <recent name="C:\Users\dell\control_project\web\src\main\webapp\resources\css" />
-      <recent name="C:\Users\dell\control_project\web\src\main\webapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dell\control_project\dao\src\test\resources" />
@@ -423,7 +446,15 @@
       <workItem from="1591608726835" duration="2839000" />
       <workItem from="1591631295439" duration="4638000" />
       <workItem from="1591704885222" duration="513000" />
-      <workItem from="1592130987337" duration="1463000" />
+      <workItem from="1592130987337" duration="1870000" />
+      <workItem from="1592200218239" duration="1491000" />
+      <workItem from="1592293310384" duration="4837000" />
+      <workItem from="1592384365407" duration="260000" />
+      <workItem from="1592386689620" duration="1570000" />
+      <workItem from="1592397194202" duration="3178000" />
+      <workItem from="1592580794465" duration="2777000" />
+      <workItem from="1592652399557" duration="2585000" />
+      <workItem from="1592723960897" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="We will start working with the project &quot;University.&quot;&#10;&#10;Fixed errors and defects.&#10;We begin to use MySQL.&#10;We remove the interaction with the salary.">
       <created>1586432531253</created>
@@ -649,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591432686454</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Spring has been successfully integrated into the Web module!">
+      <created>1592132711569</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1592132711569</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +707,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Authorization work (not finished)" />
     <MESSAGE value="The test.jsp is created" />
     <MESSAGE value="All classes in Dao module executed in agreement with &quot;crud&quot;.&#10;Also the Service module was rewritten" />
     <MESSAGE value="Problems with connection to the db.&#10;Problems with tests to the Dao module." />
@@ -694,7 +731,8 @@
     <MESSAGE value="Small fix" />
     <MESSAGE value="Small correction. Let's fill work!))" />
     <MESSAGE value="Spring has been successfully integrated into the Dao and Service modules!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring has been successfully integrated into the Dao and Service modules!" />
+    <MESSAGE value="Spring has been successfully integrated into the Web module!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring has been successfully integrated into the Web module!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="71" key="#Assign_Data_Sources" timestamp="1589187716303">
@@ -729,10 +767,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="529" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1589744237703" />
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1591639371794">
+    <state x="338" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1592653061051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="818" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591639371794" />
+    <state x="338" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592653061051" />
     <state x="481" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591432232439">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -757,10 +795,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="57" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1536.824@0.0.1536.824" timestamp="1586803747191" />
-    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1591432684306">
+    <state x="405" y="0" key="CommitChangelistDialog2" timestamp="1592132709670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591432684306" />
+    <state x="405" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592132709670" />
     <state x="271" y="112" key="FileChooserDialogImpl" timestamp="1586719032206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -813,10 +851,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589728203100" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591432697261">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592132724370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591432697261" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592132724370" />
     <state x="656" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589647414933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -857,10 +895,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1591262717366" />
-    <state x="463" y="144" width="611" height="536" key="find.popup" timestamp="1589824499717">
+    <state x="463" y="144" width="611" height="536" key="find.popup" timestamp="1592593816344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1589824499717" />
+    <state x="463" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1592593816344" />
     <state x="550" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1586603375642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

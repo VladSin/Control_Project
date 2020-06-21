@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="default" template="/WEB-INF/view/layouts/default.jspx">
+        <put-attribute name="header" value="/WEB-INF/view/common/header.jspx"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/view/common/footer.jspx"/>
+    </definition>
+
+    <definition name="index" >
+        <put-attribute name="body" value="/WEB-INF/view/page/index.jspx"/>
+    </definition>
+
+    <definition name="exam" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/exam.jspx"/>
+    </definition>
+
+    <definition name="login" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/login.jspx"/>
+    </definition>
+
+    <definition name="math" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/math.jspx"/>
+    </definition>
+
+    <definition name="phys" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/phys.jspx"/>
+    </definition>
+
+    <definition name="prog" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/prog.jspx"/>
+    </definition>
+
+    <definition name="result">
+        <put-attribute name="body" value="/WEB-INF/view/page/result.jspx"/>
+    </definition>
+
+    <definition name="student">
+        <put-attribute name="body" value="/WEB-INF/view/page/student.jspx"/>
+    </definition>
+
+    <definition name="table">
+        <put-attribute name="body" value="/WEB-INF/view/page/table.jspx"/>
+    </definition>
+
+    <definition name="user" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/user.jspx"/>
+    </definition>
+
+</tiles-definitions>

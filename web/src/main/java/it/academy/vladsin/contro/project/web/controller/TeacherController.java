@@ -1,6 +1,5 @@
 package it.academy.vladsin.contro.project.web.controller;
 
-import it.academy.vladsin.contro.project.web.WebUtils;
 import it.academy.vladsin.control.project.data.Applicant;
 import it.academy.vladsin.control.project.data.Faculty;
 import it.academy.vladsin.control.project.data.User;
@@ -11,14 +10,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
-@RequestMapping
 public class TeacherController {
 
     private ApplicantService applicantService;
@@ -34,11 +30,11 @@ public class TeacherController {
 
     @GetMapping("/teacher")
     public String doGetTeacher(){
-        return "redirect:/table";
+        return "table";
     }
 
     @GetMapping("/table")
-    public String doGetTable(HttpServletRequest request, HttpServletResponse response){
+    public String doGetTable(HttpServletRequest request){
 
         List<Applicant> applicants = applicantService.getApplicants();
         request.setAttribute("applicants", applicants);
@@ -49,7 +45,6 @@ public class TeacherController {
         List<Faculty> faculties = facultyService.getFaculties();
         request.setAttribute("faculties", faculties);
 
-        //WebUtils.forward("table", request, response);
         return "table";
     }
 }

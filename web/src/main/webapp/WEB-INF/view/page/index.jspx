@@ -1,0 +1,24 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: dell
+  Date: 20.06.2020
+  Time: 14:30
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          version="2.0">
+    <html>
+    <head>
+        <title>Начальная страница</title>
+        <link rel="stylesheet" type="text/css" href="assests/css/backgroundStyle.css"/>
+        <link rel="stylesheet" type="text/css" href="assests/css/topTextStyle.css"/>
+    </head>
+    <body>
+    <center>
+        <h1 style="color: green">Мы рады приветствовать Вас на нашем сайте!!!</h1>
+        <a href="${pageContext.request.contextPath}/login">Войти на сайт</a>
+    </center>
+    </body>
+</html>
+</jsp:root>

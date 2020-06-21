@@ -10,14 +10,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
-@RequestMapping
 public class AfterExamController {
 
     private ExamService examService;
@@ -32,7 +29,7 @@ public class AfterExamController {
     }
 
     @GetMapping("/result")
-    public String doGet(HttpServletRequest request, HttpServletResponse response){
+    public String doGet(HttpServletRequest request){
         Object applicantId = request.getSession().getAttribute("applicantId");
 
         Applicant applicant = applicantService.getApplicant((Long) applicantId);
@@ -42,10 +39,8 @@ public class AfterExamController {
         request.setAttribute("faculty", faculty);
 
         List<Exam> exams = facultyService.getExamForFaculty();
-        //List<Exam> exams = examService.getExams();
         request.setAttribute("exams", exams);
 
         return "result";
-        //WebUtils.forward("result", request, response);
     }
 }

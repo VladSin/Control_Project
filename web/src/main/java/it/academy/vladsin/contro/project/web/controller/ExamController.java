@@ -1,6 +1,5 @@
 package it.academy.vladsin.contro.project.web.controller;
 
-import it.academy.vladsin.contro.project.web.WebUtils;
 import it.academy.vladsin.control.project.data.Applicant;
 import it.academy.vladsin.control.project.data.Student;
 import it.academy.vladsin.control.project.data.University;
@@ -11,16 +10,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.time.LocalDateTime;
 
 @Controller
-@RequestMapping
 public class ExamController {
 
     private ApplicantService applicantService;
@@ -33,25 +27,22 @@ public class ExamController {
     }
 
     @GetMapping("/prog")
-    public String doGetProg(HttpServletRequest req, HttpServletResponse resp){
-        return "prog";
-        //WebUtils.forward("prog", req, resp);
+    public String doGetProg(){
+        return "/WEB-INF/view/page/prog";
     }
 
     @GetMapping("/math")
-    public String doGetMath(HttpServletRequest req, HttpServletResponse resp){
-        return "math";
-        //WebUtils.forward("math", req, resp);
+    public String doGetMath(){
+        return "/WEB-INF/view/page/math";
     }
 
     @GetMapping("/phys")
-    public String doGetPhys(HttpServletRequest req, HttpServletResponse resp){
-        return "phys";
-        //WebUtils.forward("phys", req, resp);
+    public String doGetPhys(){
+        return "/WEB-INF/view/page/phys";
     }
 
     @PostMapping("/prog")
-    public String doPostProg(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public String doPostProg(HttpServletRequest req) {
         int mark = 0;
         String answer1 = req.getParameter("test[0]");
         String answer2 = req.getParameter("test[1]");
@@ -73,11 +64,11 @@ public class ExamController {
             university.addStudents(student);
             studentService.saveStudent(student);
         }
-        return  "redirect:/result";
+        return "result";
     }
 
     @PostMapping("/math")
-    public String doPostMath(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public String doPostMath(HttpServletRequest req){
         int mark = 0;
         String answer1 = req.getParameter("test[3]");
         String answer2 = req.getParameter("test[4]");
@@ -99,11 +90,11 @@ public class ExamController {
             university.addStudents(student);
             studentService.saveStudent(student);
         }
-        return  "redirect:/result";
+        return "result";
     }
 
     @PostMapping("/phys")
-    public String doPostPhys(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public String doPostPhys(HttpServletRequest req){
         int mark = 0;
         String answer1 = req.getParameter("test[6]");
         String answer2 = req.getParameter("test[7]");
@@ -125,7 +116,6 @@ public class ExamController {
             university.addStudents(student);
             studentService.saveStudent(student);
         }
-
-       return  "redirect:/result";
+       return "result";
     }
 }

@@ -1,6 +1,5 @@
 package it.academy.vladsin.contro.project.web.controller;
 
-import it.academy.vladsin.contro.project.web.WebUtils;
 import it.academy.vladsin.control.project.data.AuthorizationUser;
 import it.academy.vladsin.control.project.service.SecurityService;
 import org.slf4j.Logger;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.time.LocalDateTime;
 
 @Controller
@@ -26,17 +24,16 @@ public class LoginController {
     }
 
     @GetMapping("/login")
-    public String doGet(HttpServletRequest request, HttpServletResponse response){
+    public String doGet(HttpServletRequest request){
         Object authorizationUser = request.getSession().getAttribute("authorizationUser");
         if (authorizationUser == null){
             return "login";
-            //WebUtils.forward("login", request, response);
         }
-        return "redirect:/user";
+        return "user";
     }
 
     @PostMapping("/login")
-    public String doPost(HttpServletRequest request, HttpServletResponse response){
+    public String doPost(HttpServletRequest request){
         String login = request.getParameter("login");
         String password = request.getParameter("password");
 
@@ -44,7 +41,6 @@ public class LoginController {
         if (authorizationUser == null) {
             request.setAttribute("error", "login or password invalid");
             log.info("error authorization at {}", LocalDateTime.now());
-            //WebUtils.forward("login", request, response);
             return "login";
         }
 
@@ -52,7 +48,7 @@ public class LoginController {
         request.getSession().setAttribute("authorizationUser", authorizationUser);
 
         if (authorizationUser.getId().equals(1L)){
-            return "redirect:/user";
+            return "user";
         } else {
             return "redirect:/teacher";
         }

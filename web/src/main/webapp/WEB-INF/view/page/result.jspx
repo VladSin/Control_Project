@@ -29,9 +29,9 @@
 
         <table>
             <tr><th>Ваш результат</th><th>Требования факультета</th></tr>
-            <tr><td><c:out value="${applicant.mark}"/></td><td><c:out value="${faculty.mark}"/></tr>
+            <tr><td><c:out value="${applicant.mark}"/></td><td><c:out value="${faculty.mark}"/></td></tr>
         </table>
-        <h2 style="color: blue">Ответы на Ваш экзамен</h2>
+        <h1 style="color: blue">Ответы на Ваш экзамен</h1>
         <table>
             <tr><th>Вопросы</th><th>Ответы</th></tr>
             <c:if test="${exams != null}">
@@ -47,7 +47,7 @@
 
         </table>
         <a href="${pageContext.request.contextPath}/login">Login</a>
-        <a href="${pageContext.request.contextPath}/index.jsp">Return</a>
+        <a href="${pageContext.request.contextPath}/WEB-INF/view/page/index.jspx">Return</a>
     </center>
     </body>
     </html>

@@ -10,7 +10,11 @@
         <put-attribute name="footer" value="/WEB-INF/view/common/footer.jspx"/>
     </definition>
 
-    <definition name="index" >
+    <definition name="body" template="/WEB-INF/view/layouts/default.jspx">
+        <put-attribute name="body" value=""/>
+    </definition>
+
+    <definition name="index" extends="default">
         <put-attribute name="body" value="/WEB-INF/view/page/index.jspx"/>
     </definition>
 
@@ -34,15 +38,15 @@
         <put-attribute name="body" value="/WEB-INF/view/page/prog.jspx"/>
     </definition>
 
-    <definition name="result">
+    <definition name="result" extends="default">
         <put-attribute name="body" value="/WEB-INF/view/page/result.jspx"/>
     </definition>
 
-    <definition name="student">
+    <definition name="student" extends="default">
         <put-attribute name="body" value="/WEB-INF/view/page/student.jspx"/>
     </definition>
 
-    <definition name="table">
+    <definition name="table" extends="default">
         <put-attribute name="body" value="/WEB-INF/view/page/table.jspx"/>
     </definition>
 

@@ -47,7 +47,7 @@
         </table>
 
         <a href="${pageContext.request.contextPath}/student">Students</a>
-        <a href="${pageContext.request.contextPath}/index.jsp">Return</a>
+        <a href="${pageContext.request.contextPath}/WEB-INF/view/page/index.jspx">Return</a>
     </center>
     </body>
     </html>

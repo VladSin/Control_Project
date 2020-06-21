@@ -12,9 +12,10 @@
           xmlns:spring="http://www.springframework.org/tags"
           version="2.0">
 
-    <header class="newHeader">
-        <div class="header">
-            <h2>Header</h2>
+    <header>
+        <link rel="stylesheet" type="text/css" href="assests/css/headerStyle.css"/>
+        <div class="overlay">
+            <h1>Ученье - свет, а неученье - тьма!</h1>
         </div>
     </header>
 

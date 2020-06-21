@@ -39,8 +39,8 @@
             </c:if>
         </table>
 
-        <a href="${pageContext.request.contextPath}/table.jsp">Applicants</a>
-        <a href="${pageContext.request.contextPath}/index.jsp">Return</a>
+        <a href="${pageContext.request.contextPath}/WEB-INF/view/page/table.jspx">Applicants</a>
+        <a href="${pageContext.request.contextPath}/WEB-INF/view/page/index.jspx">Return</a>
     </center>
     </body>
     </html>

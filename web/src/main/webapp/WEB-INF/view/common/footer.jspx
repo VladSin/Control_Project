@@ -12,9 +12,10 @@
           xmlns:spring="http://www.springframework.org/tags"
           version="2.0">
 
-    <footer class="newFooter">
-        <div class="footer">
-            <h2>Footer</h2>
+    <footer>
+        <link rel="stylesheet" type="text/css" href="assests/css/footerStyle.css"/>
+        <div class="overlay">
+            <h6>21.06.2020</h6>
         </div>
     </footer>
 

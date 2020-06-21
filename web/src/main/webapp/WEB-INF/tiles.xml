@@ -10,11 +10,11 @@
         <put-attribute name="footer" value="/WEB-INF/view/common/footer.jspx"/>
     </definition>
 
-    <definition name="body" template="/WEB-INF/view/layouts/default.jspx">
+    <definition name="body" template="/WEB-INF/view/layouts/body.jspx">
         <put-attribute name="body" value=""/>
     </definition>
 
-    <definition name="index" extends="default">
+    <definition name="index" extends="body">
         <put-attribute name="body" value="/WEB-INF/view/page/index.jspx"/>
     </definition>
 
@@ -26,27 +26,27 @@
         <put-attribute name="body" value="/WEB-INF/view/page/login.jspx"/>
     </definition>
 
-    <definition name="math" extends="default">
+    <definition name="math" extends="body">
         <put-attribute name="body" value="/WEB-INF/view/page/math.jspx"/>
     </definition>
 
-    <definition name="phys" extends="default">
+    <definition name="phys" extends="body">
         <put-attribute name="body" value="/WEB-INF/view/page/phys.jspx"/>
     </definition>
 
-    <definition name="prog" extends="default">
+    <definition name="prog" extends="body">
         <put-attribute name="body" value="/WEB-INF/view/page/prog.jspx"/>
     </definition>
 
-    <definition name="result" extends="default">
+    <definition name="result" extends="body">
         <put-attribute name="body" value="/WEB-INF/view/page/result.jspx"/>
     </definition>
 
-    <definition name="student" extends="default">
+    <definition name="student" extends="body">
         <put-attribute name="body" value="/WEB-INF/view/page/student.jspx"/>
     </definition>
 
-    <definition name="table" extends="default">
+    <definition name="table" extends="body">
         <put-attribute name="body" value="/WEB-INF/view/page/table.jspx"/>
     </definition>
 

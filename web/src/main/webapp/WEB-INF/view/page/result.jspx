@@ -46,8 +46,8 @@
             </c:if>
 
         </table>
-        <a href="${pageContext.request.contextPath}/login">Login</a>
-        <a href="${pageContext.request.contextPath}/WEB-INF/view/page/index.jspx">Return</a>
+        <a href="${pageContext.request.contextPath}/logout">Login</a>
+        <a href="${pageContext.request.contextPath}/">Return</a>
     </center>
     </body>
     </html>

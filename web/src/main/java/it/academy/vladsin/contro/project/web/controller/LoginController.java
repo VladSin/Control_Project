@@ -4,6 +4,9 @@ import it.academy.vladsin.control.project.data.AuthorizationUser;
 import it.academy.vladsin.control.project.service.SecurityService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,8 +28,8 @@ public class LoginController {
 
     @GetMapping("/login")
     public String doGet(HttpServletRequest request){
-        Object authorizationUser = request.getSession().getAttribute("authorizationUser");
-        if (authorizationUser == null){
+        final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if(authentication == null || "authorizationUser".equals(authentication.getPrincipal())){
             return "login";
         }
         return "user";
@@ -46,9 +49,11 @@ public class LoginController {
 
         log.info("authorizationUser {} logged at {}", authorizationUser.getLogin(), LocalDateTime.now());
         request.getSession().setAttribute("authorizationUser", authorizationUser);
+        Authentication authentication = new UsernamePasswordAuthenticationToken(authorizationUser, null);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
 
         if (authorizationUser.getId().equals(1L)){
-            return "user";
+            return "redirect:/user";
         } else {
             return "redirect:/teacher";
         }

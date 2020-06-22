@@ -8,13 +8,16 @@ import it.academy.vladsin.control.project.service.StudentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 
 @Controller
+@RequestMapping
 public class ExamController {
 
     private ApplicantService applicantService;
@@ -64,7 +67,7 @@ public class ExamController {
             university.addStudents(student);
             studentService.saveStudent(student);
         }
-        return "result";
+        return "redirect:/result";
     }
 
     @PostMapping("/math")
@@ -90,7 +93,7 @@ public class ExamController {
             university.addStudents(student);
             studentService.saveStudent(student);
         }
-        return "result";
+        return "redirect:/result";
     }
 
     @PostMapping("/phys")
@@ -116,6 +119,6 @@ public class ExamController {
             university.addStudents(student);
             studentService.saveStudent(student);
         }
-       return "result";
+       return "redirect:/result";
     }
 }

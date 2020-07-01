@@ -1,0 +1,37 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: dell
+  Date: 16.06.2020
+  Time: 10:47
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          version="2.0"
+          xmlns:spring="http://www.springframework.org/tags">
+    <html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Страница для абитуриентов</title>
+        <link rel="stylesheet" type="text/css" href="assests/css/backgroundStyle.css"/>
+    </head>
+    <body>
+    <center>
+        <h1 style="color: green"><spring:message code="page.welcome"/></h1>
+        <p>
+            <spring:message code="page.message"/>
+        </p>
+                <form action="${pageContext.request.contextPath}/faculty" method="post">
+
+            <select name="exam">
+                <option label="exam" value="Programming">Programming</option>
+                <option label="exam" value="Mathematics">Mathematics</option>
+                <option label="exam" value="Physics">Physics</option>
+            </select>
+            <input type="submit" name="exam" value="Start" />
+
+        </form>
+    </center>
+    </body>
+    </html>
+</jsp:root>

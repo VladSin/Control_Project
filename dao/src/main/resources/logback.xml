@@ -12,7 +12,7 @@
         <appender-ref ref="STDOUT" />
     </root>
 
-    <logger name="it_academy.control_project.dao.impl" level="TRACE" additivity="false">
+    <logger name="it.academy.vladsin.control.project.dao.impl" level="TRACE" additivity="false">
         <appender-ref ref="STDOUT" />
     </logger>
 

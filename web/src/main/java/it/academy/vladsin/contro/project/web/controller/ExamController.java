@@ -7,8 +7,8 @@ import it.academy.vladsin.control.project.service.ApplicantService;
 import it.academy.vladsin.control.project.service.StudentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,6 +45,7 @@ public class ExamController {
     }
 
     @PostMapping("/prog")
+    @Secured("ROLE_USER")
     public String doPostProg(HttpServletRequest req) {
         int mark = 0;
         String answer1 = req.getParameter("test[0]");
@@ -71,6 +72,7 @@ public class ExamController {
     }
 
     @PostMapping("/math")
+    @Secured("ROLE_USER")
     public String doPostMath(HttpServletRequest req){
         int mark = 0;
         String answer1 = req.getParameter("test[3]");
@@ -97,6 +99,7 @@ public class ExamController {
     }
 
     @PostMapping("/phys")
+    @Secured("ROLE_USER")
     public String doPostPhys(HttpServletRequest req){
         int mark = 0;
         String answer1 = req.getParameter("test[6]");

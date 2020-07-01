@@ -8,6 +8,7 @@ import it.academy.vladsin.control.project.service.ExamService;
 import it.academy.vladsin.control.project.service.FacultyService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,6 +33,7 @@ public class AfterExamController {
     }
 
     @GetMapping("/result")
+    @Secured("ROLE_USER")
     public String doGet(HttpServletRequest request){
         Object applicantId = request.getSession().getAttribute("applicantId");
 

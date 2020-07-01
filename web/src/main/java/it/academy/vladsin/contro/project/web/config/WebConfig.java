@@ -82,14 +82,14 @@ public class WebConfig {
         return tilesConfigurer;
     }
 
-//    @Bean
-//    public ReloadableResourceBundleMessageSource messageSource(){
-//        ReloadableResourceBundleMessageSource source = new ReloadableResourceBundleMessageSource();
-//        source.setBasename("classpath:i18n/messages");
-//        source.setDefaultEncoding("UTF-8");
-//
-//        return source;
-//    }
+    @Bean
+    public ReloadableResourceBundleMessageSource messageSource(){
+        ReloadableResourceBundleMessageSource source = new ReloadableResourceBundleMessageSource();
+        source.setBasename("classpath:i18n/messages");
+        source.setDefaultEncoding("UTF-8");
+
+        return source;
+    }
 
     @Bean
     public CookieLocaleResolver localeResolver(){

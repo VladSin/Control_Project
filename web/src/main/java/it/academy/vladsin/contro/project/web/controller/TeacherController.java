@@ -8,6 +8,8 @@ import it.academy.vladsin.control.project.service.FacultyService;
 import it.academy.vladsin.control.project.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,11 +33,13 @@ public class TeacherController {
     }
 
     @GetMapping("/teacher")
-    public String doGetTeacher(){
+    @Secured("ROLE_TEACHER")
+    public String doGetTeacher(UsernamePasswordAuthenticationToken authentication){
         return "redirect:/table";
     }
 
     @GetMapping("/table")
+    @Secured("ROLE_TEACHER")
     public String doGetTable(HttpServletRequest request){
 
         List<Applicant> applicants = applicantService.getApplicants();

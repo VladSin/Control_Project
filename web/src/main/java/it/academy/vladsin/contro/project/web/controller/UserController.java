@@ -4,6 +4,8 @@ import it.academy.vladsin.control.project.data.User;
 import it.academy.vladsin.control.project.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,11 +26,13 @@ public class UserController {
     }
 
     @GetMapping("/user")
-    public String doGet(){
+    @Secured("ROLE_USER")
+    public String doGet(UsernamePasswordAuthenticationToken authentication){
         return "user";
     }
 
     @PostMapping("/user")
+    @Secured("ROLE_USER")
     public String doPost(HttpServletRequest request){
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");

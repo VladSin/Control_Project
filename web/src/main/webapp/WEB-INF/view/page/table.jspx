@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="assests/css/tableStyle.css"/>
     </head>
     <body>
+    <a href="${pageContext.request.contextPath}/logout">Logout</a>
     <center>
         <h1 style="color: darkslateblue">Список сдачи тестирования</h1>
         <table>
@@ -34,7 +35,7 @@
                                     <td style="color: green">${applicant.mark}</td>
                                 </tr>
                             </c:if>
-                            <c:if test="${applicant.mark < 8}">
+                            <c:if test="${applicant.mark lt 8}">
                                 <tr>
                                     <td style="color: red">${user.name}</td>
                                     <td style="color: red">${user.surname}</td>

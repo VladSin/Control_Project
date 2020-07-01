@@ -9,12 +9,12 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 import javax.servlet.Filter;
 
 public class WebApplicationInitialization extends AbstractAnnotationConfigDispatcherServletInitializer {
+
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
                 RootConfig.class,
                 WebSecurityConfig.class,
-                ResourceConfig.class
         };
     }
 
@@ -34,9 +34,9 @@ public class WebApplicationInitialization extends AbstractAnnotationConfigDispat
 
     @Override
     protected Filter[] getServletFilters() {
-//        DelegatingFilterProxy delegateFilterProxy = new DelegatingFilterProxy();
-//        delegateFilterProxy.setTargetBeanName("springSecurityFFilterChain");
-//        return new Filter[]{delegateFilterProxy};
-        return super.getServletFilters();
+        DelegatingFilterProxy delegateFilterProxy = new DelegatingFilterProxy();
+        delegateFilterProxy.setTargetBeanName("springSecurityFilterChain");
+        return new Filter[]{delegateFilterProxy};
+        //return super.getServletFilters();
     }
 }

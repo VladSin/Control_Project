@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="assests/css/tableStyle.css"/>
     </head>
     <body>
+    <a href="${pageContext.request.contextPath}/logout">Logout</a>
     <center>
         <h1 style="color: darkslateblue">Список Студентов</h1>
         <table>

@@ -16,10 +16,10 @@ public class DefaultSecurityService implements SecurityService {
     @Override
     @Transactional
     public AuthorizationUser login(String login, String password) {
-        if (login.equals("User")){
-            return authUserDao.getAuthUser(1);
-        } else if (login.equals("Teacher")) {
-            return authUserDao.getAuthUser(2);
+        if (login.equals("User") && password.equals("User")) {
+            return authUserDao.getAuthUser(1L);
+        } else if (login.equals("Teacher") && password.equals("Teacher")) {
+            return authUserDao.getAuthUser(2L);
         } else {
             return null;
         }

@@ -30,42 +30,64 @@ public class WebConfig {
 
     @Bean
     public AfterExamController afterExamController(){
-        return new AfterExamController(serviceConfig.examService(), serviceConfig.applicantService(), serviceConfig.facultyService());
+        return new AfterExamController(
+                serviceConfig.examService(),
+                serviceConfig.applicantService(),
+                serviceConfig.facultyService()
+        );
     }
 
     @Bean
     public ExamController examController(){
-        return new ExamController(serviceConfig.applicantService(), serviceConfig.studentService());
+        return new ExamController(
+                serviceConfig.applicantService(),
+                serviceConfig.studentService(),
+                serviceConfig.examService()
+        );
     }
 
     @Bean
     public FacultyController facultyController(){
-        return new FacultyController(serviceConfig.facultyService());
+        return new FacultyController(
+                serviceConfig.facultyService()
+        );
     }
 
     @Bean
     public LoginController loginController(){
-        return new LoginController(serviceConfig.securityService());
+        return new LoginController(
+                serviceConfig.securityService()
+        );
     }
 
     @Bean
     public LogoutController logoutController(){
-        return new LogoutController(serviceConfig.securityService());
+        return new LogoutController(
+                serviceConfig.securityService()
+        );
     }
 
     @Bean
     public StudentsController studentsController(){
-        return new StudentsController(serviceConfig.studentService(), serviceConfig.userService());
+        return new StudentsController(
+                serviceConfig.studentService(),
+                serviceConfig.userService()
+        );
     }
 
     @Bean
     public TeacherController teacherController(){
-        return new TeacherController(serviceConfig.applicantService(), serviceConfig.userService(), serviceConfig.facultyService());
+        return new TeacherController(
+                serviceConfig.applicantService(),
+                serviceConfig.userService(),
+                serviceConfig.facultyService()
+        );
     }
 
     @Bean
     public UserController userController(){
-        return new UserController(serviceConfig.userService());
+        return new UserController(serviceConfig.userService()
+        );
     }
 
     @Bean

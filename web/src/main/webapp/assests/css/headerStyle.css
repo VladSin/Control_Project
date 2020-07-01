@@ -21,7 +21,7 @@ header .overlay{
 
 }
 
-h1 {
+h1, p {
     font-family: 'Dancing Script', cursive;
     font-size: 80px;
     margin-bottom: 30px;

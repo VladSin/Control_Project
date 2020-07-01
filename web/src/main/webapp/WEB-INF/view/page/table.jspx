@@ -8,7 +8,6 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
           xmlns="http://www.w3.org/1999/xhtml"
           xmlns:c="http://java.sun.com/jsp/jstl/core"
-          xmlns:sec="http://www.springframework.org/security/tags"
           version="2.0">
 
     <html>
@@ -49,7 +48,6 @@
         </table>
 
         <a href="${pageContext.request.contextPath}/student">Students</a>
-        <a href="${pageContext.request.contextPath}/">Return</a>
     </center>
     </body>
     </html>

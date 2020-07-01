@@ -15,7 +15,7 @@
     <header>
         <link rel="stylesheet" type="text/css" href="assests/css/headerStyle.css"/>
         <div class="overlay">
-            <h1>Ученье - свет, а неученье - тьма!</h1>
+            <h1><spring:message code="page.header"/></h1>
         </div>
     </header>
 

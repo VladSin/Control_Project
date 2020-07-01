@@ -35,7 +35,7 @@ public class LoginController {
         if(authentication == null || "anonymousUser".equals(authentication.getPrincipal())){
             return "login";
         }
-        return "user";
+        return "login";
     }
 
     @PostMapping("/login")

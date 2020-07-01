@@ -16,8 +16,8 @@
     </head>
     <body>
     <center>
-        <h1 style="color: green">Мы рады приветствовать Вас на нашем сайте!!!</h1>
-        <a href="${pageContext.request.contextPath}/login">Войти на сайт</a>
+        <h1 style="color: green">Welcome!!!</h1>
+        <a href="${pageContext.request.contextPath}/login">Give to us!</a>
     </center>
     </body>
 </html>

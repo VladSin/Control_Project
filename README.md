@@ -15,6 +15,10 @@
   + Паттерн MVC;
   + Многомодульность (dao, service, data, web);
   + Связи в db (One-to-One, One-to-Many, Many-to-Many);
+  + Интернационализация сообщений через Spring (i18n);
+  + Spring MVC;
+  + В качестве представления данных используются шаблоны фрейморка Tiles;
+  + Модуль безопасности Spring для ограничения доступа (Spring Security);
   + Кэширование, логирование, тестирование и многое другое ;)
 
 Используемые технологии:
@@ -23,4 +27,4 @@
   + Framework Hibernate (5.4.5 Final);
   + Unit-tests (junit-jupiter);
   + Filters;
-  + Framework Spring (ведется интеграция в ветви spring_updating);
+  + Framework Spring;
